@@ -1,5 +1,7 @@
 # Data model diagrams
 
+Here is a series of graphical representation of all the classes, relations and attributes of the entities (directly and indirectly) involved in SKG-IF, and it is aligned in the [JSON-LD context]((https://skg-if.github.io/context/) prepared for SKG-IF.
+
 ## Research product
 ![Research product diagram](https://raw.githubusercontent.com/skg-if/data-model/refs/heads/main/graphs/skg-if-research-product.png)
 
