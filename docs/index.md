@@ -4,7 +4,7 @@
 ![Research product diagram](../graphs/skg-if-research-product.png)
 
 ## Agent
-![Agent diagram](../graphs/skg-if-agent.png)
+![Agent diagram](https://raw.githubusercontent.com/skg-if/data-model/refs/heads/main/graphs/skg-if-agent.png)
 
 ## Grant
 ![Grant diagram](../graphs/skg-if-grant.png)
