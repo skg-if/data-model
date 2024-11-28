@@ -1,7 +1,7 @@
 ---
 title: Data model
 layout: default
-nav_order: 99
+nav_exclude: true
 ---
 
 # Data model diagrams
