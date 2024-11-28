@@ -1,3 +1,9 @@
+---
+title: Data model
+layout: default
+nav_order: 99
+---
+
 # Data model diagrams
 
 Here is a series of graphical representation of all the classes, relations and attributes of the entities (directly and indirectly) involved in SKG-IF, and it is aligned in the [JSON-LD context](https://w3id.org/skg-if/context/skg-if.json) prepared for SKG-IF.
