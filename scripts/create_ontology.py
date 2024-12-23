@@ -226,7 +226,7 @@ def create_ontology(classes, object_properties, data_properties, individuals, pr
     onto.add((DC.date, RDF.type, OWL.AnnotationProperty))
     onto.add((DC.title, RDF.type, OWL.AnnotationProperty))
 
-    onto_iri = URIRef("https://w3id.org/skg-if/data-model/ontology/")
+    onto_iri = URIRef("https://w3id.org/skg-if/ontology/")
     onto.add((onto_iri, RDF.type, OWL.Ontology))
     onto.add((onto_iri, RDFS.label, Literal("SKG-O")))
     onto.add((onto_iri, DC.title, Literal("The SKG-IF Ontology")))
