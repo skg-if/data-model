@@ -194,7 +194,7 @@ def create_domain_range(property, property_iri, ontology, d_support, is_object_p
 
     domain_strings = ["In SKG-IF, it is used in the following classes (domain):"]
     for entity in domain_entities:
-        domain_strings.append("- " + entity)
+        domain_strings.append("* " + entity)
     
     range_type = "data types"
     if is_object_property:
@@ -202,7 +202,7 @@ def create_domain_range(property, property_iri, ontology, d_support, is_object_p
 
     range_strings = ["In SKG-IF, it is used to link to entities belonging to the following " + range_type + " (range):"]
     for entity in range_entities:
-        range_strings.append("- " + entity)
+        range_strings.append("* " + entity)
     
     ontology.add((property_iri, DC.description, 
                   Literal("\n".join(domain_strings) + "\n\n" + "\n".join(range_strings))))
@@ -247,7 +247,7 @@ def create_ontology(classes, object_properties, data_properties, individuals, pr
             domain_properties = get_domain_properties(o_class, d_support)
 
             if len(domain_properties):
-                domain_strings = ["The properties that can be used with this class are:"]
+                domain_strings = ["The properties that can be used with this class are:\n"]
                 for property, target in domain_properties:
                     property_labels = d_support["term_mapping"][property]
                     for property_label in property_labels:
@@ -255,7 +255,7 @@ def create_ontology(classes, object_properties, data_properties, individuals, pr
                         if arity is not None:
                             break
 
-                    domain_strings.append("- " + property + " -" + ("[0..1]" if arity is None else "[" + arity + "]") + "-> " + target)
+                    domain_strings.append("* " + property + " -" + ("[0..N]" if arity is None else "[" + arity + "]") + "-> " + target)
                 
                 onto.add((iri, DC.description, Literal("\n".join(domain_strings))))
 
@@ -382,7 +382,7 @@ if __name__ == "__main__":
                     l_const = "0"
                 
                 if p_type == "List":
-                    r_const = "*"
+                    r_const = "N"
                 else:
                     r_const = "1"
                 

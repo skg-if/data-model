@@ -30,80 +30,80 @@
 prism:edition a owl:DatatypeProperty ;
     rdfs:label "prism:edition (SKG-IF labels: edition)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:string""" ;
+* xsd:string""" ;
     rdfs:comment "The edition (for journals and books)." ;
     rdfs:isDefinedBy prism: .
 
 prism:endingPage a owl:DatatypeProperty ;
     rdfs:label "prism:endingPage (SKG-IF labels: last)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Manifestation
+* fabio:Manifestation
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:string""" ;
+* xsd:string""" ;
     rdfs:comment "The ending page." ;
     rdfs:isDefinedBy prism: .
 
 prism:issueIdentifier a owl:DatatypeProperty ;
     rdfs:label "prism:issueIdentifier (SKG-IF labels: issue)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:string""" ;
+* xsd:string""" ;
     rdfs:comment "Issue number." ;
     rdfs:isDefinedBy prism: .
 
 prism:keyword a owl:DatatypeProperty ;
     rdfs:label "prism:keyword (SKG-IF labels: keywords)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- frapo:Grant
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
+* rdfs:Literal""" ;
     rdfs:comment "Keywords of a Grant." ;
     rdfs:isDefinedBy prism: .
 
 prism:seriesTitle a owl:DatatypeProperty ;
     rdfs:label "prism:seriesTitle (SKG-IF labels: series)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:ExpressionCollection
+* fabio:ExpressionCollection
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
+* rdfs:Literal""" ;
     rdfs:comment "The name of the conference or book series." ;
     rdfs:isDefinedBy prism: .
 
 prism:startingPage a owl:DatatypeProperty ;
     rdfs:label "prism:startingPage (SKG-IF labels: first)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Manifestation
+* fabio:Manifestation
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:string""" ;
+* xsd:string""" ;
     rdfs:comment "The starting page." ;
     rdfs:isDefinedBy prism: .
 
 prism:versionIdentifier a owl:DatatypeProperty ;
     rdfs:label "prism:versionIdentifier (SKG-IF labels: version)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:string""" ;
+* xsd:string""" ;
     rdfs:comment "The version for a software or research data product." ;
     rdfs:isDefinedBy prism: .
 
 prism:volume a owl:DatatypeProperty ;
     rdfs:label "prism:volume (SKG-IF labels: volume)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:string""" ;
+* xsd:string""" ;
     rdfs:comment "Volume number (for journals, books, conferences)." ;
     rdfs:isDefinedBy prism: .
 
@@ -126,20 +126,21 @@ frapo:GovernmentOrganization a owl:Class ;
 frapo:Grant a owl:Class ;
     rdfs:label "frapo:Grant (SKG-IF labels: Grant)" ;
     dc:description """The properties that can be used with this class are:
-- datacite:hasIdentifier -[0..*]-> datacite:Identifier
-- dcterms:abstract -[0..1]-> rdfs:Literal
-- dcterms:temporal -[0..1]-> ti:TimeInterval
-- dcterms:title -[0..1]-> rdfs:Literal
-- foaf:homepage -[0..1]-> foaf:Document
-- frapo:hasAcronym -[0..1]-> rdfs:Literal
-- frapo:hasCallIdentifier -[0..1]-> rdfs:Literal
-- frapo:hasCurrency -[0..1]-> xsd:float
-- frapo:hasCurrencyCode -[0..1]-> xsd:string
-- frapo:hasFundingAgency -[0..1]-> frapo:FundingAgency
-- frapo:hasGrantNumber -[0..1]-> xsd:string
-- frapo:supports -[0..*]-> foaf:Organization
-- prism:keyword -[0..*]-> rdfs:Literal
-- pro:isRelatedToRoleInTime -[0..*]-> pro:RoleInTime""" ;
+
+* datacite:hasIdentifier -[0..N]-> datacite:Identifier
+* dcterms:abstract -[0..1]-> rdfs:Literal
+* dcterms:temporal -[0..1]-> ti:TimeInterval
+* dcterms:title -[0..1]-> rdfs:Literal
+* foaf:homepage -[0..1]-> foaf:Document
+* frapo:hasAcronym -[0..1]-> rdfs:Literal
+* frapo:hasCallIdentifier -[0..1]-> rdfs:Literal
+* frapo:hasCurrency -[0..1]-> xsd:float
+* frapo:hasCurrencyCode -[0..N]-> xsd:string
+* frapo:hasFundingAgency -[0..1]-> frapo:FundingAgency
+* frapo:hasGrantNumber -[0..1]-> xsd:string
+* frapo:supports -[0..N]-> foaf:Organization
+* prism:keyword -[0..N]-> rdfs:Literal
+* pro:isRelatedToRoleInTime -[0..N]-> pro:RoleInTime""" ;
     rdfs:comment "The entity Grant describes funding awarded to a Agent by a funding body. These bodies, both public and private, can be funders, foundations, governments, agencies or institutions." ;
     rdfs:isDefinedBy frapo: .
 
@@ -165,105 +166,105 @@ frapo:University a owl:Class ;
     rdfs:isDefinedBy frapo: .
 
 frapo:hasAcronym a owl:DatatypeProperty ;
-    rdfs:label "frapo:hasAcronym (SKG-IF labels: acronym, short_name)" ;
+    rdfs:label "frapo:hasAcronym (SKG-IF labels: short_name, acronym)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:ExpressionCollection
-- foaf:Organization
-- frapo:Grant
+* fabio:ExpressionCollection
+* foaf:Organization
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
-    rdfs:comment "Acronym used by a Venue." ;
+* rdfs:Literal""" ;
+    rdfs:comment "The short name/acronym for an Organisation." ;
     rdfs:isDefinedBy frapo: .
 
 frapo:hasCallIdentifier a owl:DatatypeProperty ;
     rdfs:label "frapo:hasCallIdentifier (SKG-IF labels: funding_stream)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- frapo:Grant
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
+* rdfs:Literal""" ;
     rdfs:comment "The funding stream of the Grant." ;
     rdfs:isDefinedBy frapo: .
 
 frapo:hasCountry a owl:DatatypeProperty ;
     rdfs:label "frapo:hasCountry (SKG-IF labels: country)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- foaf:Organization
+* foaf:Organization
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
+* rdfs:Literal""" ;
     rdfs:comment "The country code of an Organisation expressed as ISO 3166-1 alpha-2." ;
     rdfs:isDefinedBy frapo: .
 
 frapo:hasCurrency a owl:DatatypeProperty ;
     rdfs:label "frapo:hasCurrency (SKG-IF labels: funded_amount)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- frapo:Grant
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:float""" ;
+* xsd:float""" ;
     rdfs:comment "Amount funded for a Grant." ;
     rdfs:isDefinedBy frapo: .
 
 frapo:hasCurrencyCode a owl:DatatypeProperty ;
     rdfs:label "frapo:hasCurrencyCode (SKG-IF labels: currency)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- frapo:Grant
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:string""" ;
+* xsd:string""" ;
     rdfs:comment "Currency of the funded amount, following ISO 4217." ;
     rdfs:isDefinedBy frapo: .
 
 frapo:hasFundingAgency a owl:ObjectProperty ;
     rdfs:label "frapo:hasFundingAgency (SKG-IF labels: funding_agency)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- frapo:Grant
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- frapo:FundingAgency""" ;
+* frapo:FundingAgency""" ;
     rdfs:comment "The local identifier of an Organisation funding the Grant." ;
     rdfs:isDefinedBy frapo: .
 
 frapo:hasGrantNumber a owl:DatatypeProperty ;
     rdfs:label "frapo:hasGrantNumber (SKG-IF labels: grant_number)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- frapo:Grant
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:string""" ;
+* xsd:string""" ;
     rdfs:comment "Unique code identifiying the Grant at the funder." ;
     rdfs:isDefinedBy frapo: .
 
 frapo:isFundedBy a owl:ObjectProperty ;
     rdfs:label "frapo:isFundedBy (SKG-IF labels: funding)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Work
+* fabio:Work
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- frapo:Grant""" ;
+* frapo:Grant""" ;
     rdfs:comment "Relevant Grant identifiers associated with a Research product." ;
     rdfs:isDefinedBy frapo: .
 
 frapo:supports a owl:ObjectProperty ;
     rdfs:label "frapo:supports (SKG-IF labels: beneficiaries)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- frapo:Grant
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- foaf:Organization""" ;
+* foaf:Organization""" ;
     rdfs:comment "Organisations identifiers funded by the Grant." ;
     rdfs:isDefinedBy frapo: .
 
 co:index a owl:DatatypeProperty ;
     rdfs:label "co:index (SKG-IF labels: rank)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- pro:RoleInTime
-- scoro:ContributionSituation
+* pro:RoleInTime
+* scoro:ContributionSituation
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:positiveInteger""" ;
+* xsd:positiveInteger""" ;
     rdfs:comment "The rank (i.e., order of appearance) of a Agent with a specific role (e.g., the order of an author in a list) of a Research product." ;
     rdfs:isDefinedBy co: .
 
@@ -296,211 +297,213 @@ dc:title a owl:AnnotationProperty .
 dcterms:Standard a owl:Class ;
     rdfs:label "dcterms:Standard" ;
     dc:description """The properties that can be used with this class are:
-- dcterms:coverage -[0..*]-> owl:Thing
-- dcterms:requires -[1..*]-> datacite:IdentifierScheme""" ;
+
+* dcterms:coverage -[1]-> owl:Thing
+* dcterms:requires -[1..N]-> datacite:IdentifierScheme""" ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:abstract a owl:DatatypeProperty ;
-    rdfs:label "dcterms:abstract (SKG-IF labels: abstract, abstracts)" ;
+    rdfs:label "dcterms:abstract (SKG-IF labels: abstracts, abstract)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Work
-- frapo:Grant
+* fabio:Work
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
-    rdfs:comment "The abstract or a description of the Grant." ;
+* rdfs:Literal""" ;
+    rdfs:comment "The abstracts of a Research product (multiple for multilinguism)." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:conformsTo a owl:ObjectProperty ;
     rdfs:label "dcterms:conformsTo (SKG-IF labels: persistent_identity_systems)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- dcat:DataService
+* dcat:DataService
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- dcterms:Standard""" ;
+* dcterms:Standard""" ;
     rdfs:comment "The persistent identifier systems that are used by a Data source to identify the `ProductType` it supports." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:coverage a owl:ObjectProperty ;
-    rdfs:label "dcterms:coverage (SKG-IF labels: research_product_type, for)" ;
+    rdfs:label "dcterms:coverage (SKG-IF labels: for, research_product_type)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- dcat:DataService
-- dcterms:Standard
+* dcat:DataService
+* dcterms:Standard
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- owl:Thing""" ;
-    rdfs:comment "The types of OpenAIRE entities managed by a Data source, based on the EOSC vocabulary Research Product Type." ;
+* owl:Thing""" ;
+    rdfs:comment "The Product type to which the persistent identifier is referring to." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:created a owl:DatatypeProperty ;
     rdfs:label "dcterms:created (SKG-IF labels: creation, creation_date)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
-- fabio:ExpressionCollection
+* fabio:Expression
+* fabio:ExpressionCollection
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date on which an entity has been created." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:dateAccepted a owl:DatatypeProperty ;
     rdfs:label "dcterms:dateAccepted (SKG-IF labels: acceptance)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date of acceptance of an entity. Examples of entities to which a date accepted may be relevant are a thesis (accepted by a university examination board) or an article (accepted by a journal editor)." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:dateCopyrighted a owl:DatatypeProperty ;
     rdfs:label "dcterms:dateCopyrighted (SKG-IF labels: copyright)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date on which an entity has been copyrighted." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:description a owl:DatatypeProperty ;
     rdfs:label "dcterms:description (SKG-IF labels: description)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- odrl:Policy
-- pso:StatusInTime
+* odrl:Policy
+* pso:StatusInTime
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:string""" ;
+* xsd:string""" ;
     rdfs:comment "describe the type of policy, if necessary." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:issued a owl:DatatypeProperty ;
     rdfs:label "dcterms:issued (SKG-IF labels: publication)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date of formal issuance of a resource (e.g. a publication or a patent)." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:modified a owl:DatatypeProperty ;
     rdfs:label "dcterms:modified (SKG-IF labels: modified)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date on which an entity has been modified." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:relation a owl:ObjectProperty ;
     rdfs:label "dcterms:relation (SKG-IF labels: relevant_organisations)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Work
+* fabio:Work
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- foaf:Organization""" ;
+* foaf:Organization""" ;
     rdfs:comment "Relevant Organisation identifiers associated with a Research product, in case the individual affiliations of an Agent are not available." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:requires a owl:ObjectProperty ;
     rdfs:label "dcterms:requires (SKG-IF labels: pid_schemes)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- dcterms:Standard
+* dcterms:Standard
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- datacite:IdentifierScheme""" ;
+* datacite:IdentifierScheme""" ;
     rdfs:comment "Persistent identifier schemes used to refer to ProductTypes." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:subject a owl:ObjectProperty ;
     rdfs:label "dcterms:subject (SKG-IF labels: disciplines)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- dcat:DataService
+* dcat:DataService
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- owl:Thing""" ;
+* owl:Thing""" ;
     rdfs:comment "The disciplines for which a Data source is dedicated. The disciplines must be specified using the Library of Congress Classification codes, available at https://id.loc.gov/authorities/classification (e.g. `PA3000-PA3049` for classical literature). In case a Data source is discipline agnostic, the string `all` should be specified." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:temporal a owl:ObjectProperty ;
     rdfs:label "dcterms:temporal (SKG-IF labels: duration)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- frapo:Grant
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- ti:TimeInterval""" ;
+* ti:TimeInterval""" ;
     rdfs:comment "The duration of the Grant." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:title a owl:DatatypeProperty ;
     rdfs:label "dcterms:title (SKG-IF labels: titles, title)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:ExpressionCollection
-- fabio:Work
-- frapo:Grant
+* fabio:ExpressionCollection
+* fabio:Work
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
+* rdfs:Literal""" ;
     rdfs:comment "The titles of a Research product (multiple for multilinguism)." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:valid a owl:DatatypeProperty ;
     rdfs:label "dcterms:valid (SKG-IF labels: validity)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "Date of validity of a resource." ;
     rdfs:isDefinedBy dcterms: .
 
 bido:holdsBibliometricDataInTime a owl:ObjectProperty ;
     rdfs:label "bido:holdsBibliometricDataInTime (SKG-IF labels: topics)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Work
+* fabio:Work
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- fabio:BibliometricDataInTime""" ;
+* fabio:BibliometricDataInTime""" ;
     rdfs:comment "Objects referring to Topic covered by the Research product." ;
     rdfs:isDefinedBy bido: .
 
 bido:withBibliometricData a owl:ObjectProperty ;
     rdfs:label "bido:withBibliometricData (SKG-IF labels: term)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:BibliometricDataInTime
+* fabio:BibliometricDataInTime
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- fabio:SubjectTerm""" ;
+* fabio:SubjectTerm""" ;
     rdfs:comment "The identifier of a Topic relevant for the Research product." ;
     rdfs:isDefinedBy bido: .
 
 cito:cites a owl:ObjectProperty ;
     rdfs:label "cito:cites (SKG-IF labels: cites)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Work
+* fabio:Work
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- fabio:Work""" ;
+* fabio:Work""" ;
     rdfs:comment "Research products identifiers that are cited by a given Research product." ;
     rdfs:isDefinedBy cito: .
 
 cito:isDocumentedBy a owl:ObjectProperty ;
     rdfs:label "cito:isDocumentedBy (SKG-IF labels: is_documented_by)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Work
+* fabio:Work
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- fabio:Work""" ;
+* fabio:Work""" ;
     rdfs:comment "Research products identifiers that documents a given Research product." ;
     rdfs:isDefinedBy cito: .
 
 datacite:Identifier a owl:Class ;
     rdfs:label "datacite:Identifier" ;
     dc:description """The properties that can be used with this class are:
-- datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme
-- literal:hasLiteralValue -[1]-> rdfs:Literal""" ;
+
+* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme
+* literal:hasLiteralValue -[1]-> rdfs:Literal""" ;
     rdfs:isDefinedBy datacite: .
 
 datacite:IdentifierScheme a owl:Class ;
@@ -534,16 +537,16 @@ datacite:handle a owl:NamedIndividual ;
 datacite:hasIdentifier a owl:ObjectProperty ;
     rdfs:label "datacite:hasIdentifier (SKG-IF labels: identifiers)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- dcat:DataService
-- fabio:Expression
-- fabio:ExpressionCollection
-- fabio:SubjectTerm
-- fabio:Work
-- foaf:Agent
-- frapo:Grant
+* dcat:DataService
+* fabio:Expression
+* fabio:ExpressionCollection
+* fabio:SubjectTerm
+* fabio:Work
+* foaf:Agent
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- datacite:Identifier""" ;
+* datacite:Identifier""" ;
     rdfs:comment "Objects representing external identifiers for the entity." ;
     rdfs:isDefinedBy datacite: .
 
@@ -594,10 +597,10 @@ datacite:url a owl:NamedIndividual ;
 datacite:usesIdentifierScheme a owl:ObjectProperty ;
     rdfs:label "datacite:usesIdentifierScheme (SKG-IF labels: scheme)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- datacite:Identifier
+* datacite:Identifier
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- datacite:IdentifierScheme""" ;
+* datacite:IdentifierScheme""" ;
     rdfs:comment "The scheme for the external identifier (e.g., a DOI)." ;
     rdfs:isDefinedBy datacite: .
 
@@ -608,8 +611,9 @@ datacite:viaf a owl:NamedIndividual ;
 fabio:BibliometricDataInTime a owl:Class ;
     rdfs:label "fabio:BibliometricDataInTime" ;
     dc:description """The properties that can be used with this class are:
-- bido:withBibliometricData -[1]-> fabio:SubjectTerm
-- prov:wasGeneratedBy -[0..*]-> prov:Activity""" ;
+
+* bido:withBibliometricData -[1]-> fabio:SubjectTerm
+* prov:wasGeneratedBy -[0..N]-> prov:Activity""" ;
     rdfs:isDefinedBy fabio: .
 
 fabio:Book a owl:Class ;
@@ -637,57 +641,60 @@ fabio:Dataset a owl:Class ;
 fabio:Expression a owl:Class ;
     rdfs:label "fabio:Expression" ;
     dc:description """The properties that can be used with this class are:
-- datacite:hasIdentifier -[0..*]-> datacite:Identifier
-- dcat:accessService -[0..1]-> dcat:DataService
-- dcterms:created -[0..1]-> xsd:dateTime
-- dcterms:dateAccepted -[0..1]-> xsd:dateTime
-- dcterms:dateCopyrighted -[0..1]-> xsd:dateTime
-- dcterms:issued -[0..1]-> xsd:dateTime
-- dcterms:modified -[0..1]-> xsd:dateTime
-- dcterms:valid -[0..1]-> xsd:dateTime
-- fabio:hasAccessDate -[0..1]-> xsd:dateTime
-- fabio:hasCorrectionDate -[0..1]-> xsd:dateTime
-- fabio:hasDateCollected -[0..1]-> xsd:dateTime
-- fabio:hasDateReceived -[0..1]-> xsd:dateTime
-- fabio:hasDecisionDate -[0..1]-> xsd:dateTime
-- fabio:hasDepositDate -[0..1]-> xsd:dateTime
-- fabio:hasDistributionDate -[0..1]-> xsd:dateTime
-- fabio:hasEmbargoDate -[0..1]-> xsd:dateTime
-- fabio:hasRequestDate -[0..1]-> xsd:dateTime
-- fabio:hasRetractionDate -[0..1]-> xsd:dateTime
-- fabio:hasSequenceIdentifier -[0..1]-> xsd:string
-- frbr:embodiment -[0..1]-> fabio:Manifestation
-- frbr:partOf -[0..*]-> fabio:Expression
-- prism:edition -[0..1]-> xsd:string
-- prism:issueIdentifier -[0..1]-> xsd:string
-- prism:versionIdentifier -[0..1]-> xsd:string
-- prism:volume -[0..1]-> xsd:string
-- pso:holdsStatusInTime -[1]-> pso:StatusInTime
-- rdf:type -[0..1]-> skos:Concept""" ;
+
+* datacite:hasIdentifier -[0..N]-> datacite:Identifier
+* dcat:accessService -[0..1]-> dcat:DataService
+* dcterms:created -[0..1]-> xsd:dateTime
+* dcterms:dateAccepted -[0..N]-> xsd:dateTime
+* dcterms:dateCopyrighted -[0..N]-> xsd:dateTime
+* dcterms:issued -[0..N]-> xsd:dateTime
+* dcterms:modified -[0..N]-> xsd:dateTime
+* dcterms:valid -[0..N]-> xsd:dateTime
+* fabio:hasAccessDate -[0..N]-> xsd:dateTime
+* fabio:hasCorrectionDate -[0..N]-> xsd:dateTime
+* fabio:hasDateCollected -[0..N]-> xsd:dateTime
+* fabio:hasDateReceived -[0..N]-> xsd:dateTime
+* fabio:hasDecisionDate -[0..N]-> xsd:dateTime
+* fabio:hasDepositDate -[0..N]-> xsd:dateTime
+* fabio:hasDistributionDate -[0..N]-> xsd:dateTime
+* fabio:hasEmbargoDate -[0..N]-> xsd:dateTime
+* fabio:hasRequestDate -[0..N]-> xsd:dateTime
+* fabio:hasRetractionDate -[0..N]-> xsd:dateTime
+* fabio:hasSequenceIdentifier -[0..1]-> xsd:string
+* frbr:embodiment -[0..1]-> fabio:Manifestation
+* frbr:partOf -[0..1]-> fabio:Expression
+* prism:edition -[0..1]-> xsd:string
+* prism:issueIdentifier -[0..1]-> xsd:string
+* prism:versionIdentifier -[0..1]-> xsd:string
+* prism:volume -[0..1]-> xsd:string
+* pso:holdsStatusInTime -[1]-> pso:StatusInTime
+* rdf:type -[0..1]-> skos:Concept""" ;
     rdfs:isDefinedBy fabio: .
 
 fabio:ExpressionCollection a owl:Class ;
     rdfs:label "fabio:ExpressionCollection (SKG-IF labels: venue)" ;
     dc:description """The properties that can be used with this class are:
-- datacite:hasIdentifier -[0..*]-> datacite:Identifier
-- dcterms:created -[0..1]-> xsd:dateTime
-- dcterms:title -[0..1]-> rdfs:Literal
-- frapo:hasAcronym -[0..1]-> rdfs:Literal
-- prism:seriesTitle -[0..1]-> rdfs:Literal
-- pro:isDocumentContextFor -[0..*]-> pro:RoleInTime
-- pso:holdsStatusInTime -[1]-> pso:StatusInTime""" ;
+
+* datacite:hasIdentifier -[0..N]-> datacite:Identifier
+* dcterms:created -[0..1]-> xsd:dateTime
+* dcterms:title -[0..1]-> rdfs:Literal
+* frapo:hasAcronym -[0..1]-> rdfs:Literal
+* prism:seriesTitle -[0..1]-> rdfs:Literal
+* pro:isDocumentContextFor -[0..N]-> pro:RoleInTime
+* pso:holdsStatusInTime -[1]-> pso:StatusInTime""" ;
     rdfs:isDefinedBy fabio: .
 
 fabio:Journal a owl:Class ;
-    rdfs:label "fabio:Journal (SKG-IF labels: journal, journal archive)" ;
+    rdfs:label "fabio:Journal (SKG-IF labels: journal archive, journal)" ;
     rdfs:comment "Data sources for the deposition (submission), preservation, discovery, and access of scientific journal articles (metadata and files), e.g. publishers sites, journal sites, etc." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:Manifestation a owl:Class ;
     rdfs:label "fabio:Manifestation" ;
     dc:description """The properties that can be used with this class are:
-- prism:endingPage -[1]-> xsd:string
-- prism:startingPage -[1]-> xsd:string""" ;
+
+* prism:endingPage -[1]-> xsd:string
+* prism:startingPage -[1]-> xsd:string""" ;
     rdfs:isDefinedBy fabio: .
 
 fabio:Metadata a owl:Class ;
@@ -710,138 +717,140 @@ fabio:Software a owl:Class ;
 fabio:SubjectTerm a owl:Class ;
     rdfs:label "fabio:SubjectTerm (SKG-IF labels: Topic, topic)" ;
     dc:description """The properties that can be used with this class are:
-- datacite:hasIdentifier -[0..*]-> datacite:Identifier
-- skos:prefLabel -[0..1]-> rdfs:Literal""" ;
+
+* datacite:hasIdentifier -[0..N]-> datacite:Identifier
+* skos:prefLabel -[0..1]-> rdfs:Literal""" ;
     rdfs:comment "A Topic describes the scientific disciplines, subjects and keywords potentially relevant for a Research product." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:Work a owl:Class ;
     rdfs:label "fabio:Work (SKG-IF labels: any, Research product)" ;
     dc:description """The properties that can be used with this class are:
-- bido:holdsBibliometricDataInTime -[0..*]-> fabio:BibliometricDataInTime
-- cito:cites -[0..*]-> fabio:Work
-- cito:isDocumentedBy -[0..*]-> fabio:Work
-- datacite:hasIdentifier -[0..*]-> datacite:Identifier
-- dcterms:abstract -[0..1]-> rdfs:Literal
-- dcterms:relation -[0..*]-> foaf:Organization
-- dcterms:title -[0..1]-> rdfs:Literal
-- frapo:isFundedBy -[0..*]-> frapo:Grant
-- frbr:partOf -[0..*]-> fabio:Work
-- frbr:realization -[0..*]-> fabio:Expression
-- frbr:revisionOf -[0..*]-> fabio:Work
-- frbr:supplement -[0..*]-> fabio:Work
-- pro:isRelatedToRoleInTime -[0..*]-> pro:RoleInTime
-- pro:isRelatedToRoleInTime -[0..*]-> scoro:ContributionSituation""" ;
+
+* bido:holdsBibliometricDataInTime -[0..N]-> fabio:BibliometricDataInTime
+* cito:cites -[0..N]-> fabio:Work
+* cito:isDocumentedBy -[0..N]-> fabio:Work
+* datacite:hasIdentifier -[0..N]-> datacite:Identifier
+* dcterms:abstract -[0..1]-> rdfs:Literal
+* dcterms:relation -[0..N]-> foaf:Organization
+* dcterms:title -[0..1]-> rdfs:Literal
+* frapo:isFundedBy -[0..N]-> frapo:Grant
+* frbr:partOf -[0..1]-> fabio:Work
+* frbr:realization -[0..N]-> fabio:Expression
+* frbr:revisionOf -[0..N]-> fabio:Work
+* frbr:supplement -[0..N]-> fabio:Work
+* pro:isRelatedToRoleInTime -[0..N]-> pro:RoleInTime
+* pro:isRelatedToRoleInTime -[0..N]-> scoro:ContributionSituation""" ;
     rdfs:comment "Research products may be of four types: research literature, research data, research software, or other." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:hasAccessDate a owl:DatatypeProperty ;
     rdfs:label "fabio:hasAccessDate (SKG-IF labels: access)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date on which a particular digital item, such as a PDF or an HTML file, has been accessed by somebody." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:hasCorrectionDate a owl:DatatypeProperty ;
     rdfs:label "fabio:hasCorrectionDate (SKG-IF labels: correction)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date on which something, for example a document, is corrected." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:hasDateCollected a owl:DatatypeProperty ;
     rdfs:label "fabio:hasDateCollected (SKG-IF labels: collected)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date on which some item has been collected, for example the data gathered by means of questionnaires." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:hasDateReceived a owl:DatatypeProperty ;
     rdfs:label "fabio:hasDateReceived (SKG-IF labels: received)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date on which some item is received, for example a document being received by a publisher." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:hasDecisionDate a owl:DatatypeProperty ;
     rdfs:label "fabio:hasDecisionDate (SKG-IF labels: decision)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date on which a particular endeavour, such as a grant application, has been or will be approved or rejected by somebody." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:hasDepositDate a owl:DatatypeProperty ;
     rdfs:label "fabio:hasDepositDate (SKG-IF labels: deposit)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date on which an entity has been deposited, for example in a library, repository, supplementary information archive, database or similar place of document or information storage." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:hasDistributionDate a owl:DatatypeProperty ;
     rdfs:label "fabio:hasDistributionDate (SKG-IF labels: distribution)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date on which something is distributed, for example the date on which a preprint of a document is e-mailed to colleagues and other academics by the author(s), or the date on which a printed announcement of forthcoming theatre events is mailed to those those on the theatre's mailing list." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:hasEmbargoDate a owl:DatatypeProperty ;
     rdfs:label "fabio:hasEmbargoDate (SKG-IF labels: embargo)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date before which an entity should not be published, or before which a press release should not be reported on. For open-access journal articles, the embargo date is the date before which availability of the open-access version of the article is restricted by the publisher, following subscription-access availability of the published work." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:hasRequestDate a owl:DatatypeProperty ;
     rdfs:label "fabio:hasRequestDate (SKG-IF labels: request)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date on which an agent is requested to do something, for example a reviewer is requested to write a review of a paper submitted to a journal for publication, or an author is requested to supply a revised version of the paper in response to the reviews received." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:hasRetractionDate a owl:DatatypeProperty ;
     rdfs:label "fabio:hasRetractionDate (SKG-IF labels: retraction)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The date on which something, for example a claim or a journal article, is retracted." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:hasSequenceIdentifier a owl:DatatypeProperty ;
     rdfs:label "fabio:hasSequenceIdentifier (SKG-IF labels: number)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:string""" ;
+* xsd:string""" ;
     rdfs:comment "a number of the manifestation within the Venue (e.g., chapter number)." ;
     rdfs:isDefinedBy fabio: .
 
@@ -852,13 +861,14 @@ pro:Role a owl:Class ;
 pro:RoleInTime a owl:Class ;
     rdfs:label "pro:RoleInTime" ;
     dc:description """The properties that can be used with this class are:
-- co:index -[0..1]-> xsd:positiveInteger
-- pro:isHeldBy -[1]-> foaf:Agent
-- pro:relatesToOrganization -[1]-> foaf:Organization
-- pro:withRole -[0..1]-> pro:Role
-- pro:withRole -[0..1]-> scoro:ProjectRole
-- scoro:withContribution -[0..*]-> scoro:Contribution
-- tvc:atTime -[0..1]-> ti:TimeInterval""" ;
+
+* co:index -[0..1]-> xsd:positiveInteger
+* pro:isHeldBy -[1]-> foaf:Agent
+* pro:relatesToOrganization -[1]-> foaf:Organization
+* pro:withRole -[0..1]-> pro:Role
+* pro:withRole -[0..1]-> scoro:ProjectRole
+* scoro:withContribution -[0..N]-> scoro:Contribution
+* tvc:atTime -[0..1]-> ti:TimeInterval""" ;
     rdfs:isDefinedBy pro: .
 
 pro:author a owl:NamedIndividual ;
@@ -872,43 +882,43 @@ pro:editor a owl:NamedIndividual ;
 pro:holdsRoleInTime a owl:ObjectProperty ;
     rdfs:label "pro:holdsRoleInTime (SKG-IF labels: affiliations)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- foaf:Person
+* foaf:Person
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- pro:RoleInTime""" ;
+* pro:RoleInTime""" ;
     rdfs:comment "All the affiliations of a Person (à la ORCID)." ;
     rdfs:isDefinedBy pro: .
 
 pro:isDocumentContextFor a owl:ObjectProperty ;
     rdfs:label "pro:isDocumentContextFor (SKG-IF labels: contributions)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:ExpressionCollection
+* fabio:ExpressionCollection
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- pro:RoleInTime""" ;
+* pro:RoleInTime""" ;
     rdfs:comment "Agents that contributed to a Venue." ;
     rdfs:isDefinedBy pro: .
 
 pro:isHeldBy a owl:ObjectProperty ;
     rdfs:label "pro:isHeldBy (SKG-IF labels: by)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- pro:RoleInTime
-- scoro:ContributionSituation
+* pro:RoleInTime
+* scoro:ContributionSituation
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- foaf:Agent""" ;
+* foaf:Agent""" ;
     rdfs:comment "The identifier of an Agent." ;
     rdfs:isDefinedBy pro: .
 
 pro:isRelatedToRoleInTime a owl:ObjectProperty ;
     rdfs:label "pro:isRelatedToRoleInTime (SKG-IF labels: contributions)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Work
-- frapo:Grant
+* fabio:Work
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- pro:RoleInTime
-- scoro:ContributionSituation""" ;
+* pro:RoleInTime
+* scoro:ContributionSituation""" ;
     rdfs:comment "Agents that contributed to a Venue." ;
     rdfs:isDefinedBy pro: .
 
@@ -919,23 +929,23 @@ pro:publisher a owl:NamedIndividual ;
 pro:relatesToOrganization a owl:ObjectProperty ;
     rdfs:label "pro:relatesToOrganization (SKG-IF labels: affiliation, declared_affiliations)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- pro:RoleInTime
-- scoro:ContributionSituation
+* pro:RoleInTime
+* scoro:ContributionSituation
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- foaf:Organization""" ;
+* foaf:Organization""" ;
     rdfs:comment "The identifier of an Organisation a Person is affiliated with." ;
     rdfs:isDefinedBy pro: .
 
 pro:withRole a owl:ObjectProperty ;
     rdfs:label "pro:withRole (SKG-IF labels: role)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- pro:RoleInTime
-- scoro:ContributionSituation
+* pro:RoleInTime
+* scoro:ContributionSituation
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- pro:Role
-- scoro:ProjectRole""" ;
+* pro:Role
+* scoro:ProjectRole""" ;
     rdfs:comment "The role that an Agent had in a Research product, to choose among `author`, `editor`, and `publisher`." ;
     rdfs:isDefinedBy pro: .
 
@@ -946,8 +956,9 @@ pso:PublicationStatus a owl:Class ;
 pso:StatusInTime a owl:Class ;
     rdfs:label "pso:StatusInTime" ;
     dc:description """The properties that can be used with this class are:
-- dcterms:description -[0..1]-> xsd:string
-- pso:withStatus -[1]-> pso:PublicationStatus""" ;
+
+* dcterms:description -[0..1]-> xsd:string
+* pso:withStatus -[1]-> pso:PublicationStatus""" ;
     rdfs:isDefinedBy pso: .
 
 pso:closed-access a owl:NamedIndividual ;
@@ -961,11 +972,11 @@ pso:embargoed a owl:NamedIndividual ;
 pso:holdsStatusInTime a owl:ObjectProperty ;
     rdfs:label "pso:holdsStatusInTime (SKG-IF labels: access_rights)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
-- fabio:ExpressionCollection
+* fabio:Expression
+* fabio:ExpressionCollection
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- pso:StatusInTime""" ;
+* pso:StatusInTime""" ;
     rdfs:comment "The access right for the specific journal." ;
     rdfs:isDefinedBy pso: .
 
@@ -992,10 +1003,10 @@ pso:unpublished a owl:NamedIndividual ;
 pso:withStatus a owl:ObjectProperty ;
     rdfs:label "pso:withStatus (SKG-IF labels: status)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- pso:StatusInTime
+* pso:StatusInTime
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- pso:PublicationStatus""" ;
+* pso:PublicationStatus""" ;
     rdfs:comment "describe if the journal is open access (`open`), closed access (`closed`), or hybrid (`hybrid`)." ;
     rdfs:isDefinedBy pso: .
 
@@ -1006,11 +1017,12 @@ scoro:Contribution a owl:Class ;
 scoro:ContributionSituation a owl:Class ;
     rdfs:label "scoro:ContributionSituation" ;
     dc:description """The properties that can be used with this class are:
-- co:index -[0..1]-> xsd:positiveInteger
-- pro:isHeldBy -[1]-> foaf:Agent
-- pro:relatesToOrganization -[1]-> foaf:Organization
-- pro:withRole -[0..1]-> pro:Role
-- scoro:withContribution -[0..*]-> scoro:Contribution""" ;
+
+* co:index -[0..1]-> xsd:positiveInteger
+* pro:isHeldBy -[1]-> foaf:Agent
+* pro:relatesToOrganization -[1]-> foaf:Organization
+* pro:withRole -[0..1]-> pro:Role
+* scoro:withContribution -[0..N]-> scoro:Contribution""" ;
     rdfs:isDefinedBy scoro: .
 
 scoro:ProjectRole a owl:Class ;
@@ -1096,11 +1108,11 @@ scoro:supervises-colleagues a owl:NamedIndividual ;
 scoro:withContribution a owl:ObjectProperty ;
     rdfs:label "scoro:withContribution (SKG-IF labels: contribution)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- pro:RoleInTime
-- scoro:ContributionSituation
+* pro:RoleInTime
+* scoro:ContributionSituation
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- scoro:Contribution""" ;
+* scoro:Contribution""" ;
     rdfs:comment "The contributions that an Agent had in a Research product. Each element in the list is a String compliant with the CRediT taxonomy (https://credit.niso.org), i.e.," ;
     rdfs:isDefinedBy scoro: .
 
@@ -1115,52 +1127,52 @@ scoro:writes-manuscript-draft a owl:NamedIndividual ;
 frbr:embodiment a owl:ObjectProperty ;
     rdfs:label "frbr:embodiment (SKG-IF labels: pages)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- fabio:Manifestation""" ;
+* fabio:Manifestation""" ;
     rdfs:comment "the pages where the manifestation in defined (within its Venue)." ;
     rdfs:isDefinedBy frbr: .
 
 frbr:partOf a owl:ObjectProperty ;
-    rdfs:label "frbr:partOf (SKG-IF labels: is_part_of, in)" ;
+    rdfs:label "frbr:partOf (SKG-IF labels: in, is_part_of)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
-- fabio:Work
+* fabio:Expression
+* fabio:Work
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- fabio:Expression
-- fabio:Work""" ;
-    rdfs:comment "Research products identifiers that contain the current Research product." ;
+* fabio:Expression
+* fabio:Work""" ;
+    rdfs:comment "A Venue identifier for the manifestation." ;
     rdfs:isDefinedBy frbr: .
 
 frbr:realization a owl:ObjectProperty ;
     rdfs:label "frbr:realization (SKG-IF labels: manifestations)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Work
+* fabio:Work
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- fabio:Expression""" ;
+* fabio:Expression""" ;
     rdfs:comment "Objects representing multiple manifestations of the same Research product (e.g., a preprint, a postprint, etc.)." ;
     rdfs:isDefinedBy frbr: .
 
 frbr:revisionOf a owl:ObjectProperty ;
     rdfs:label "frbr:revisionOf (SKG-IF labels: is_new_version_of)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Work
+* fabio:Work
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- fabio:Work""" ;
+* fabio:Work""" ;
     rdfs:comment "Research products identifiers that are prior versions of a given Research product." ;
     rdfs:isDefinedBy frbr: .
 
 frbr:supplement a owl:ObjectProperty ;
     rdfs:label "frbr:supplement (SKG-IF labels: is_supplemented_by)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Work
+* fabio:Work
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- fabio:Work""" ;
+* fabio:Work""" ;
     rdfs:comment "Research products identifiers that are supplement of a given Research product." ;
     rdfs:isDefinedBy frbr: .
 
@@ -1172,55 +1184,57 @@ vivo:Publisher a owl:Class ;
 literal:hasLiteralValue a owl:DatatypeProperty ;
     rdfs:label "literal:hasLiteralValue (SKG-IF labels: value)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- datacite:Identifier
+* datacite:Identifier
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
+* rdfs:Literal""" ;
     rdfs:comment "The external identifier." ;
     rdfs:isDefinedBy literal: .
 
 tvc:atTime a owl:ObjectProperty ;
     rdfs:label "tvc:atTime (SKG-IF labels: period)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- pro:RoleInTime
+* pro:RoleInTime
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- ti:TimeInterval""" ;
+* ti:TimeInterval""" ;
     rdfs:comment "The time period where the Person was affiliated with an Organisation. It includes the following information:" ;
     rdfs:isDefinedBy tvc: .
 
 ti:TimeInterval a owl:Class ;
     rdfs:label "ti:TimeInterval" ;
     dc:description """The properties that can be used with this class are:
-- ti:hasIntervalEndDate -[0..1]-> xsd:dateTime
-- ti:hasIntervalStartDate -[1]-> xsd:dateTime""" ;
+
+* ti:hasIntervalEndDate -[0..1]-> xsd:dateTime
+* ti:hasIntervalStartDate -[1]-> xsd:dateTime""" ;
     rdfs:isDefinedBy ti: .
 
 ti:hasIntervalEndDate a owl:DatatypeProperty ;
     rdfs:label "ti:hasIntervalEndDate (SKG-IF labels: end)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- ti:TimeInterval
+* ti:TimeInterval
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The end datetime (if any) of the Grant. The string should be compliant with the ISO 8601 datetime string." ;
     rdfs:isDefinedBy ti: .
 
 ti:hasIntervalStartDate a owl:DatatypeProperty ;
     rdfs:label "ti:hasIntervalStartDate (SKG-IF labels: start)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- ti:TimeInterval
+* ti:TimeInterval
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:dateTime""" ;
+* xsd:dateTime""" ;
     rdfs:comment "The start datetime of the Grant. The string should be compliant with the ISO 8601 datetime string." ;
     rdfs:isDefinedBy ti: .
 
 skos:Concept a owl:Class ;
     rdfs:label "skos:Concept" ;
     dc:description """The properties that can be used with this class are:
-- skos:inScheme -[1]-> skos:ConceptScheme
-- skos:prefLabel -[0..1]-> rdfs:Literal""" ;
+
+* skos:inScheme -[1]-> skos:ConceptScheme
+* skos:prefLabel -[0..1]-> rdfs:Literal""" ;
     rdfs:isDefinedBy skos: .
 
 skos:ConceptScheme a owl:Class ;
@@ -1230,65 +1244,66 @@ skos:ConceptScheme a owl:Class ;
 skos:altLabel a owl:DatatypeProperty ;
     rdfs:label "skos:altLabel (SKG-IF labels: other_names)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- foaf:Organization
+* foaf:Organization
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
+* rdfs:Literal""" ;
     rdfs:comment "Other names, perhaps in different languages, identifiying an Organisation." ;
     rdfs:isDefinedBy skos: .
 
 skos:inScheme a owl:ObjectProperty ;
     rdfs:label "skos:inScheme (SKG-IF labels: defined_in)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- skos:Concept
+* skos:Concept
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- skos:ConceptScheme""" ;
+* skos:ConceptScheme""" ;
     rdfs:comment "the URL of the schema of the manifestation type, e.g., a link to the vocabulary of allowed product types." ;
     rdfs:isDefinedBy skos: .
 
 skos:prefLabel a owl:DatatypeProperty ;
     rdfs:label "skos:prefLabel (SKG-IF labels: labels)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:SubjectTerm
-- skos:Concept
+* fabio:SubjectTerm
+* skos:Concept
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
+* rdfs:Literal""" ;
     rdfs:comment "The labels describing a Topic (multiple for multilinguism)." ;
     rdfs:isDefinedBy skos: .
 
 dcat:DataService a owl:Class ;
     rdfs:label "dcat:DataService (SKG-IF labels: Data source)" ;
     dc:description """The properties that can be used with this class are:
-- datacite:hasIdentifier -[0..*]-> datacite:Identifier
-- dcat:theme -[0..1]-> owl:Thing
-- dcterms:conformsTo -[0..*]-> dcterms:Standard
-- dcterms:coverage -[0..*]-> owl:Thing
-- dcterms:subject -[0..1]-> owl:Thing
-- foaf:name -[0..1]-> rdfs:Literal
-- odrl:hasPolicy -[0..*]-> odrl:Policy
-- schema:audience -[0..*]-> schema:Audience""" ;
+
+* datacite:hasIdentifier -[0..N]-> datacite:Identifier
+* dcat:theme -[0..1]-> owl:Thing
+* dcterms:conformsTo -[0..N]-> dcterms:Standard
+* dcterms:coverage -[1]-> owl:Thing
+* dcterms:subject -[0..N]-> owl:Thing
+* foaf:name -[0..1]-> rdfs:Literal
+* odrl:hasPolicy -[0..N]-> odrl:Policy
+* schema:audience -[0..N]-> schema:Audience""" ;
     rdfs:comment "A Data source is a service or platform where a Research product (its metadata and files) is stored, preserved, and made discoverable and accessible. A data source is described by the EOSC Profile for data sources (https://wiki.eoscfuture.eu/display/PUBLIC/D.+v4.00+EOSC+Data+Source+Profile)." ;
     rdfs:isDefinedBy dcat: .
 
 dcat:accessService a owl:ObjectProperty ;
     rdfs:label "dcat:accessService (SKG-IF labels: hosting_data_source)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:Expression
+* fabio:Expression
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- dcat:DataService""" ;
+* dcat:DataService""" ;
     rdfs:comment "A Data source identifier for the manifestation." ;
     rdfs:isDefinedBy dcat: .
 
 dcat:theme a owl:ObjectProperty ;
     rdfs:label "dcat:theme (SKG-IF labels: data_source_classification)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- dcat:DataService
+* dcat:DataService
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- owl:Thing""" ;
+* owl:Thing""" ;
     rdfs:comment "The specific type of a Data source, based on the vocabulary Data source Classification." ;
     rdfs:isDefinedBy dcat: .
 
@@ -1299,19 +1314,20 @@ odrl:Action a owl:Class ;
 odrl:Policy a owl:Class ;
     rdfs:label "odrl:Policy" ;
     dc:description """The properties that can be used with this class are:
-- dcterms:description -[0..1]-> xsd:string
-- foaf:page -[0..1]-> foaf:Document
-- odrl:action -[1]-> odrl:Action
-- odrl:target -[0..*]-> owl:Thing""" ;
+
+* dcterms:description -[0..1]-> xsd:string
+* foaf:page -[0..1]-> foaf:Document
+* odrl:action -[1]-> odrl:Action
+* odrl:target -[0..N]-> owl:Thing""" ;
     rdfs:isDefinedBy odrl: .
 
 odrl:action a owl:ObjectProperty ;
     rdfs:label "odrl:action (SKG-IF labels: about)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- odrl:Policy
+* odrl:Policy
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- odrl:Action""" ;
+* odrl:Action""" ;
     rdfs:comment "the type of policy to consider." ;
     rdfs:isDefinedBy odrl: .
 
@@ -1328,55 +1344,57 @@ odrl:archive a owl:NamedIndividual ;
 odrl:hasPolicy a owl:ObjectProperty ;
     rdfs:label "odrl:hasPolicy (SKG-IF labels: policy)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- dcat:DataService
+* dcat:DataService
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- odrl:Policy""" ;
+* odrl:Policy""" ;
     rdfs:comment "The policies followed by a Data source." ;
     rdfs:isDefinedBy odrl: .
 
 odrl:target a owl:ObjectProperty ;
     rdfs:label "odrl:target (SKG-IF labels: target)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- odrl:Policy
+* odrl:Policy
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- owl:Thing""" ;
+* owl:Thing""" ;
     rdfs:comment "the types of resources to which the policy applies to. Each item in the list should be compliant with the following terms:" ;
     rdfs:isDefinedBy odrl: .
 
 prov:Activity a owl:Class ;
     rdfs:label "prov:Activity" ;
     dc:description """The properties that can be used with this class are:
-- prov:wasAssociatedWith -[1]-> foaf:Agent
-- rdf:value -[1]-> xsd:float""" ;
+
+* prov:wasAssociatedWith -[1]-> foaf:Agent
+* rdf:value -[1]-> xsd:float""" ;
     rdfs:isDefinedBy prov: .
 
 prov:wasAssociatedWith a owl:ObjectProperty ;
     rdfs:label "prov:wasAssociatedWith (SKG-IF labels: associated_with)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- prov:Activity
+* prov:Activity
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- foaf:Agent""" ;
+* foaf:Agent""" ;
     rdfs:comment "the `local_identifier` of the Agent responsible for the topic relation." ;
     rdfs:isDefinedBy prov: .
 
 prov:wasGeneratedBy a owl:ObjectProperty ;
     rdfs:label "prov:wasGeneratedBy (SKG-IF labels: provenance)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- fabio:BibliometricDataInTime
+* fabio:BibliometricDataInTime
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- prov:Activity""" ;
+* prov:Activity""" ;
     rdfs:comment "Provenance information tracking the origin of the relation between a Topic and a Research product. Each topic provenance object has the following properties:" ;
     rdfs:isDefinedBy prov: .
 
 foaf:Agent a owl:Class ;
     rdfs:label "foaf:Agent (SKG-IF labels: Agent)" ;
     dc:description """The properties that can be used with this class are:
-- datacite:hasIdentifier -[0..*]-> datacite:Identifier
-- foaf:name -[0..1]-> rdfs:Literal""" ;
+
+* datacite:hasIdentifier -[0..N]-> datacite:Identifier
+* foaf:name -[0..1]-> rdfs:Literal""" ;
     rdfs:comment "The Agent entity represents an individual (e.g., a person, an organisation, or another kind of entity being able to act) who is involved in the creation, publication, dissemination, etc. of a Research product. An Agent can be an author, a reviewer, an editor, a publisher, a researcher, or any other stakeholder involved in the scholarly communication process." ;
     rdfs:isDefinedBy foaf: .
 
@@ -1387,76 +1405,79 @@ foaf:Document a owl:Class ;
 foaf:Organization a owl:Class ;
     rdfs:label "foaf:Organization" ;
     dc:description """The properties that can be used with this class are:
-- foaf:homepage -[0..1]-> foaf:Document
-- frapo:hasAcronym -[0..1]-> rdfs:Literal
-- frapo:hasCountry -[0..1]-> rdfs:Literal
-- skos:altLabel -[0..*]-> rdfs:Literal""" ;
+
+* foaf:homepage -[0..1]-> foaf:Document
+* frapo:hasAcronym -[0..1]-> rdfs:Literal
+* frapo:hasCountry -[0..1]-> rdfs:Literal
+* skos:altLabel -[0..N]-> rdfs:Literal""" ;
     rdfs:isDefinedBy foaf: .
 
 foaf:Person a owl:Class ;
     rdfs:label "foaf:Person" ;
     dc:description """The properties that can be used with this class are:
-- foaf:familyName -[0..1]-> rdfs:Literal
-- foaf:givenName -[0..1]-> rdfs:Literal
-- pro:holdsRoleInTime -[0..*]-> pro:RoleInTime""" ;
+
+* foaf:familyName -[0..1]-> rdfs:Literal
+* foaf:givenName -[0..1]-> rdfs:Literal
+* pro:holdsRoleInTime -[0..N]-> pro:RoleInTime""" ;
     rdfs:isDefinedBy foaf: .
 
 foaf:familyName a owl:DatatypeProperty ;
     rdfs:label "foaf:familyName (SKG-IF labels: family_name)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- foaf:Person
+* foaf:Person
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
+* rdfs:Literal""" ;
     rdfs:comment "The family name of a Person." ;
     rdfs:isDefinedBy foaf: .
 
 foaf:givenName a owl:DatatypeProperty ;
     rdfs:label "foaf:givenName (SKG-IF labels: given_name)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- foaf:Person
+* foaf:Person
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
+* rdfs:Literal""" ;
     rdfs:comment "The given name of a Person." ;
     rdfs:isDefinedBy foaf: .
 
 foaf:homepage a owl:ObjectProperty ;
     rdfs:label "foaf:homepage (SKG-IF labels: website)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- foaf:Organization
-- frapo:Grant
+* foaf:Organization
+* frapo:Grant
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- foaf:Document""" ;
+* foaf:Document""" ;
     rdfs:comment "An URL poiting to the website of the funded project." ;
     rdfs:isDefinedBy foaf: .
 
 foaf:name a owl:DatatypeProperty ;
     rdfs:label "foaf:name (SKG-IF labels: name)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- dcat:DataService
-- foaf:Agent
+* dcat:DataService
+* foaf:Agent
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- rdfs:Literal""" ;
+* rdfs:Literal""" ;
     rdfs:comment "Name of the Data source." ;
     rdfs:isDefinedBy foaf: .
 
 foaf:page a owl:ObjectProperty ;
     rdfs:label "foaf:page (SKG-IF labels: documented_at)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- odrl:Policy
+* odrl:Policy
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- foaf:Document""" ;
+* foaf:Document""" ;
     rdfs:comment "the URL of the document that describes the policy." ;
     rdfs:isDefinedBy foaf: .
 
 schema:Audience a owl:Class ;
     rdfs:label "schema:Audience" ;
     dc:description """The properties that can be used with this class are:
-- schema:audienceType -[1]-> xsd:string""" ;
+
+* schema:audienceType -[1]-> xsd:string""" ;
     rdfs:isDefinedBy schema: .
 
 schema:MedicalOrganization a owl:Class ;
@@ -1466,26 +1487,26 @@ schema:MedicalOrganization a owl:Class ;
 schema:audience a owl:ObjectProperty ;
     rdfs:label "schema:audience (SKG-IF labels: audience)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- dcat:DataService
+* dcat:DataService
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-- schema:Audience""" ;
+* schema:Audience""" ;
     rdfs:comment "The property defines the target audiences of the users of a Data source." ;
     rdfs:isDefinedBy schema: .
 
 schema:audienceType a owl:DatatypeProperty ;
     rdfs:label "schema:audienceType (SKG-IF labels: audience_type)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
-- schema:Audience
+* schema:Audience
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
-- xsd:string""" ;
+* xsd:string""" ;
     rdfs:comment "the type of the audience based on the vocabulary Jurisdiction." ;
     rdfs:isDefinedBy schema: .
 
 <https://w3id.org/skg-if/data-model/ontology/> a owl:Ontology ;
     rdfs:label "SKG-O" ;
-    dc:date "2024-12-22"^^xsd:date ;
+    dc:date "2024-12-23"^^xsd:date ;
     dc:title "The SKG-IF Ontology" ;
     vann:preferredNamespacePrefix "skg-o" ;
     vann:preferredNamespaceUri "https://w3id.org/skg-if/data-model/ontology/"^^xsd:anyURI ;
