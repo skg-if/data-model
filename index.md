@@ -1,5 +1,5 @@
 ---
-title: SKG-IF Data Model
+title: Data Model
 layout: default
 nav_order: 3
 ---
