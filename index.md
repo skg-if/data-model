@@ -19,25 +19,50 @@ The SKG-IF Data Model, summarised in convenient [Graffoo diagrams](https://essep
 * [Topic](#topic), that describes the scientific disciplines, subjects and keywords potentially relevant for a research product.
 * [Venue](#venue), an entity that models a publishing “gateway” used by an agent to make their research products available to others.
 
-The SKG-IF Data Model has been also implemented as an OWL ontology, i.e. the [SKG-IF Ontology (SKG-O)](https://w3id.org/skg-if/ontology). It is not yet another bibliographic ontology, but rather it is just a place where existing and complementary ontological entities from several other ontologies, all employed in SKG-IF, are grouped together for the purpose of providing descriptive metadata compliant with the SKG-IF Data Model. The SKG-IF data created following the [Interoperability Framework](/interoperability-framework/) are aligned with the SKG-IF Ontology via the [SKG-IF JSON-LD context](/context/).
+The SKG-IF Data Model has been also implemented as an OWL ontology, i.e. the [SKG-IF Ontology (SKG-O)](https://w3id.org/skg-if/ontology/). It is not yet another bibliographic ontology, but rather it is just a place where existing and complementary ontological entities from several other ontologies, all employed in SKG-IF, are grouped together for the purpose of providing descriptive metadata compliant with the SKG-IF Data Model. The ontology is composed by six different ontological modules, formally imported in it, one for each type of SKG-IF entity - [SKG-O: agent](https://w3id.org/skg-if/ontology/agent/), [SKG-O: data-source](https://w3id.org/skg-if/ontology/data-source/), [SKG-O: grant](https://w3id.org/skg-if/ontology/grant/), [SKG-O: research-product](https://w3id.org/skg-if/ontology/research-product), [SKG-O: topic](https://w3id.org/skg-if/ontology/topic/), [SKG-O: venue](https://w3id.org/skg-if/ontology/venue/).
+
+The SKG-IF data created following the [Interoperability Framework](/interoperability-framework/) are aligned with the SKG-IF Ontology via the [SKG-IF JSON-LD context](/context/).
 
 ## Agent
-![Agent diagram]({% link data-model/graphs/skg-if-agent.png %})
+
+Module URL: [https://w3id.org/skg-if/ontology/agent/](https://w3id.org/skg-if/ontology/agent/)
+
+![Agent diagram]({% link data-model/graphs/agent.png %})
+
 
 ## Data source
-![Data source diagram]({% link data-model/graphs/skg-if-data-source.png %})
+
+Module URL: [https://w3id.org/skg-if/ontology/data-source/](https://w3id.org/skg-if/ontology/data-source/)
+
+![Data source diagram]({% link data-model/graphs/data-source.png %})
+
 
 ## Grant
-![Grant diagram]({% link data-model/graphs/skg-if-grant.png %})
+
+Module URL: [https://w3id.org/skg-if/ontology/grant/](https://w3id.org/skg-if/ontology/grant/)
+
+![Grant diagram]({% link data-model/graphs/grant.png %})
+
 
 ## Research product
-![Research product diagram]({% link data-model/graphs/skg-if-research-product.png %})
+
+Module URL: [https://w3id.org/skg-if/ontology/research-product/](https://w3id.org/skg-if/ontology/research-product/)
+
+![Research product diagram]({% link data-model/graphs/research-product.png %})
+
 
 ## Topic
-![Topic diagram]({% link data-model/graphs/skg-if-topic.png %})
+
+Module URL: [https://w3id.org/skg-if/ontology/topic/](https://w3id.org/skg-if/ontology/topic/)
+
+![Topic diagram]({% link data-model/graphs/topic.png %})
+
 
 ## Venue
-![Venue diagram]({% link data-model/graphs/skg-if-venue.png %})
+
+Module URL: [https://w3id.org/skg-if/ontology/venue/](https://w3id.org/skg-if/ontology/venue/)
+
+![Venue diagram]({% link data-model/graphs/venue.png %})
 
 
 

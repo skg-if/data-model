@@ -1,0 +1,167 @@
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:name (SKG-IF labels: name)" .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/Organization> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* foaf:homepage -[0..1]-> foaf:Document\n* frapo:hasAcronym -[0..1]-> rdfs:Literal\n* frapo:hasCountry -[0..1]-> rdfs:Literal\n* skos:altLabel -[0..N]-> rdfs:Literal" .
+<http://purl.org/cerif/frapo/Facility> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:Facility (SKG-IF labels: facility)" .
+<http://purl.org/cerif/frapo/hasAcronym> <http://www.w3.org/2000/01/rdf-schema#comment> "The short name/acronym for an Organisation." .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* ti:hasIntervalEndDate -[0..1]-> xsd:dateTime\n* ti:hasIntervalStartDate -[0..1]-> xsd:dateTime" .
+<http://purl.org/spar/datacite/viaf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/skg-if/ontology/agent/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "skg-o" .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+<http://purl.org/cerif/frapo/Repository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/pro/relatesToOrganization> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* pro:RoleInTime\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Organization" .
+<http://purl.org/spar/pro/withRole> <http://www.w3.org/2000/01/rdf-schema#label> "pro:withRole (SKG-IF labels: role)" .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/pro/Role> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
+<http://purl.org/cerif/frapo/hasAcronym> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasAcronym (SKG-IF labels: short_name)" .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:hasIdentifier (SKG-IF labels: identifiers)" .
+<http://purl.org/cerif/frapo/Company> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:Company (SKG-IF labels: company)" .
+<http://www.essepuntato.it/2012/04/tvc/atTime> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* pro:RoleInTime\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* ti:TimeInterval" .
+<http://xmlns.com/foaf/0.1/Person> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* foaf:familyName -[0..1]-> rdfs:Literal\n* foaf:givenName -[0..1]-> rdfs:Literal\n* pro:holdsRoleInTime -[0..N]-> pro:RoleInTime" .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/cerif/frapo/Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Agent" .
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/cerif/frapo/NotForProfitOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/pro/holdsRoleInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/cerif/frapo/Company> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The scheme for the external identifier." .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:Identifier" .
+<http://purl.org/spar/pro/RoleInTime> <http://www.w3.org/2000/01/rdf-schema#label> "pro:RoleInTime" .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/spar/pro/holdsRoleInTime> <http://www.w3.org/2000/01/rdf-schema#comment> "All the affiliations of a Person (à la ORCID)." .
+<http://xmlns.com/foaf/0.1/name> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* foaf:Agent\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/spar/scoro/affiliate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/datacite/Identifier> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme\n* literal:hasLiteralValue -[1]-> rdfs:Literal" .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+<http://purl.org/cerif/frapo/ResearchInstitute> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/spar/pro/withRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/cerif/frapo/Facility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cerif/frapo/Repository> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:Repository (SKG-IF labels: archive)" .
+<http://purl.org/spar/pro/relatesToOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "pro:relatesToOrganization (SKG-IF labels: affiliation)" .
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:homepage (SKG-IF labels: website)" .
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+<https://schema.org/MedicalOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "schema:MedicalOrganization (SKG-IF labels: healthcare)" .
+<http://purl.org/cerif/frapo/FundingAgency> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:FundingAgency (SKG-IF labels: funder)" .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "ti:TimeInterval" .
+<http://purl.org/spar/datacite/orcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:IdentifierScheme" .
+<http://xmlns.com/foaf/0.1/homepage> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* foaf:Organization\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Document" .
+<http://purl.org/cerif/frapo/Facility> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:IdentifierScheme" .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/datacite/orcid> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:orcid (SKG-IF labels: orcid)" .
+<https://schema.org/MedicalOrganization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/> .
+<http://purl.org/cerif/frapo/hasCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "The country code of an Organisation expressed as ISO 3166-1 alpha-2." .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/cerif/frapo/GovernmentOrganization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://www.essepuntato.it/2012/04/tvc/atTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The time period where the Person was affiliated with an Organisation. It includes the following information:" .
+<http://purl.org/spar/datacite/hasIdentifier> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* foaf:Agent\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:Identifier" .
+<http://purl.org/spar/pro/RoleInTime> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* pro:relatesToOrganization -[1]-> foaf:Organization\n* pro:withRole -[0..1]-> pro:Role\n* tvc:atTime -[0..1]-> ti:TimeInterval" .
+<https://w3id.org/skg-if/ontology/agent/> <http://purl.org/dc/elements/1.1/creator> "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/pro/withRole> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* pro:RoleInTime\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* pro:Role" .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* ti:TimeInterval\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:dateTime" .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The end datetime (if any) of the affiliation with an Organisation. The string should be compliant with the ISO 8601 datetime string." .
+<http://purl.org/spar/scoro/affiliate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#comment> "The given name of a Person." .
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* foaf:Organization\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://purl.org/spar/datacite/viaf> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:viaf (SKG-IF labels: viaf)" .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Document" .
+<http://xmlns.com/foaf/0.1/givenName> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* foaf:Person\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://purl.org/cerif/frapo/hasAcronym> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/spar/datacite/viaf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:usesIdentifierScheme (SKG-IF labels: scheme)" .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/familyName> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* foaf:Person\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://purl.org/cerif/frapo/hasCountry> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* foaf:Organization\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://purl.org/cerif/frapo/ResearchInstitute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The start datetime of the affiliation with an Organisation. The string should be compliant with the ISO 8601 datetime string." .
+<http://purl.org/cerif/frapo/Repository> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/cerif/frapo/GovernmentOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:GovernmentOrganization (SKG-IF labels: government)" .
+<http://www.essepuntato.it/2012/04/tvc/atTime> <http://www.w3.org/2000/01/rdf-schema#label> "tvc:atTime (SKG-IF labels: period)" .
+<https://w3id.org/skg-if/ontology/agent/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "Other names, perhaps in different languages, identifiying an Organisation." .
+<http://purl.org/cerif/frapo/hasAcronym> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* foaf:Organization\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The external identifier." .
+<https://w3id.org/skg-if/ontology/agent/> <http://www.w3.org/2000/01/rdf-schema#label> "SKG-O: agent" .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/skg-if/ontology/agent/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/skg-if/ontology/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/cerif/frapo/GovernmentOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/pro/relatesToOrganization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Organization" .
+<http://purl.org/cerif/frapo/NotForProfitOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:NotForProfitOrganization (SKG-IF labels: nonprofit)" .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skg-if/ontology/agent/> <http://www.w3.org/2000/01/rdf-schema#comment> "SKG-O, the SKG-IF Ontology, is not yet another bibliographic ontology. Rather it is just a place where existing and complementary ontological entities from several other ontologies, all employed in the Scientific Knowledge Graph Interoperability Framework (SKG-IF), are grouped together for the purpose of providing descriptive metadata compliant with the SKG-IF Data Model." .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Objects representing external identifiers for the entity." .
+<http://purl.org/spar/pro/RoleInTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
+<https://w3id.org/skg-if/ontology/agent/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.1" .
+<http://purl.org/cerif/frapo/FundingAgency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#comment> "The string containing whatever concatenation of an Agent name(s)." .
+<https://schema.org/MedicalOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/2000/01/rdf-schema#label> "skos:altLabel (SKG-IF labels: other_names)" .
+<http://purl.org/spar/pro/RoleInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/pro/Role> <http://www.w3.org/2000/01/rdf-schema#label> "pro:Role" .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Person" .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:familyName (SKG-IF labels: family_name)" .
+<https://w3id.org/skg-if/ontology/agent/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/skg-if/ontology/agent/1.0.1/> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/pro/holdsRoleInTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
+<https://w3id.org/skg-if/ontology/agent/> <http://purl.org/dc/elements/1.1/title> "The SKG-IF Ontology: agent" .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#label> "literal:hasLiteralValue (SKG-IF labels: value)" .
+<http://purl.org/cerif/frapo/ResearchInstitute> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:ResearchInstitute (SKG-IF labels: research)" .
+<http://purl.org/cerif/frapo/University> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:University (SKG-IF labels: education)" .
+<http://purl.org/spar/pro/holdsRoleInTime> <http://www.w3.org/2000/01/rdf-schema#label> "pro:holdsRoleInTime (SKG-IF labels: affiliations)" .
+<https://w3id.org/skg-if/ontology/agent/> <http://purl.org/dc/elements/1.1/date> "2025-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/cerif/frapo/hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasCountry (SKG-IF labels: country)" .
+<https://w3id.org/skg-if/ontology/agent/> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" .
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#comment> "The website URL for an Organisation." .
+<http://purl.org/spar/pro/holdsRoleInTime> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* foaf:Person\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* pro:RoleInTime" .
+<http://purl.org/spar/pro/relatesToOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:givenName (SKG-IF labels: given_name)" .
+<http://purl.org/cerif/frapo/hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/pro/withRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
+<http://purl.org/spar/pro/withRole> <http://www.w3.org/2000/01/rdf-schema#comment> "The role that a Person had in the context of an Organisation. Needed for parsing purposes; fixed to `affiliate`." .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.essepuntato.it/2010/06/literalreification/> .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://www.essepuntato.it/2012/04/tvc/atTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/cerif/frapo/University> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cerif/frapo/hasCountry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#label> "ti:hasIntervalEndDate (SKG-IF labels: end)" .
+<http://purl.org/spar/pro/relatesToOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier of an Organisation a Person is affiliated with." .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/datacite/orcid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/cerif/frapo/University> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/cerif/frapo/hasAcronym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/familyName> <http://www.w3.org/2000/01/rdf-schema#comment> "The family name of a Person." .
+<http://purl.org/cerif/frapo/FundingAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* ti:TimeInterval\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:dateTime" .
+<http://purl.org/spar/pro/Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2012/04/tvc/atTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.essepuntato.it/2012/04/tvc/> .
+<http://xmlns.com/foaf/0.1/Agent> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* datacite:hasIdentifier -[0..N]-> datacite:Identifier\n* foaf:name -[0..1]-> rdfs:Literal" .
+<http://purl.org/cerif/frapo/NotForProfitOrganization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/spar/scoro/affiliate> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:affiliate (SKG-IF labels: affiliate)" .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#label> "ti:hasIntervalStartDate (SKG-IF labels: start)" .

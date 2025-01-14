@@ -1,4 +1,5 @@
 from glob import glob
+from json import load
 from os.path import sep, exists, splitext, basename, dirname
 from os import makedirs
 from argparse import ArgumentParser
@@ -216,8 +217,13 @@ def associate_definitions(level_defs, file_string, d_support):
                 value = sub(extract_regex, "\\1", value)
             d_support["definitions"][clean_term(key)] = value
 
-def create_ontology(classes, object_properties, data_properties, individuals, prefixes, d_support, version=None):
+def create_ontology(classes, object_properties, data_properties, individuals, prefixes, d_support, version=None, module_name="", graph_path=None):
     onto = Graph()
+
+    module_name_title = ""
+    if module_name != "":
+        module_name_title = ": " + module_name
+        module_name += "/"
 
     for prefix, base_url in prefixes.items():
         onto.bind(prefix, base_url)
@@ -225,52 +231,72 @@ def create_ontology(classes, object_properties, data_properties, individuals, pr
     onto.add((DC.description, RDF.type, OWL.AnnotationProperty))
     onto.add((DC.date, RDF.type, OWL.AnnotationProperty))
     onto.add((DC.title, RDF.type, OWL.AnnotationProperty))
+    onto.add((DC.rights, RDF.type, OWL.AnnotationProperty))
+    onto.add((DC.creator, RDF.type, OWL.AnnotationProperty))
+    onto.add((VANN.preferredNamespacePrefix, RDF.type, OWL.AnnotationProperty))
+    onto.add((VANN.preferredNamespaceUri, RDF.type, OWL.AnnotationProperty))
 
-    onto_iri = URIRef("https://w3id.org/skg-if/ontology/")
+    onto_iri = URIRef("https://w3id.org/skg-if/ontology/" + module_name)
     onto.add((onto_iri, RDF.type, OWL.Ontology))
-    onto.add((onto_iri, RDFS.label, Literal("SKG-O")))
-    onto.add((onto_iri, DC.title, Literal("The SKG-IF Ontology")))
+    onto.add((onto_iri, RDFS.label, Literal("SKG-O" + module_name_title)))
+    onto.add((onto_iri, DC.title, Literal("The SKG-IF Ontology" + module_name_title)))
+    onto.add((onto_iri, DC.creator, Literal("Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG")))
+    onto.add((onto_iri, DC.rights, Literal("This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)")))
     onto.add((onto_iri, RDFS.comment, Literal("SKG-O, the SKG-IF Ontology, is not yet another bibliographic ontology. Rather it is just a place where existing and complementary ontological entities from several other ontologies, all employed in the Scientific Knowledge Graph Interoperability Framework (SKG-IF), are grouped together for the purpose of providing descriptive metadata compliant with the SKG-IF Data Model.")))
     onto.add((onto_iri, DC.date, 
               Literal(datetime.today().strftime('%Y-%m-%d'), datatype=XSD.date)))
     onto.add((onto_iri, VANN.preferredNamespacePrefix, Literal("skg-o")))
     onto.add((onto_iri, VANN.preferredNamespaceUri, 
-              Literal(str(onto_iri), datatype=XSD.anyURI)))
+              Literal(str(onto_iri.replace(module_name, "")), datatype=XSD.anyURI)))
     
     if version is not None:
         onto.add((onto_iri, OWL.versionIRI, onto_iri + version + "/"))
         onto.add((onto_iri, OWL.versionInfo, Literal(version)))
     
-    for o_class in classes:
-        iri = create_entity(o_class, OWL.Class, prefixes, onto, d_support)
-        if iri is not None:
-            domain_properties = get_domain_properties(o_class, d_support)
+    if graph_path is not None:
+        for f in glob(graph_path + sep + "*.graphml"):
+            module_name = splitext(basename(f))[0]
+            imported = onto_iri + module_name + "/" + (
+                version + "/" if version is not None else "")
+            onto.add((onto_iri, OWL.imports, imported))
+    else:
+        for o_class in classes:
+            iri = create_entity(o_class, OWL.Class, prefixes, onto, d_support)
+            if iri is not None:
+                domain_properties = get_domain_properties(o_class, d_support)
 
-            if len(domain_properties):
-                domain_strings = ["The properties that can be used with this class are:\n"]
-                for property, target in domain_properties:
-                    property_labels = d_support["term_mapping"][property]
-                    for property_label in property_labels:
-                        arity = d_support["arity"].get(property_label, None)
-                        if arity is not None:
-                            break
+                if len(domain_properties):
+                    domain_strings = ["The properties that can be used with this class are:\n"]
+                    for property, target in domain_properties:
+                        property_labels = d_support["term_mapping"][property]
 
-                    domain_strings.append("* " + property + " -" + ("[0..N]" if arity is None else "[" + arity + "]") + "-> " + target)
-                
-                onto.add((iri, DC.description, Literal("\n".join(domain_strings))))
+                        arity = None
+                        for property_label in property_labels:
+                            cur_arity = d_support["arity"].get(property_label, None)
+                            if cur_arity is not None: # Take the most flexible 
+                                if arity is None:
+                                    arity = cur_arity
+                                else:
+                                    comp_list = ["0..N", "1..N", "0..1", "1"]
+                                    if comp_list.index(cur_arity) < comp_list.index(arity):
+                                        arity = cur_arity
 
-    for o_objprop in object_properties:
-        iri = create_entity(o_objprop, OWL.ObjectProperty, prefixes, onto, d_support)
-        if iri is not None:
-            create_domain_range(o_objprop, iri, onto, d_support, True)
-    
-    for o_dataprop in data_properties:
-        iri = create_entity(o_dataprop, OWL.DatatypeProperty, prefixes, onto, d_support)
-        if iri is not None:
-            create_domain_range(o_dataprop, iri, onto, d_support, False)
-    
-    for o_ind in individuals:
-        create_entity(o_ind, OWL.NamedIndividual, prefixes, onto, d_support)
+                        domain_strings.append("* " + property + " -" + ("[0..N]" if arity is None else "[" + arity + "]") + "-> " + target)
+                    
+                    onto.add((iri, DC.description, Literal("\n".join(domain_strings))))
+
+        for o_objprop in object_properties:
+            iri = create_entity(o_objprop, OWL.ObjectProperty, prefixes, onto, d_support)
+            if iri is not None:
+                create_domain_range(o_objprop, iri, onto, d_support, True)
+        
+        for o_dataprop in data_properties:
+            iri = create_entity(o_dataprop, OWL.DatatypeProperty, prefixes, onto, d_support)
+            if iri is not None:
+                create_domain_range(o_dataprop, iri, onto, d_support, False)
+        
+        for o_ind in individuals:
+            create_entity(o_ind, OWL.NamedIndividual, prefixes, onto, d_support)
     
     return onto
 
@@ -281,6 +307,19 @@ def store(ontology, dest_dir, file_name, format):
     dest_file = dest_dir + sep + file_name
     ontology.serialize(dest_file, format=format)
 
+def store_ontology(ontology, log, out, version_number, file_name): 
+    if ontology is not None:
+        log.info("Storing the ontology into the file system in different formats.")
+        file_name_o = splitext(basename(out))[0]
+        dir_name = dirname(out)
+        for f in formats:
+            store(ontology, dir_name + sep + "current" + sep + file_name, file_name_o + "." + formats[f], f)
+            log.info("Ontology serialised %s format and stored in %s" % (f, dir_name + sep + "current"))
+            if version_number is not None:
+                store(ontology, dir_name + sep + version_number + sep + file_name, 
+                    file_name_o + "." + formats[f], f)
+                log.info("Versioned ontology serialised %s format and stored in %s" % (f, dir_name + sep + version_number))
+
 
 # Main
 if __name__ == "__main__":
@@ -289,6 +328,8 @@ if __name__ == "__main__":
                             help="The directory that includes the .graphml files defining the SKG-IF Data Model.")
     arg_parser.add_argument("-d", "--docs", dest="docs_path", required=True,
                             help="The directory that includes the SKG-IF documentation to use to fill in the annotations of the ontology.")
+    arg_parser.add_argument("-a", "--arity", dest="arity_path", required=True,
+                            help="The file containing the definition of the arities of specific property, if needed.")
     arg_parser.add_argument("-o", "--output", dest="output_path", required=True,
                             help="The path where to store the ontology to create.")
     arg_parser.add_argument("-v", "--version", dest="version_number",
@@ -303,24 +344,31 @@ if __name__ == "__main__":
     log.addHandler(log_h)
     log.setLevel(logging.INFO)
 
-    d = {
-        "term_mapping": defaultdict(set),
-        "entity_id": defaultdict(set),
-        "id_entity": defaultdict(set),
-        "domain_range": defaultdict(dict),
-        "definitions": defaultdict(str),
-        "arity": defaultdict(str)
-    } 
-
     log.info("Extracting the ontological entities from the .graphml files of the data mode.")
 
-    class_terms = set()
-    property_terms = set()
-    individual_terms = set()
-
     for c in glob(args.graphs_dir + sep + "*.graphml"):
+        d = {
+            "term_mapping": defaultdict(set),
+            "entity_id": defaultdict(set),
+            "id_entity": defaultdict(set),
+            "domain_range": defaultdict(dict),
+            "definitions": defaultdict(str),
+            "arity": defaultdict(str)
+        } 
+
+        class_terms = set()
+        property_terms = set()
+        individual_terms = set()
+
+        default_arity = {}
+        try:
+            with open(args.arity_path, mode="r", encoding="utf-8") as f:
+                default_arity = load(f)
+        except:
+            log.warning("Problems in loading the file with defalut arity values for the properties. Default values will not be considered.")
+
         log.info("Processing file '%s'." % c)
-        file_name = sub(".*(skg-if-.+).graphml$", "\\1", c)
+        file_name = splitext(basename(c))[0]
         
         with open(c, mode="r", encoding="utf-8") as f:
             soup = BeautifulSoup(f, "xml")
@@ -338,73 +386,74 @@ if __name__ == "__main__":
         for term in edge_terms:
             property_terms.add(term)
 
-    log.info("Identifying all OWL datatypes defined in all the .graphml files.")
-    datatype_set = set()
-    extract_datatypes(individual_terms, {"xsd"}, datatype_set)
-    extract_datatypes(class_terms, {"rdfs"}, datatype_set)
+        log.info("Identifying all OWL datatypes defined in '%s'." % c)
+        datatype_set = set()
+        extract_datatypes(individual_terms, {"xsd"}, datatype_set)
+        extract_datatypes(class_terms, {"rdfs"}, datatype_set)
 
-    log.info("Identifying OWL object properties and data properties from the properties extracted from all the .graphml files.")
-    object_property_terms = set()
-    data_property_terms = set()
-    for property in property_terms:
-        entity_ranges = get_domain_range_entity_names(property, False, d)
-        for entity_range in entity_ranges:
-            if entity_range in datatype_set:
-                data_property_terms.add(property)
-            else:
-                object_property_terms.add(property)
-
-    log.info("Extracting annotations for all the OWL entities extracted from the documents included in the SKG-IF documentation.")
-    for c in glob(args.docs_path + sep + "*.md"):
-        log.info("Processing file '%s'." % c)
-        file_name = sub(".*/(.+).md$", "\\1", c)
-        
-        with open(c, mode="r", encoding="utf-8") as f:
-            file_string = f.read()
-
-            log.info("Extracting the entity definitions from the document '%s'." % file_name)
-            associate_definitions([
-                ("\n# (.+)[\\n\\s]+(.+)", None),
-                ("\n### (.+)[\\n\\s]+(.+)", "^[^:]+: (.+)"),
-                ("\n\s*- `(.+)` \*[^\*]+\* [^:]+: (.+)", "^[^:]+: (.+)"),
-                ("\n\s*- `(.+)`: (.+)", "^[^:]+: (.+)")
-            ], file_string, d)
-
-            log.info("Extracting the arity of all the OWL object and data properties as defined in the document '%s'." % file_name)
-            arity_re = "(\s*- `([^`]+)` |### `([^`]+)`\s*\n+)\*([^\*]+)\* \((mandatory|recommended|optional)\)"
-            arity_def = findall(arity_re, file_string)
-            for _, e_name_v1, e_name_v2, p_type, arity in arity_def:
-                entity = e_name_v1 if e_name_v1 != "" else e_name_v2
-
-                if arity == "mandatory":
-                    l_const = "1"
+        log.info("Identifying OWL object properties and data properties from the properties extracted from '%s'" % c)
+        object_property_terms = set()
+        data_property_terms = set()
+        for property in property_terms:
+            entity_ranges = get_domain_range_entity_names(property, False, d)
+            for entity_range in entity_ranges:
+                if entity_range in datatype_set:
+                    data_property_terms.add(property)
                 else:
-                    l_const = "0"
-                
-                if p_type == "List":
-                    r_const = "N"
-                else:
-                    r_const = "1"
-                
-                d["arity"][entity] = "1" if l_const == "1" and r_const == "1" else l_const + ".." + r_const
+                    object_property_terms.add(property)
 
-    version_number = None
-    if args.version_number is not None:
-        version_number = args.version_number.strip()
+        log.info("Extracting annotations for all the OWL entities extracted from the documents included in the SKG-IF "
+                 "documentation for the entity '%s'." % file_name)
+        for c2 in glob(args.docs_path + sep + file_name + ".md"):
+            log.info("Processing file '%s'." % c2)
+            file_name_d = sub(".*/(.+).md$", "\\1", c2)
+            
+            with open(c2, mode="r", encoding="utf-8") as f:
+                file_string = f.read()
 
-    log.info("Creating the ontology.")
-    ontology = create_ontology(
-        class_terms, object_property_terms, data_property_terms, individual_terms, 
-        prefixes, d, version_number)
+                log.info("Extracting the entity definitions from the document '%s'." % file_name_d)
+                associate_definitions([
+                    ("\n# (.+)[\\n\\s]+(.+)", None),
+                    ("\n### (.+)[\\n\\s]+(.+)", "^[^:]+: (.+)"),
+                    ("\n\s*- `(.+)` \*[^\*]+\* [^:]+: (.+)", "^[^:]+: (.+)"),
+                    ("\n\s*- `(.+)`: (.+)", "^[^:]+: (.+)")
+                ], file_string, d)
+
+                log.info("Extracting the arity of all the OWL object and data properties as defined in the document '%s'." % file_name_d)
+                arity_re = "(\s*- `([^`]+)` |### `([^`]+)`\s*\n+)\*([^\*]+)\* \((mandatory|recommended|optional)\)"
+                arity_def = findall(arity_re, file_string)
+                for _, e_name_v1, e_name_v2, p_type, arity in arity_def:
+                    entity = e_name_v1 if e_name_v1 != "" else e_name_v2
+
+                    if entity in default_arity:
+                        l_const = default_arity[entity]["l_const"]
+                        r_const = default_arity[entity]["r_const"]
+                    else:
+                        if arity == "mandatory":
+                            l_const = "1"
+                        else:
+                            l_const = "0"
+                        
+                        if p_type == "List":
+                            r_const = "N"
+                        else:
+                            r_const = "1"
+                    
+                    new_entity_arity = "1" if l_const == "1" and r_const == "1" else l_const + ".." + r_const
+                    d["arity"][entity] = new_entity_arity
+
+        version_number = None
+        if args.version_number is not None:
+            version_number = args.version_number.strip()
+
+        log.info("Creating the ontology.")
+        ontology = create_ontology(
+            class_terms, object_property_terms, data_property_terms, individual_terms, 
+            prefixes, d, version_number, file_name)
+        store_ontology(ontology, log, args.output_path, version_number, file_name)
     
-    if ontology is not None:
-        log.info("Storing the ontology into the file system in different formats.")
-        dir_name = dirname(args.output_path)
-        file_name = splitext(basename(args.output_path))[0]
-        for f in formats:
-            store(ontology, dir_name + sep + "current", file_name + "." + formats[f], f)
-            log.info("Ontology serialised %s format and stored in %s" % (f, dir_name + sep + "current"))
-            if args.version_number is not None:
-                store(ontology, dir_name + sep + version_number, 
-                      file_name + "." + formats[f], f)
-                log.info("Versioned ontology serialised %s format and stored in %s" % (f, dir_name + sep + version_number))
+    log.info("Creating the main ontology.")
+    ontology = create_ontology(
+        set(), set(), set(), set(), 
+        prefixes, dict(), version_number, "", args.graphs_dir)
+    store_ontology(ontology, log, args.output_path, version_number, "")
