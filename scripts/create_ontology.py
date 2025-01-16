@@ -108,6 +108,8 @@ def gather_entities_and_labels(soup, consider_edges, d_support, file_name):
             
             if label != "":
                 d_support["term_mapping"][entity].add(label)
+                if consider_edges:
+                    d_support["class_property"][element_source].add(label)
         
             d_support["entity_id"][entity].add(element_id)
             d_support["id_entity"][element_id].add(entity)
@@ -181,8 +183,9 @@ def get_domain_properties(class_name, d_support):
     for property_id, d_r in d_support["domain_range"].items():
         if d_r["domain"] in class_ids:
             for property in d_support["id_entity"][property_id]:
+                property_labels = d_support["term_mapping"][property]
                 for target_class in d_support["id_entity"][d_r["range"]]:
-                    item = (property, target_class)
+                    item = (property, property_labels, target_class)
                     if item not in selected_properties:
                         selected_properties.append(item)
     
@@ -267,8 +270,13 @@ def create_ontology(classes, object_properties, data_properties, individuals, pr
 
                 if len(domain_properties):
                     domain_strings = ["The properties that can be used with this class are:\n"]
-                    for property, target in domain_properties:
-                        property_labels = d_support["term_mapping"][property]
+                    for property, all_property_labels, target in domain_properties:
+                        # property_labels = d_support["term_mapping"][property]
+                        class_id = list(sorted(list(d_support["entity_id"][o_class])))[0]
+                        property_labels = set()
+                        for pl in d_support["class_property"][class_id]:
+                            if pl in all_property_labels:
+                                property_labels.add(pl)
 
                         arity = None
                         for property_label in property_labels:
@@ -349,6 +357,7 @@ if __name__ == "__main__":
     for c in glob(args.graphs_dir + sep + "*.graphml"):
         d = {
             "term_mapping": defaultdict(set),
+            "class_property": defaultdict(set),
             "entity_id": defaultdict(set),
             "id_entity": defaultdict(set),
             "domain_range": defaultdict(dict),

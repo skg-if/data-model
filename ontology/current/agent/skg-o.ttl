@@ -303,7 +303,7 @@ schema:MedicalOrganization a owl:Class ;
 <https://w3id.org/skg-if/ontology/agent/> a owl:Ontology ;
     rdfs:label "SKG-O: agent" ;
     dc:creator "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" ;
-    dc:date "2025-01-14"^^xsd:date ;
+    dc:date "2025-01-16"^^xsd:date ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" ;
     dc:title "The SKG-IF Ontology: agent" ;
     vann:preferredNamespacePrefix "skg-o" ;

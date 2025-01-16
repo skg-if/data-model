@@ -345,7 +345,7 @@ fabio:Expression a owl:Class ;
 * fabio:hasRetractionDate -[0..N]-> xsd:dateTime
 * fabio:hasSequenceIdentifier -[0..1]-> xsd:string
 * frbr:embodiment -[0..1]-> fabio:Manifestation
-* frbr:partOf -[0..N]-> fabio:Expression
+* frbr:partOf -[0..1]-> fabio:Expression
 * prism:edition -[0..1]-> xsd:string
 * prism:issueIdentifier -[0..1]-> xsd:string
 * prism:versionIdentifier -[0..1]-> xsd:string
@@ -728,7 +728,7 @@ In SKG-IF, it is used to link to entities belonging to the following classes (ra
     rdfs:isDefinedBy frbr: .
 
 frbr:partOf a owl:ObjectProperty ;
-    rdfs:label "frbr:partOf (SKG-IF labels: is_part_of, in)" ;
+    rdfs:label "frbr:partOf (SKG-IF labels: in, is_part_of)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
 * fabio:Expression
 * fabio:Work
@@ -736,7 +736,7 @@ frbr:partOf a owl:ObjectProperty ;
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * fabio:Expression
 * fabio:Work""" ;
-    rdfs:comment "Research products identifiers that contain the current Research product." ;
+    rdfs:comment "A Venue identifier for the manifestation." ;
     rdfs:isDefinedBy frbr: .
 
 frbr:realization a owl:ObjectProperty ;
@@ -868,7 +868,7 @@ foaf:Organization a owl:Class ;
 <https://w3id.org/skg-if/ontology/research-product/> a owl:Ontology ;
     rdfs:label "SKG-O: research-product" ;
     dc:creator "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" ;
-    dc:date "2025-01-14"^^xsd:date ;
+    dc:date "2025-01-16"^^xsd:date ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" ;
     dc:title "The SKG-IF Ontology: research-product" ;
     vann:preferredNamespacePrefix "skg-o" ;

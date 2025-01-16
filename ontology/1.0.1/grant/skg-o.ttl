@@ -322,7 +322,7 @@ In SKG-IF, it is used to link to entities belonging to the following classes (ra
 <https://w3id.org/skg-if/ontology/grant/> a owl:Ontology ;
     rdfs:label "SKG-O: grant" ;
     dc:creator "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" ;
-    dc:date "2025-01-14"^^xsd:date ;
+    dc:date "2025-01-16"^^xsd:date ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" ;
     dc:title "The SKG-IF Ontology: grant" ;
     vann:preferredNamespacePrefix "skg-o" ;

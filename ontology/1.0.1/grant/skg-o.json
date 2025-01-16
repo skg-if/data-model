@@ -1,43 +1,43 @@
 [
   {
-    "@id": "http://purl.org/spar/datacite/hasIdentifier",
+    "@id": "http://purl.org/dc/terms/abstract",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/dc/elements/1.1/description": [
       {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:Identifier"
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "Objects representing external identifiers for the entity."
+        "@value": "The abstract or a description of the Grant."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/datacite/"
+        "@id": "http://purl.org/dc/terms/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "datacite:hasIdentifier (SKG-IF labels: identifiers)"
+        "@value": "dcterms:abstract (SKG-IF labels: abstract)"
       }
     ]
   },
   {
-    "@id": "http://xmlns.com/foaf/0.1/Document",
+    "@id": "http://purl.org/cerif/frapo/FundingAgency",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://xmlns.com/foaf/0.1/"
+        "@id": "http://purl.org/cerif/frapo/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "foaf:Document"
+        "@value": "frapo:FundingAgency"
       }
     ]
   },
@@ -68,96 +68,28 @@
     ]
   },
   {
-    "@id": "http://purl.org/cerif/frapo/supports",
+    "@id": "http://xmlns.com/foaf/0.1/homepage",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://purl.org/dc/elements/1.1/description": [
       {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Organization"
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Document"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "Organisations identifiers funded by the Grant."
+        "@value": "An URL poiting to the website of the funded project."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/cerif/frapo/"
+        "@id": "http://xmlns.com/foaf/0.1/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "frapo:supports (SKG-IF labels: beneficiaries)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/title",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Title of the Grant."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/dc/terms/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "dcterms:title (SKG-IF labels: title)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/scoro/workpackage-leader",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/scoro/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "scoro:workpackage-leader (SKG-IF labels: workpackage leader)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/cerif/frapo/hasGrantNumber",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:string"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Unique code identifiying the Grant at the funder."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/cerif/frapo/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "frapo:hasGrantNumber (SKG-IF labels: grant_number)"
+        "@value": "foaf:homepage (SKG-IF labels: website)"
       }
     ]
   },
@@ -188,18 +120,13 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/datacite/usesIdentifierScheme",
+    "@id": "http://purl.org/spar/datacite/Identifier",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/dc/elements/1.1/description": [
       {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:IdentifierScheme"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The scheme for the external identifier."
+        "@value": "The properties that can be used with this class are:\n\n* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme\n* literal:hasLiteralValue -[1]-> rdfs:Literal"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -209,7 +136,157 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "datacite:usesIdentifierScheme (SKG-IF labels: scheme)"
+        "@value": "datacite:Identifier"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/rights",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/datacite/hasIdentifier",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:Identifier"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Objects representing external identifiers for the entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/datacite/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "datacite:hasIdentifier (SKG-IF labels: identifiers)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/temporal",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* ti:TimeInterval"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The duration of the Grant."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "dcterms:temporal (SKG-IF labels: duration)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/workpackage-leader",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/scoro/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "scoro:workpackage-leader (SKG-IF labels: workpackage leader)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/cerif/frapo/hasFundingAgency",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* frapo:FundingAgency"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The local identifier of an Organisation funding the Grant."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/cerif/frapo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "frapo:hasFundingAgency (SKG-IF labels: funding_agency)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Organization",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "foaf:Organization"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/lead-applicant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/scoro/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "scoro:lead-applicant (SKG-IF labels: lead applicant)"
       }
     ]
   },
@@ -240,40 +317,19 @@
     ]
   },
   {
-    "@id": "http://purl.org/cerif/frapo/FundingAgency",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/cerif/frapo/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "frapo:FundingAgency"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/title",
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate",
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval",
     "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/dc/elements/1.1/description": [
       {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* ti:TimeInterval\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:dateTime"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The end datetime (if any) of the Grant. The string should be compliant with the ISO 8601 datetime string."
+        "@value": "The properties that can be used with this class are:\n\n* ti:hasIntervalEndDate -[0..1]-> xsd:dateTime\n* ti:hasIntervalStartDate -[1]-> xsd:dateTime"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -283,188 +339,28 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "ti:hasIntervalEndDate (SKG-IF labels: end)"
+        "@value": "ti:TimeInterval"
       }
     ]
   },
   {
-    "@id": "http://purl.org/cerif/frapo/hasFundingAgency",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* frapo:FundingAgency"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The local identifier of an Organisation funding the Grant."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/cerif/frapo/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "frapo:hasFundingAgency (SKG-IF labels: funding_agency)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/scoro/project-member",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/scoro/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "scoro:project-member (SKG-IF labels: project member)"
-      }
-    ]
-  },
-  {
-    "@id": "http://prismstandard.org/namespaces/basic/2.0/keyword",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Keywords of a Grant."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://prismstandard.org/namespaces/basic/2.0/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "prism:keyword (SKG-IF labels: keywords)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/rights",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/datacite/Identifier",
+    "@id": "http://purl.org/spar/pro/RoleInTime",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://purl.org/dc/elements/1.1/description": [
       {
-        "@value": "The properties that can be used with this class are:\n\n* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme\n* literal:hasLiteralValue -[1]-> rdfs:Literal"
+        "@value": "The properties that can be used with this class are:\n\n* pro:isHeldBy -[1]-> foaf:Agent\n* pro:withRole -[0..N]-> scoro:ProjectRole"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/datacite/"
+        "@id": "http://purl.org/spar/pro/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "datacite:Identifier"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/description",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/scoro/project-leader",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/scoro/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "scoro:project-leader (SKG-IF labels: project leader)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/temporal",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* ti:TimeInterval"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The duration of the Grant."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/dc/terms/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "dcterms:temporal (SKG-IF labels: duration)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/scoro/ProjectRole",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/scoro/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "scoro:ProjectRole"
-      }
-    ]
-  },
-  {
-    "@id": "http://xmlns.com/foaf/0.1/Organization",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://xmlns.com/foaf/0.1/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "foaf:Organization"
+        "@value": "pro:RoleInTime"
       }
     ]
   },
@@ -495,7 +391,7 @@
     ]
   },
   {
-    "@id": "http://purl.org/cerif/frapo/hasAcronym",
+    "@id": "http://purl.org/dc/terms/title",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
@@ -506,7 +402,33 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "The acronym of the Grant."
+        "@value": "Title of the Grant."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/dc/terms/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "dcterms:title (SKG-IF labels: title)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/cerif/frapo/hasCurrency",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:float"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Amount funded for a Grant."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -516,7 +438,203 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "frapo:hasAcronym (SKG-IF labels: acronym)"
+        "@value": "frapo:hasCurrency (SKG-IF labels: funded_amount)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/project-manager",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/scoro/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "scoro:project-manager (SKG-IF labels: project manager)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pro/isHeldBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* pro:RoleInTime\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The identifier of an Agent contributing to a Grant."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/pro/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "pro:isHeldBy (SKG-IF labels: by)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/co-applicant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/scoro/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "scoro:co-applicant (SKG-IF labels: co-applicant)"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* ti:TimeInterval\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:dateTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The end datetime (if any) of the Grant. The string should be compliant with the ISO 8601 datetime string."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "ti:hasIntervalEndDate (SKG-IF labels: end)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/project-leader",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/scoro/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "scoro:project-leader (SKG-IF labels: project leader)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/datacite/usesIdentifierScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:IdentifierScheme"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The scheme for the external identifier."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/datacite/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "datacite:usesIdentifierScheme (SKG-IF labels: scheme)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/cerif/frapo/hasGrantNumber",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:string"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Unique code identifiying the Grant at the funder."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/cerif/frapo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "frapo:hasGrantNumber (SKG-IF labels: grant_number)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/datacite/IdentifierScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/datacite/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "datacite:IdentifierScheme"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/date",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Document",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "foaf:Document"
       }
     ]
   },
@@ -542,77 +660,96 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/pro/RoleInTime",
+    "@id": "http://prismstandard.org/namespaces/basic/2.0/keyword",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/dc/elements/1.1/description": [
       {
-        "@value": "The properties that can be used with this class are:\n\n* pro:isHeldBy -[1]-> foaf:Agent\n* pro:withRole -[0..N]-> scoro:ProjectRole"
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Keywords of a Grant."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/pro/"
+        "@id": "http://prismstandard.org/namespaces/basic/2.0/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "pro:RoleInTime"
+        "@value": "prism:keyword (SKG-IF labels: keywords)"
       }
     ]
   },
   {
-    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/scoro/co-applicant",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/scoro/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "scoro:co-applicant (SKG-IF labels: co-applicant)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/datacite/IdentifierScheme",
+    "@id": "http://xmlns.com/foaf/0.1/Agent",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/datacite/"
+        "@id": "http://xmlns.com/foaf/0.1/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "datacite:IdentifierScheme"
+        "@value": "foaf:Agent (SKG-IF labels: Agent)"
       }
     ]
   },
   {
-    "@id": "http://purl.org/spar/scoro/project-manager",
+    "@id": "http://purl.org/cerif/frapo/supports",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Organization"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Organisations identifiers funded by the Grant."
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/scoro/"
+        "@id": "http://purl.org/cerif/frapo/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "scoro:project-manager (SKG-IF labels: project manager)"
+        "@value": "frapo:supports (SKG-IF labels: beneficiaries)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/cerif/frapo/hasAcronym",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The acronym of the Grant."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/cerif/frapo/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "frapo:hasAcronym (SKG-IF labels: acronym)"
       }
     ]
   },
@@ -643,54 +780,6 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/pro/isRelatedToRoleInTime",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* pro:RoleInTime"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Objects, each describing an Agent, its contribution, and declared affiliations to one or more Organisations in the context of the Grant."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/pro/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "pro:isRelatedToRoleInTime (SKG-IF labels: contributions)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/scoro/lead-applicant",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/scoro/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "scoro:lead-applicant (SKG-IF labels: lead applicant)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/date",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
     "@id": "https://w3id.org/skg-if/ontology/grant/",
     "@type": [
       "http://www.w3.org/2002/07/owl#Ontology"
@@ -703,7 +792,7 @@
     "http://purl.org/dc/elements/1.1/date": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-01-14"
+        "@value": "2025-01-16"
       }
     ],
     "http://purl.org/dc/elements/1.1/rights": [
@@ -749,18 +838,34 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/pro/isHeldBy",
+    "@id": "http://purl.org/spar/scoro/ProjectRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/scoro/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "scoro:ProjectRole"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pro/isRelatedToRoleInTime",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://purl.org/dc/elements/1.1/description": [
       {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* pro:RoleInTime\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Agent"
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* pro:RoleInTime"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
-        "@value": "The identifier of an Agent contributing to a Grant."
+        "@value": "Objects, each describing an Agent, its contribution, and declared affiliations to one or more Organisations in the context of the Grant."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -770,128 +875,23 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "pro:isHeldBy (SKG-IF labels: by)"
+        "@value": "pro:isRelatedToRoleInTime (SKG-IF labels: contributions)"
       }
     ]
   },
   {
-    "@id": "http://xmlns.com/foaf/0.1/Agent",
+    "@id": "http://purl.org/spar/scoro/project-member",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://xmlns.com/foaf/0.1/"
+        "@id": "http://purl.org/spar/scoro/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "foaf:Agent (SKG-IF labels: Agent)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/cerif/frapo/hasCurrency",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:float"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "Amount funded for a Grant."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/cerif/frapo/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "frapo:hasCurrency (SKG-IF labels: funded_amount)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/creator",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://xmlns.com/foaf/0.1/homepage",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Document"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "An URL poiting to the website of the funded project."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://xmlns.com/foaf/0.1/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "foaf:homepage (SKG-IF labels: website)"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "The properties that can be used with this class are:\n\n* ti:hasIntervalEndDate -[0..1]-> xsd:dateTime\n* ti:hasIntervalStartDate -[1]-> xsd:dateTime"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "ti:TimeInterval"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/abstract",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "The abstract or a description of the Grant."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/dc/terms/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "dcterms:abstract (SKG-IF labels: abstract)"
+        "@value": "scoro:project-member (SKG-IF labels: project member)"
       }
     ]
   }

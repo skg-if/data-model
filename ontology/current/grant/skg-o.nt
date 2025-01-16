@@ -1,170 +1,170 @@
-<http://purl.org/cerif/frapo/supports> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Organization" .
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/cerif/frapo/Grant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
-<http://purl.org/spar/pro/isHeldBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/cerif/frapo/hasFundingAgency> <http://www.w3.org/2000/01/rdf-schema#comment> "The local identifier of an Organisation funding the Grant." .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/scoro/project-leader> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
-<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#comment> "An URL poiting to the website of the funded project." .
-<http://purl.org/spar/scoro/project-leader> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:project-leader (SKG-IF labels: project leader)" .
-<http://purl.org/spar/datacite/hasIdentifier> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:Identifier" .
 <http://purl.org/cerif/frapo/hasAcronym> <http://www.w3.org/2000/01/rdf-schema#comment> "The acronym of the Grant." .
-<http://purl.org/dc/terms/temporal> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:temporal (SKG-IF labels: duration)" .
-<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2000/01/rdf-schema#label> "prism:keyword (SKG-IF labels: keywords)" .
-<http://purl.org/spar/pro/isRelatedToRoleInTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
-<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/spar/pro/withRole> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* pro:RoleInTime\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* scoro:ProjectRole" .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-<http://purl.org/spar/scoro/project-member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/skg-if/ontology/grant/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/skg-if/ontology/grant/1.0.1/> .
-<http://purl.org/dc/terms/temporal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/spar/pro/withRole> <http://www.w3.org/2000/01/rdf-schema#label> "pro:withRole (SKG-IF labels: role)" .
-<http://purl.org/cerif/frapo/supports> <http://www.w3.org/2000/01/rdf-schema#comment> "Organisations identifiers funded by the Grant." .
-<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The end datetime (if any) of the Grant. The string should be compliant with the ISO 8601 datetime string." .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:hasIdentifier (SKG-IF labels: identifiers)" .
-<https://w3id.org/skg-if/ontology/grant/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/skg-if/ontology/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<https://w3id.org/skg-if/ontology/grant/> <http://www.w3.org/2000/01/rdf-schema#comment> "SKG-O, the SKG-IF Ontology, is not yet another bibliographic ontology. Rather it is just a place where existing and complementary ontological entities from several other ontologies, all employed in the Scientific Knowledge Graph Interoperability Framework (SKG-IF), are grouped together for the purpose of providing descriptive metadata compliant with the SKG-IF Data Model." .
-<http://purl.org/cerif/frapo/hasFundingAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
-<http://purl.org/cerif/frapo/hasFundingAgency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
-<http://purl.org/spar/scoro/lead-applicant> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:lead-applicant (SKG-IF labels: lead applicant)" .
-<http://purl.org/dc/terms/temporal> <http://www.w3.org/2000/01/rdf-schema#comment> "The duration of the Grant." .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/scoro/project-member> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
-<http://purl.org/cerif/frapo/hasFundingAgency> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* frapo:FundingAgency" .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The scheme for the external identifier." .
-<http://purl.org/cerif/frapo/Grant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/cerif/frapo/hasGrantNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://purl.org/cerif/frapo/hasCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:Identifier" .
-<http://purl.org/spar/pro/RoleInTime> <http://www.w3.org/2000/01/rdf-schema#label> "pro:RoleInTime" .
-<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
-<http://purl.org/dc/terms/abstract> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
-<http://purl.org/dc/terms/title> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
-<http://purl.org/spar/datacite/Identifier> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme\n* literal:hasLiteralValue -[1]-> rdfs:Literal" .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-<http://purl.org/cerif/frapo/hasCurrency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
-<http://purl.org/spar/scoro/lead-applicant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
-<http://purl.org/cerif/frapo/hasCurrency> <http://www.w3.org/2000/01/rdf-schema#comment> "Amount funded for a Grant." .
-<http://purl.org/spar/pro/withRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/skg-if/ontology/grant/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "skg-o" .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* ti:hasIntervalEndDate -[0..1]-> xsd:dateTime\n* ti:hasIntervalStartDate -[1]-> xsd:dateTime" .
-<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:homepage (SKG-IF labels: website)" .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "ti:TimeInterval" .
-<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:title (SKG-IF labels: title)" .
-<http://purl.org/spar/scoro/project-manager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/skg-if/ontology/grant/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://purl.org/spar/pro/isRelatedToRoleInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/cerif/frapo/hasCallIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:IdentifierScheme" .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:IdentifierScheme" .
-<http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:abstract (SKG-IF labels: abstract)" .
-<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of the Grant." .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://purl.org/cerif/frapo/FundingAgency> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:FundingAgency" .
-<https://w3id.org/skg-if/ontology/grant/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.1" .
-<http://purl.org/spar/scoro/workpackage-leader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/spar/scoro/co-applicant> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:co-applicant (SKG-IF labels: co-applicant)" .
-<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/skg-if/ontology/grant/> <http://purl.org/dc/elements/1.1/title> "The SKG-IF Ontology: grant" .
-<https://w3id.org/skg-if/ontology/grant/> <http://purl.org/dc/elements/1.1/creator> "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" .
-<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
-<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/spar/scoro/project-leader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/cerif/frapo/hasCurrencyCode> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasCurrencyCode (SKG-IF labels: currency)" .
-<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/cerif/frapo/hasGrantNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique code identifiying the Grant at the funder." .
-<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2000/01/rdf-schema#comment> "Keywords of a Grant." .
-<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* ti:TimeInterval\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:dateTime" .
-<http://purl.org/spar/pro/RoleInTime> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* pro:isHeldBy -[1]-> foaf:Agent\n* pro:withRole -[0..N]-> scoro:ProjectRole" .
-<http://purl.org/cerif/frapo/hasCurrencyCode> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:string" .
-<https://w3id.org/skg-if/ontology/grant/> <http://www.w3.org/2000/01/rdf-schema#label> "SKG-O: grant" .
-<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Agent (SKG-IF labels: Agent)" .
-<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Document" .
-<http://purl.org/cerif/frapo/Grant> <http://www.w3.org/2000/01/rdf-schema#comment> "The entity Grant describes funding awarded to a Agent by a funding body. These bodies, both public and private, can be funders, foundations, governments, agencies or institutions." .
-<http://purl.org/cerif/frapo/Grant> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:Grant (SKG-IF labels: Grant)" .
-<http://purl.org/spar/pro/isRelatedToRoleInTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Objects, each describing an Agent, its contribution, and declared affiliations to one or more Organisations in the context of the Grant." .
-<http://purl.org/cerif/frapo/hasAcronym> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
-<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/pro/isRelatedToRoleInTime> <http://www.w3.org/2000/01/rdf-schema#label> "pro:isRelatedToRoleInTime (SKG-IF labels: contributions)" .
-<http://purl.org/cerif/frapo/supports> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
-<http://purl.org/spar/pro/isRelatedToRoleInTime> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* pro:RoleInTime" .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:usesIdentifierScheme (SKG-IF labels: scheme)" .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/cerif/frapo/hasGrantNumber> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
-<http://purl.org/cerif/frapo/hasCurrencyCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
-<http://purl.org/cerif/frapo/hasAcronym> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasAcronym (SKG-IF labels: acronym)" .
-<https://w3id.org/skg-if/ontology/grant/> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" .
-<http://purl.org/spar/scoro/co-applicant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/cerif/frapo/hasCurrencyCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Currency of the funded amount, following ISO 4217." .
-<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
-<http://purl.org/dc/terms/temporal> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* ti:TimeInterval" .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The external identifier." .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Organization" .
-<http://purl.org/cerif/frapo/hasCallIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasCallIdentifier (SKG-IF labels: funding_stream)" .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The start datetime of the Grant. The string should be compliant with the ISO 8601 datetime string." .
-<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/homepage> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Document" .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Objects representing external identifiers for the entity." .
-<http://purl.org/spar/pro/RoleInTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
-<http://purl.org/cerif/frapo/FundingAgency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
-<http://purl.org/cerif/frapo/hasCallIdentifier> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
-<http://purl.org/cerif/frapo/hasGrantNumber> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasGrantNumber (SKG-IF labels: grant_number)" .
-<http://purl.org/cerif/frapo/hasCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasCurrency (SKG-IF labels: funded_amount)" .
-<http://purl.org/spar/scoro/co-applicant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
-<http://purl.org/cerif/frapo/supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://prismstandard.org/namespaces/basic/2.0/> .
-<http://purl.org/spar/pro/RoleInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/scoro/lead-applicant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/spar/pro/isHeldBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier of an Agent contributing to a Grant." .
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
-<http://purl.org/cerif/frapo/Grant> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* datacite:hasIdentifier -[0..N]-> datacite:Identifier\n* dcterms:abstract -[0..1]-> rdfs:Literal\n* dcterms:temporal -[0..1]-> ti:TimeInterval\n* dcterms:title -[0..1]-> rdfs:Literal\n* foaf:homepage -[0..1]-> foaf:Document\n* frapo:hasAcronym -[0..1]-> rdfs:Literal\n* frapo:hasCallIdentifier -[0..1]-> rdfs:Literal\n* frapo:hasCurrency -[0..1]-> xsd:float\n* frapo:hasCurrencyCode -[0..N]-> xsd:string\n* frapo:hasFundingAgency -[0..1]-> frapo:FundingAgency\n* frapo:hasGrantNumber -[0..1]-> xsd:string\n* frapo:supports -[0..N]-> foaf:Organization\n* prism:keyword -[0..N]-> rdfs:Literal\n* pro:isRelatedToRoleInTime -[0..N]-> pro:RoleInTime" .
-<http://purl.org/cerif/frapo/hasGrantNumber> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:string" .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/cerif/frapo/hasCurrencyCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/scoro/project-manager> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:project-manager (SKG-IF labels: project manager)" .
-<http://purl.org/cerif/frapo/hasFundingAgency> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasFundingAgency (SKG-IF labels: funding_agency)" .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#label> "literal:hasLiteralValue (SKG-IF labels: value)" .
-<http://purl.org/cerif/frapo/hasAcronym> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
-<http://purl.org/cerif/frapo/supports> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:supports (SKG-IF labels: beneficiaries)" .
-<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/skg-if/ontology/grant/> <http://purl.org/dc/elements/1.1/date> "2025-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/spar/pro/isHeldBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
-<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:ProjectRole" .
-<http://purl.org/spar/pro/isHeldBy> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* pro:RoleInTime\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Agent" .
-<http://purl.org/spar/pro/withRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
-<http://purl.org/spar/scoro/workpackage-leader> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:workpackage-leader (SKG-IF labels: workpackage leader)" .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.essepuntato.it/2010/06/literalreification/> .
+<https://w3id.org/skg-if/ontology/grant/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/skg-if/ontology/grant/1.0.1/> .
 <http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://purl.org/cerif/frapo/hasCallIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#label> "ti:hasIntervalEndDate (SKG-IF labels: end)" .
-<http://purl.org/spar/scoro/project-member> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:project-member (SKG-IF labels: project member)" .
-<http://purl.org/dc/terms/temporal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/pro/isHeldBy> <http://www.w3.org/2000/01/rdf-schema#label> "pro:isHeldBy (SKG-IF labels: by)" .
-<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://purl.org/cerif/frapo/hasCurrency> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:float" .
-<http://purl.org/spar/scoro/project-manager> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
-<http://purl.org/cerif/frapo/hasAcronym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
-<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/cerif/frapo/FundingAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* ti:TimeInterval\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:dateTime" .
-<http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#comment> "The abstract or a description of the Grant." .
+<http://purl.org/cerif/frapo/hasFundingAgency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/spar/scoro/workpackage-leader> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:workpackage-leader (SKG-IF labels: workpackage leader)" .
+<http://purl.org/spar/scoro/lead-applicant> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:lead-applicant (SKG-IF labels: lead applicant)" .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The external identifier." .
+<http://purl.org/cerif/frapo/hasAcronym> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:Identifier" .
+<https://w3id.org/skg-if/ontology/grant/> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" .
+<http://purl.org/cerif/frapo/hasFundingAgency> <http://www.w3.org/2000/01/rdf-schema#comment> "The local identifier of an Organisation funding the Grant." .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:hasIdentifier (SKG-IF labels: identifiers)" .
+<http://purl.org/cerif/frapo/hasCurrency> <http://www.w3.org/2000/01/rdf-schema#comment> "Amount funded for a Grant." .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://purl.org/cerif/frapo/hasCallIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "The funding stream of the Grant." .
+<http://purl.org/spar/pro/withRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/cerif/frapo/hasCallIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/cerif/frapo/supports> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Organization" .
+<http://purl.org/spar/scoro/project-leader> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/pro/isRelatedToRoleInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+<http://purl.org/cerif/frapo/hasCurrencyCode> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:string" .
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of the Grant." .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* ti:TimeInterval\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:dateTime" .
+<http://purl.org/spar/scoro/project-member> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:project-member (SKG-IF labels: project member)" .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/cerif/frapo/supports> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/cerif/frapo/hasCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasCurrency (SKG-IF labels: funded_amount)" .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* ti:TimeInterval\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:dateTime" .
+<http://purl.org/spar/pro/RoleInTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#label> "ti:hasIntervalEndDate (SKG-IF labels: end)" .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/skg-if/ontology/grant/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.1" .
+<http://purl.org/cerif/frapo/hasCallIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/dc/terms/temporal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/spar/datacite/Identifier> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme\n* literal:hasLiteralValue -[1]-> rdfs:Literal" .
+<http://purl.org/cerif/frapo/hasFundingAgency> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* frapo:FundingAgency" .
+<http://purl.org/cerif/frapo/Grant> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* datacite:hasIdentifier -[0..N]-> datacite:Identifier\n* dcterms:abstract -[0..1]-> rdfs:Literal\n* dcterms:temporal -[0..1]-> ti:TimeInterval\n* dcterms:title -[0..1]-> rdfs:Literal\n* foaf:homepage -[0..1]-> foaf:Document\n* frapo:hasAcronym -[0..1]-> rdfs:Literal\n* frapo:hasCallIdentifier -[0..1]-> rdfs:Literal\n* frapo:hasCurrency -[0..1]-> xsd:float\n* frapo:hasCurrencyCode -[0..N]-> xsd:string\n* frapo:hasFundingAgency -[0..1]-> frapo:FundingAgency\n* frapo:hasGrantNumber -[0..1]-> xsd:string\n* frapo:supports -[0..N]-> foaf:Organization\n* prism:keyword -[0..N]-> rdfs:Literal\n* pro:isRelatedToRoleInTime -[0..N]-> pro:RoleInTime" .
+<http://purl.org/cerif/frapo/hasAcronym> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasAcronym (SKG-IF labels: acronym)" .
+<http://purl.org/spar/pro/RoleInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skg-if/ontology/grant/> <http://www.w3.org/2000/01/rdf-schema#comment> "SKG-O, the SKG-IF Ontology, is not yet another bibliographic ontology. Rather it is just a place where existing and complementary ontological entities from several other ontologies, all employed in the Scientific Knowledge Graph Interoperability Framework (SKG-IF), are grouped together for the purpose of providing descriptive metadata compliant with the SKG-IF Data Model." .
+<http://purl.org/cerif/frapo/Grant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:homepage (SKG-IF labels: website)" .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Objects representing external identifiers for the entity." .
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/spar/pro/isRelatedToRoleInTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
+<http://purl.org/spar/scoro/project-member> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/cerif/frapo/supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cerif/frapo/supports> <http://www.w3.org/2000/01/rdf-schema#comment> "Organisations identifiers funded by the Grant." .
+<http://purl.org/spar/scoro/workpackage-leader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:title (SKG-IF labels: title)" .
+<http://purl.org/cerif/frapo/hasAcronym> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/spar/pro/isHeldBy> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* pro:RoleInTime\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Agent" .
+<http://purl.org/spar/scoro/project-manager> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:project-manager (SKG-IF labels: project manager)" .
+<http://purl.org/cerif/frapo/FundingAgency> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:FundingAgency" .
+<http://purl.org/dc/terms/temporal> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* ti:TimeInterval" .
+<http://purl.org/cerif/frapo/hasCurrency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The scheme for the external identifier." .
+<http://purl.org/cerif/frapo/hasGrantNumber> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<https://w3id.org/skg-if/ontology/grant/> <http://purl.org/dc/elements/1.1/creator> "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" .
+<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skg-if/ontology/grant/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/skg-if/ontology/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:usesIdentifierScheme (SKG-IF labels: scheme)" .
+<https://w3id.org/skg-if/ontology/grant/> <http://www.w3.org/2000/01/rdf-schema#label> "SKG-O: grant" .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cerif/frapo/hasFundingAgency> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasFundingAgency (SKG-IF labels: funding_agency)" .
+<http://purl.org/cerif/frapo/hasGrantNumber> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasGrantNumber (SKG-IF labels: grant_number)" .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/scoro/co-applicant> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:co-applicant (SKG-IF labels: co-applicant)" .
+<http://purl.org/dc/terms/abstract> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://purl.org/cerif/frapo/hasGrantNumber> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:string" .
+<http://purl.org/cerif/frapo/hasAcronym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/pro/isHeldBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#comment> "The abstract or a description of the Grant." .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The start datetime of the Grant. The string should be compliant with the ISO 8601 datetime string." .
+<http://purl.org/cerif/frapo/hasCurrencyCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Currency of the funded amount, following ISO 4217." .
+<http://purl.org/cerif/frapo/supports> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:supports (SKG-IF labels: beneficiaries)" .
+<http://purl.org/cerif/frapo/FundingAgency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://xmlns.com/foaf/0.1/homepage> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Document" .
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/scoro/co-applicant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/cerif/frapo/Grant> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:Grant (SKG-IF labels: Grant)" .
+<http://purl.org/cerif/frapo/hasGrantNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "ti:TimeInterval" .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/cerif/frapo/Grant> <http://www.w3.org/2000/01/rdf-schema#comment> "The entity Grant describes funding awarded to a Agent by a funding body. These bodies, both public and private, can be funders, foundations, governments, agencies or institutions." .
+<https://w3id.org/skg-if/ontology/grant/> <http://purl.org/dc/elements/1.1/title> "The SKG-IF Ontology: grant" .
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:IdentifierScheme" .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/pro/isHeldBy> <http://www.w3.org/2000/01/rdf-schema#label> "pro:isHeldBy (SKG-IF labels: by)" .
+<http://purl.org/spar/scoro/project-manager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/spar/scoro/workpackage-leader> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/co-applicant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+<http://purl.org/dc/terms/temporal> <http://www.w3.org/2000/01/rdf-schema#comment> "The duration of the Grant." .
+<http://purl.org/spar/pro/RoleInTime> <http://www.w3.org/2000/01/rdf-schema#label> "pro:RoleInTime" .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:abstract (SKG-IF labels: abstract)" .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Agent (SKG-IF labels: Agent)" .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/pro/RoleInTime> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* pro:isHeldBy -[1]-> foaf:Agent\n* pro:withRole -[0..N]-> scoro:ProjectRole" .
+<http://purl.org/spar/scoro/project-leader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/cerif/frapo/Grant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/cerif/frapo/FundingAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/scoro/lead-applicant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:IdentifierScheme" .
+<https://w3id.org/skg-if/ontology/grant/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/2000/01/rdf-schema#comment> "An URL poiting to the website of the funded project." .
+<http://purl.org/spar/pro/isHeldBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier of an Agent contributing to a Grant." .
+<http://purl.org/spar/pro/isHeldBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/pro/> .
+<http://purl.org/dc/terms/temporal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/pro/withRole> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* pro:RoleInTime\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* scoro:ProjectRole" .
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://prismstandard.org/namespaces/basic/2.0/> .
+<http://purl.org/cerif/frapo/hasGrantNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique code identifiying the Grant at the funder." .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/cerif/frapo/hasCurrencyCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://purl.org/dc/terms/title> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
 <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> <http://www.w3.org/2000/01/rdf-schema#label> "ti:hasIntervalStartDate (SKG-IF labels: start)" .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.essepuntato.it/2010/06/literalreification/> .
+<http://purl.org/spar/pro/isRelatedToRoleInTime> <http://www.w3.org/2000/01/rdf-schema#label> "pro:isRelatedToRoleInTime (SKG-IF labels: contributions)" .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#label> "literal:hasLiteralValue (SKG-IF labels: value)" .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Document" .
+<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:ProjectRole" .
+<http://purl.org/spar/pro/withRole> <http://www.w3.org/2000/01/rdf-schema#label> "pro:withRole (SKG-IF labels: role)" .
+<https://w3id.org/skg-if/ontology/grant/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "skg-o" .
+<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/project-leader> <http://www.w3.org/2000/01/rdf-schema#label> "scoro:project-leader (SKG-IF labels: project leader)" .
+<http://purl.org/cerif/frapo/hasFundingAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://purl.org/cerif/frapo/hasCurrency> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:float" .
+<http://purl.org/spar/scoro/project-member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/scoro/lead-applicant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Organization" .
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2000/01/rdf-schema#label> "prism:keyword (SKG-IF labels: keywords)" .
+<http://purl.org/cerif/frapo/hasCallIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasCallIdentifier (SKG-IF labels: funding_stream)" .
+<http://purl.org/cerif/frapo/hasCallIdentifier> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://purl.org/cerif/frapo/hasCurrencyCode> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:hasCurrencyCode (SKG-IF labels: currency)" .
+<http://purl.org/spar/pro/isRelatedToRoleInTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Objects, each describing an Agent, its contribution, and declared affiliations to one or more Organisations in the context of the Grant." .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* ti:hasIntervalEndDate -[0..1]-> xsd:dateTime\n* ti:hasIntervalStartDate -[1]-> xsd:dateTime" .
+<http://purl.org/spar/datacite/hasIdentifier> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:Identifier" .
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The end datetime (if any) of the Grant. The string should be compliant with the ISO 8601 datetime string." .
+<http://purl.org/cerif/frapo/hasCurrencyCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/pro/withRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://prismstandard.org/namespaces/basic/2.0/keyword> <http://www.w3.org/2000/01/rdf-schema#comment> "Keywords of a Grant." .
+<http://purl.org/dc/terms/temporal> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:temporal (SKG-IF labels: duration)" .
+<https://w3id.org/skg-if/ontology/grant/> <http://purl.org/dc/elements/1.1/date> "2025-01-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/spar/pro/isRelatedToRoleInTime> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* frapo:Grant\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* pro:RoleInTime" .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/scoro/project-manager> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .

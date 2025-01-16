@@ -1,24 +1,6 @@
 [
   {
-    "@id": "http://purl.org/dc/elements/1.1/rights",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/creator",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@id": "http://purl.org/dc/elements/1.1/title",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
@@ -36,7 +18,7 @@
     "http://purl.org/dc/elements/1.1/date": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-01-14"
+        "@value": "2025-01-16"
       }
     ],
     "http://purl.org/dc/elements/1.1/rights": [
@@ -102,6 +84,12 @@
     ]
   },
   {
+    "@id": "http://purl.org/dc/elements/1.1/rights",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
     "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
@@ -114,7 +102,19 @@
     ]
   },
   {
-    "@id": "http://purl.org/dc/elements/1.1/title",
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/description",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
