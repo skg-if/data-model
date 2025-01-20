@@ -21,7 +21,7 @@ The SKG-IF Data Model, summarised in convenient [Graffoo diagrams](https://essep
 
 The SKG-IF Data Model has been also implemented as an OWL ontology, i.e. the [SKG-IF Ontology (SKG-O)](https://w3id.org/skg-if/ontology/). It is not yet another bibliographic ontology, but rather it is just a place where existing and complementary ontological entities from several other ontologies, all employed in SKG-IF, are grouped together for the purpose of providing descriptive metadata compliant with the SKG-IF Data Model. The ontology is composed by six different ontological modules, formally imported in it, one for each type of SKG-IF entity - [SKG-O: agent](https://w3id.org/skg-if/ontology/agent/), [SKG-O: data-source](https://w3id.org/skg-if/ontology/data-source/), [SKG-O: grant](https://w3id.org/skg-if/ontology/grant/), [SKG-O: research-product](https://w3id.org/skg-if/ontology/research-product), [SKG-O: topic](https://w3id.org/skg-if/ontology/topic/), [SKG-O: venue](https://w3id.org/skg-if/ontology/venue/).
 
-The SKG-IF data created following the [Interoperability Framework](/interoperability-framework/) are aligned with the SKG-IF Ontology via the [SKG-IF JSON-LD context](/context/).
+The SKG-IF data created following the [Interoperability Framework](/interoperability-framework/) are aligned with the SKG-IF Ontology via the [SKG-IF JSON-LD context](/context/). In addition, a specific [SHACL document](https://w3id.org/skg-if/validation/shacl) has been developed for semantically validating the data provided according to the data model.
 
 ## Agent
 
