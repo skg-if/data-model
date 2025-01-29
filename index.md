@@ -6,9 +6,9 @@ nav_order: 3
 
 # Data Model
 
-The SKG-IF Data Model is the metadata model used for the data compliant with the [SKG-IF Interoperability Framwork](/interoperability-framework/).
+The SKG-IF Data Model is the metadata model used for the data compliant with the [SKG-IF Interoperability Framework](/interoperability-framework/).
 
-The SKG-IF Data Model is used to model all the main SKG-IF main entities, their attributes and the relations to other entities. All these aspects are implementeed using the 'language' of the Semantic Web, in particular by re-employing several existing ontological models that have been developed in the past to address specific modelling scenarios compatible with the aims of SKG-IF. 
+The SKG-IF Data Model is used to model all the SKG-IF main entities, their attributes and their relations to other entities. All these aspects are implemented using the 'language' of the Semantic Web, in particular by re-employing several existing ontological models developed to address specific modelling scenarios compatible with the aims of SKG-IF. 
 
 The SKG-IF Data Model, summarised in convenient [Graffoo diagrams](https://essepuntato.it/graffoo), allows one to record information about the following SKG-IF entities:
 
