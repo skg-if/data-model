@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/skg-if/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/skg-if/ontology/","name":"The SKG-IF Ontology: research-product", "headline":"Document describing the ontology https://w3id.org/skg-if/ontology/", "dateReleased":"Fri Jan 17 10:18:02 CET 2025", "version":"1.0.1", "author":[{"@type":"Person","name":"Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/skg-if/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/skg-if/ontology/","name":"The SKG-IF Ontology: research-product", "headline":"Document describing the ontology https://w3id.org/skg-if/ontology/", "dateReleased":"Sun Mar 09 14:57:05 CET 2025", "version":"1.0.2", "author":[{"@type":"Person","name":"Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -70,17 +70,17 @@ $(function(){
 
 <dl>
 <dt>This version:</dt>
-<dd><a href="https://w3id.org/skg-if/ontology/research-product/1.0.1/">https://w3id.org/skg-if/ontology/research-product/1.0.1/</a></dd>
+<dd><a href="https://w3id.org/skg-if/ontology/research-product/1.0.2/">https://w3id.org/skg-if/ontology/research-product/1.0.2/</a></dd>
 <dt>Latest version:</dt>
 <dd><a href="https://w3id.org/skg-if/ontology/">https://w3id.org/skg-if/ontology/</a></dd>
 <dt>Revision:</dt>
-<dd>1.0.1</dd>
+<dd>1.0.2</dd>
 <dt>Authors:</dt>
 <dd>Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG</dd>
 
 <dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-This%20work%20is%20distributed%20under%20a%20Creative%20Commons%20Attribution%20License%20(https://creativecommons.org/licenses/by/4.0/legalcode)-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
 </dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG. The SKG-IF Ontology: research-product. Revision: 1.0.1. Retrieved from: https://w3id.org/skg-if/ontology/research-product/1.0.1/</dd>
+<dd>Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG. The SKG-IF Ontology: research-product. Revision: 1.0.2. Retrieved from: https://w3id.org/skg-if/ontology/research-product/1.0.2/</dd>
 </dl>
 
 <hr/>
@@ -100,6 +100,9 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
+      <a href="#http://purl.org/spar/bido/BibliometricDataInTime" title="http://purl.org/spar/bido/BibliometricDataInTime">bido:BibliometricDataInTime</a>
+   </li>
+   <li>
       <a href="#http://purl.org/spar/datacite/Identifier" title="http://purl.org/spar/datacite/Identifier">datacite:Identifier</a>
    </li>
    <li>
@@ -107,10 +110,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://www.w3.org/ns/dcat#DataService" title="http://www.w3.org/ns/dcat#DataService">dcat:DataService (SKG-IF labels: Data source)</a>
-   </li>
-   <li>
-      <a href="#http://purl.org/spar/fabio/BibliometricDataInTime"
-         title="http://purl.org/spar/fabio/BibliometricDataInTime">fabio:BibliometricDataInTime</a>
    </li>
    <li>
       <a href="#http://purl.org/spar/fabio/Dataset" title="http://purl.org/spar/fabio/Dataset">fabio:Dataset (SKG-IF labels: research data)</a>
@@ -207,7 +206,7 @@ This ontology has the following classes and properties.</span>
       <a href="#http://purl.org/vocab/frbr/core#embodiment" title="http://purl.org/vocab/frbr/core#embodiment">frbr:embodiment (SKG-IF labels: pages)</a>
    </li>
    <li>
-      <a href="#http://purl.org/vocab/frbr/core#partOf" title="http://purl.org/vocab/frbr/core#partOf">frbr:partOf (SKG-IF labels: in, is_part_of)</a>
+      <a href="#http://purl.org/vocab/frbr/core#partOf" title="http://purl.org/vocab/frbr/core#partOf">frbr:partOf (SKG-IF labels: is_part_of, in)</a>
    </li>
    <li>
       <a href="#http://purl.org/vocab/frbr/core#realization" title="http://purl.org/vocab/frbr/core#realization">frbr:realization (SKG-IF labels: manifestations)</a>
@@ -456,10 +455,10 @@ This section provides details for each class and property defined by SKG-O: rese
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
+  <li><a href="#http://purl.org/spar/bido/BibliometricDataInTime" title="http://purl.org/spar/bido/BibliometricDataInTime">bido:BibliometricDataInTime</a></li>
   <li><a href="#http://purl.org/spar/datacite/Identifier" title="http://purl.org/spar/datacite/Identifier">datacite:Identifier</a></li>
   <li><a href="#http://purl.org/spar/datacite/IdentifierScheme" title="http://purl.org/spar/datacite/IdentifierScheme">datacite:IdentifierScheme</a></li>
   <li><a href="#http://www.w3.org/ns/dcat#DataService" title="http://www.w3.org/ns/dcat#DataService">dcat:DataService (SKG-IF labels: Data source)</a></li>
-  <li><a href="#http://purl.org/spar/fabio/BibliometricDataInTime" title="http://purl.org/spar/fabio/BibliometricDataInTime">fabio:BibliometricDataInTime</a></li>
   <li><a href="#http://purl.org/spar/fabio/Dataset" title="http://purl.org/spar/fabio/Dataset">fabio:Dataset (SKG-IF labels: research data)</a></li>
   <li><a href="#http://purl.org/spar/fabio/Expression" title="http://purl.org/spar/fabio/Expression">fabio:Expression</a></li>
   <li><a href="#http://purl.org/spar/fabio/Manifestation" title="http://purl.org/spar/fabio/Manifestation">fabio:Manifestation</a></li>
@@ -480,6 +479,21 @@ This section provides details for each class and property defined by SKG-O: rese
   <li><a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></li>
   <li><a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme" title="http://www.w3.org/2004/02/skos/core#ConceptScheme">skos:ConceptScheme</a></li>
  </ul>
+ <div class="entity" id="http://purl.org/spar/bido/BibliometricDataInTime">
+  <h3>bido:BibliometricDataInTime<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/spar/bido/BibliometricDataInTime</p>
+  <div class="info">
+   <span class="markdown">The properties that can be used with this class are: * bido:withBibliometricData -[1]-&gt; fabio:SubjectTerm * prov:wasGeneratedBy -[0..N]-&gt; prov:Activity</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://purl.org/spar/bido/">http://purl.org/spar/bido/</a>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="http://purl.org/spar/datacite/Identifier">
   <h3>datacite:Identifier<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/datacite/Identifier</p>
@@ -516,21 +530,6 @@ This section provides details for each class and property defined by SKG-O: rese
    </dt>
    <dd>
     <a href="http://www.w3.org/ns/dcat#">http://www.w3.org/ns/dcat#</a>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.org/spar/fabio/BibliometricDataInTime">
-  <h3>fabio:BibliometricDataInTime<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/spar/fabio/BibliometricDataInTime</p>
-  <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * bido:withBibliometricData -[1]-&gt; fabio:SubjectTerm * prov:wasGeneratedBy -[0..N]-&gt; prov:Activity</span>
-  </div>
-  <dl class="definedBy">
-   <dt>
-    Is defined by
-   </dt>
-   <dd>
-    <a href="http://purl.org/spar/fabio/">http://purl.org/spar/fabio/</a>
    </dd>
   </dl>
  </div>
@@ -619,7 +618,7 @@ This section provides details for each class and property defined by SKG-O: rese
    <span class="markdown">Research products may be of four types: research literature, research data, research software, or other.</span>
   </div>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * bido:holdsBibliometricDataInTime -[0..N]-&gt; fabio:BibliometricDataInTime * cito:cites -[0..N]-&gt; fabio:Work * cito:isDocumentedBy -[0..N]-&gt; fabio:Work * datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier * dcterms:abstract -[0..N]-&gt; rdfs:Literal * dcterms:relation -[0..N]-&gt; foaf:Organization * dcterms:title -[0..N]-&gt; rdfs:Literal * frapo:isFundedBy -[0..N]-&gt; frapo:Grant * frbr:partOf -[0..N]-&gt; fabio:Work * frbr:realization -[0..N]-&gt; fabio:Expression * frbr:revisionOf -[0..N]-&gt; fabio:Work * frbr:supplement -[0..N]-&gt; fabio:Work * pro:isRelatedToRoleInTime -[0..N]-&gt; pro:RoleInTime * pro:isRelatedToRoleInTime -[0..N]-&gt; scoro:ContributionSituation</span>
+   <span class="markdown">The properties that can be used with this class are: * bido:holdsBibliometricDataInTime -[0..N]-&gt; bido:BibliometricDataInTime * cito:cites -[0..N]-&gt; fabio:Work * cito:isDocumentedBy -[0..N]-&gt; fabio:Work * datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier * dcterms:abstract -[0..N]-&gt; rdfs:Literal * dcterms:relation -[0..N]-&gt; foaf:Organization * dcterms:title -[0..N]-&gt; rdfs:Literal * frapo:isFundedBy -[0..N]-&gt; frapo:Grant * frbr:partOf -[0..N]-&gt; fabio:Work * frbr:realization -[0..N]-&gt; fabio:Expression * frbr:revisionOf -[0..N]-&gt; fabio:Work * frbr:supplement -[0..N]-&gt; fabio:Work * pro:isRelatedToRoleInTime -[0..N]-&gt; pro:RoleInTime * pro:isRelatedToRoleInTime -[0..N]-&gt; scoro:ContributionSituation</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -802,7 +801,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <li><a href="#http://purl.org/dc/terms/relation" title="http://purl.org/dc/terms/relation">dcterms:relation (SKG-IF labels: relevant_organisations)</a></li>
   <li><a href="#http://purl.org/cerif/frapo/isFundedBy" title="http://purl.org/cerif/frapo/isFundedBy">frapo:isFundedBy (SKG-IF labels: funding)</a></li>
   <li><a href="#http://purl.org/vocab/frbr/core#embodiment" title="http://purl.org/vocab/frbr/core#embodiment">frbr:embodiment (SKG-IF labels: pages)</a></li>
-  <li><a href="#http://purl.org/vocab/frbr/core#partOf" title="http://purl.org/vocab/frbr/core#partOf">frbr:partOf (SKG-IF labels: in, is_part_of)</a></li>
+  <li><a href="#http://purl.org/vocab/frbr/core#partOf" title="http://purl.org/vocab/frbr/core#partOf">frbr:partOf (SKG-IF labels: is_part_of, in)</a></li>
   <li><a href="#http://purl.org/vocab/frbr/core#realization" title="http://purl.org/vocab/frbr/core#realization">frbr:realization (SKG-IF labels: manifestations)</a></li>
   <li><a href="#http://purl.org/vocab/frbr/core#revisionOf" title="http://purl.org/vocab/frbr/core#revisionOf">frbr:revisionOf (SKG-IF labels: is_new_version_of)</a></li>
   <li><a href="#http://purl.org/vocab/frbr/core#supplement" title="http://purl.org/vocab/frbr/core#supplement">frbr:supplement (SKG-IF labels: is_supplemented_by)</a></li>
@@ -824,7 +823,7 @@ This section provides details for each class and property defined by SKG-O: rese
    <span class="markdown">Objects referring to Topic covered by the Research product.</span>
   </div>
   <div class="info">
-   <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Work In SKG-IF, it is used to link to entities belonging to the following classes (range): * fabio:BibliometricDataInTime</span>
+   <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Work In SKG-IF, it is used to link to entities belonging to the following classes (range): * bido:BibliometricDataInTime</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -842,7 +841,7 @@ This section provides details for each class and property defined by SKG-O: rese
    <span class="markdown">The identifier of a Topic relevant for the Research product.</span>
   </div>
   <div class="info">
-   <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:BibliometricDataInTime In SKG-IF, it is used to link to entities belonging to the following classes (range): * fabio:SubjectTerm</span>
+   <span class="markdown">In SKG-IF, it is used in the following classes (domain): * bido:BibliometricDataInTime In SKG-IF, it is used to link to entities belonging to the following classes (range): * fabio:SubjectTerm</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -998,10 +997,10 @@ This section provides details for each class and property defined by SKG-O: rese
   </dl>
  </div>
  <div class="entity" id="http://purl.org/vocab/frbr/core#partOf">
-  <h3>frbr:partOf (SKG-IF labels: in, is_part_of)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>frbr:partOf (SKG-IF labels: is_part_of, in)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/vocab/frbr/core#partOf</p>
   <div class="comment">
-   <span class="markdown">A Venue identifier for the manifestation.</span>
+   <span class="markdown">Research products identifiers that contain the current Research product.</span>
   </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression * fabio:Work In SKG-IF, it is used to link to entities belonging to the following classes (range): * fabio:Expression * fabio:Work</span>
@@ -1166,7 +1165,7 @@ This section provides details for each class and property defined by SKG-O: rese
    <span class="markdown">Provenance information tracking the origin of the relation between a Topic and a Research product.</span>
   </div>
   <div class="info">
-   <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:BibliometricDataInTime In SKG-IF, it is used to link to entities belonging to the following classes (range): * prov:Activity</span>
+   <span class="markdown">In SKG-IF, it is used in the following classes (domain): * bido:BibliometricDataInTime In SKG-IF, it is used to link to entities belonging to the following classes (range): * prov:Activity</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -1301,7 +1300,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <h3>dcterms:abstract (SKG-IF labels: abstracts)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/abstract</p>
   <div class="comment">
-   <span class="markdown">The abstracts of a Research product (multiple for multilinguism).</span>
+   <span class="markdown">The abstracts of a Research product (multiple for multilingualism).</span>
   </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Work In SKG-IF, it is used to link to entities belonging to the following data types (range): * rdfs:Literal</span>
@@ -1427,7 +1426,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <h3>dcterms:title (SKG-IF labels: titles)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
   <div class="comment">
-   <span class="markdown">The titles of a Research product (multiple for multilinguism).</span>
+   <span class="markdown">The titles of a Research product (multiple for multilingualism).</span>
   </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Work In SKG-IF, it is used to link to entities belonging to the following data types (range): * rdfs:Literal</span>
@@ -1787,7 +1786,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <h3>skos:prefLabel (SKG-IF labels: labels)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#prefLabel</p>
   <div class="comment">
-   <span class="markdown">the labels describing the type (multiple for multilinguism).</span>
+   <span class="markdown">the labels describing the type (multiple for multilingualism).</span>
   </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * skos:Concept In SKG-IF, it is used to link to entities belonging to the following data types (range): * rdfs:Literal</span>

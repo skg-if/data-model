@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/skg-if/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/skg-if/ontology/","name":"The SKG-IF Ontology: data-source", "headline":"Document describing the ontology https://w3id.org/skg-if/ontology/", "dateReleased":"Fri Jan 17 10:14:53 CET 2025", "version":"1.0.1", "author":[{"@type":"Person","name":"Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/skg-if/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/skg-if/ontology/","name":"The SKG-IF Ontology: data-source", "headline":"Document describing the ontology https://w3id.org/skg-if/ontology/", "dateReleased":"Sun Mar 09 14:54:50 CET 2025", "version":"1.0.2", "author":[{"@type":"Person","name":"Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -70,17 +70,17 @@ $(function(){
 
 <dl>
 <dt>This version:</dt>
-<dd><a href="https://w3id.org/skg-if/ontology/data-source/1.0.1/">https://w3id.org/skg-if/ontology/data-source/1.0.1/</a></dd>
+<dd><a href="https://w3id.org/skg-if/ontology/data-source/1.0.2/">https://w3id.org/skg-if/ontology/data-source/1.0.2/</a></dd>
 <dt>Latest version:</dt>
 <dd><a href="https://w3id.org/skg-if/ontology/">https://w3id.org/skg-if/ontology/</a></dd>
 <dt>Revision:</dt>
-<dd>1.0.1</dd>
+<dd>1.0.2</dd>
 <dt>Authors:</dt>
 <dd>Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG</dd>
 
 <dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-This%20work%20is%20distributed%20under%20a%20Creative%20Commons%20Attribution%20License%20(https://creativecommons.org/licenses/by/4.0/legalcode)-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
 </dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG. The SKG-IF Ontology: data-source. Revision: 1.0.1. Retrieved from: https://w3id.org/skg-if/ontology/data-source/1.0.1/</dd>
+<dd>Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG. The SKG-IF Ontology: data-source. Revision: 1.0.2. Retrieved from: https://w3id.org/skg-if/ontology/data-source/1.0.2/</dd>
 </dl>
 
 <hr/>
@@ -174,7 +174,7 @@ This ontology has the following classes and properties.</span>
       <a href="#http://purl.org/dc/terms/conformsTo" title="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo (SKG-IF labels: persistent_identity_systems)</a>
    </li>
    <li>
-      <a href="#http://purl.org/dc/terms/coverage" title="http://purl.org/dc/terms/coverage">dcterms:coverage (SKG-IF labels: research_product_type, for)</a>
+      <a href="#http://purl.org/dc/terms/coverage" title="http://purl.org/dc/terms/coverage">dcterms:coverage (SKG-IF labels: for, research_product_type)</a>
    </li>
    <li>
       <a href="#http://purl.org/dc/terms/requires" title="http://purl.org/dc/terms/requires">dcterms:requires (SKG-IF labels: pid_schemes)</a>
@@ -565,7 +565,7 @@ This section provides details for each class and property defined by SKG-O: data
   <li><a href="#http://purl.org/spar/datacite/usesIdentifierScheme" title="http://purl.org/spar/datacite/usesIdentifierScheme">datacite:usesIdentifierScheme (SKG-IF labels: scheme)</a></li>
   <li><a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">dcat:theme (SKG-IF labels: data_source_classification)</a></li>
   <li><a href="#http://purl.org/dc/terms/conformsTo" title="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo (SKG-IF labels: persistent_identity_systems)</a></li>
-  <li><a href="#http://purl.org/dc/terms/coverage" title="http://purl.org/dc/terms/coverage">dcterms:coverage (SKG-IF labels: research_product_type, for)</a></li>
+  <li><a href="#http://purl.org/dc/terms/coverage" title="http://purl.org/dc/terms/coverage">dcterms:coverage (SKG-IF labels: for, research_product_type)</a></li>
   <li><a href="#http://purl.org/dc/terms/requires" title="http://purl.org/dc/terms/requires">dcterms:requires (SKG-IF labels: pid_schemes)</a></li>
   <li><a href="#http://purl.org/dc/terms/subject" title="http://purl.org/dc/terms/subject">dcterms:subject (SKG-IF labels: disciplines)</a></li>
   <li><a href="#http://xmlns.com/foaf/0.1/page" title="http://xmlns.com/foaf/0.1/page">foaf:page (SKG-IF labels: documented_at)</a></li>
@@ -578,7 +578,7 @@ This section provides details for each class and property defined by SKG-O: data
   <h3>datacite:hasIdentifier (SKG-IF labels: identifiers)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/datacite/hasIdentifier</p>
   <div class="comment">
-   <span class="markdown">Objects representing external identifiers for the entity.</span>
+   <span class="markdown">Objects representing external identifiers for the entity. Each object is structured as follows.</span>
   </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * dcat:DataService In SKG-IF, it is used to link to entities belonging to the following classes (range): * datacite:Identifier</span>
@@ -614,7 +614,7 @@ This section provides details for each class and property defined by SKG-O: data
   <h3>dcat:theme (SKG-IF labels: data_source_classification)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#theme</p>
   <div class="comment">
-   <span class="markdown">The specific type of a Data source, based on the vocabulary Data source Classification.</span>
+   <span class="markdown">The specific type of a Data source, based on the vocabulary Data source Classification. It can be chosen among the following values:</span>
   </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * dcat:DataService In SKG-IF, it is used to link to entities belonging to the following classes (range): * owl:Thing</span>
@@ -647,10 +647,10 @@ This section provides details for each class and property defined by SKG-O: data
   </dl>
  </div>
  <div class="entity" id="http://purl.org/dc/terms/coverage">
-  <h3>dcterms:coverage (SKG-IF labels: research_product_type, for)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>dcterms:coverage (SKG-IF labels: for, research_product_type)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/coverage</p>
   <div class="comment">
-   <span class="markdown">The types of OpenAIRE entities managed by a Data source, based on the EOSC vocabulary Research Product Type.</span>
+   <span class="markdown">The Product type to which the persistent identifier is referring to. To choose from</span>
   </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * dcat:DataService * dcterms:Standard In SKG-IF, it is used to link to entities belonging to the following classes (range): * owl:Thing</span>
@@ -668,7 +668,7 @@ This section provides details for each class and property defined by SKG-O: data
   <h3>dcterms:requires (SKG-IF labels: pid_schemes)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/requires</p>
   <div class="comment">
-   <span class="markdown">Persistent identifier schemes used to refer to ProductTypes.</span>
+   <span class="markdown">Persistent identifier schemes used to refer to ProductTypes. Each elements must be drawn by the EOSC vocabulary Persistent Identity Scheme, i.e.,</span>
   </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * dcterms:Standard In SKG-IF, it is used to link to entities belonging to the following classes (range): * datacite:IdentifierScheme</span>
@@ -704,7 +704,7 @@ This section provides details for each class and property defined by SKG-O: data
   <h3>foaf:page (SKG-IF labels: documented_at)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/page</p>
   <div class="comment">
-   <span class="markdown">the URL of the document that describes the policy.</span>
+   <span class="markdown">The URL of the document that describes the policy.</span>
   </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * odrl:Policy In SKG-IF, it is used to link to entities belonging to the following classes (range): * foaf:Document</span>
@@ -722,7 +722,7 @@ This section provides details for each class and property defined by SKG-O: data
   <h3>odrl:action (SKG-IF labels: about)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/odrl/2/action</p>
   <div class="comment">
-   <span class="markdown">the type of policy to consider.</span>
+   <span class="markdown">The type of policy to consider.</span>
   </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * odrl:Policy In SKG-IF, it is used to link to entities belonging to the following classes (range): * odrl:Action</span>
@@ -758,7 +758,7 @@ This section provides details for each class and property defined by SKG-O: data
   <h3>odrl:target (SKG-IF labels: target)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/odrl/2/target</p>
   <div class="comment">
-   <span class="markdown">the types of resources to which the policy applies to. Each item in the list should be compliant with the following terms:</span>
+   <span class="markdown">The types of resources to which the policy applies to. Each item in the list should be compliant with the following terms:</span>
   </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * odrl:Policy In SKG-IF, it is used to link to entities belonging to the following classes (range): * owl:Thing</span>
@@ -802,7 +802,7 @@ This section provides details for each class and property defined by SKG-O: data
   <h3>dcterms:description (SKG-IF labels: description)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
   <div class="comment">
-   <span class="markdown">describe the type of policy, if necessary.</span>
+   <span class="markdown">Describe the type of policy, if necessary.</span>
   </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * odrl:Policy In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:string</span>
