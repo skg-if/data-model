@@ -1,10 +1,10 @@
 ---
-title: Data Model
+title: Data model
 layout: default
 nav_order: 3
 ---
 
-# Data Model
+# Data model
 
 The SKG-IF Data Model is the metadata model used for the data compliant with the [SKG-IF Interoperability Framework](/interoperability-framework/).
 
