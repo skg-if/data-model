@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>foaf:Organization</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://prismstandard.org/namespaces/basic/2.0/keyword">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>prism:keyword (SKG-IF labels: keywords)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://prismstandard.org/namespaces/basic/2.0/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>ti:hasIntervalEndDate (SKG-IF labels: end)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* ti:TimeInterval
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* xsd:dateTime</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/scoro/lead-applicant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>scoro:lead-applicant (SKG-IF labels: lead applicant)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/skg-if/ontology/grant/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>SKG-O: grant</rdfs:label>
+    <dc:title>The SKG-IF Ontology: grant</dc:title>
+    <dc:creator>Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG</dc:creator>
+    <dc:rights>This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)</dc:rights>
+    <rdfs:comment>SKG-O, the SKG-IF Ontology, is not yet another bibliographic ontology. Rather it is just a place where existing and complementary ontological entities from several other ontologies, all employed in the Scientific Knowledge Graph Interoperability Framework (SKG-IF), are grouped together for the purpose of providing descriptive metadata compliant with the SKG-IF Data Model.</rdfs:comment>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-22</dc:date>
+    <vann:preferredNamespacePrefix>skg-o</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/skg-if/ontology/</vann:preferredNamespaceUri>
+    <owl:versionIRI rdf:resource="https://w3id.org/skg-if/ontology/grant/1.1.0/"/>
+    <owl:versionInfo>1.1.0</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/cerif/frapo/Grant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>frapo:Grant (SKG-IF labels: Grant)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <dc:description>The properties that can be used with this class are:
+
+* datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier
+* dcterms:abstract -[0..N]-&gt; rdfs:Literal
+* dcterms:temporal -[0..N]-&gt; ti:TimeInterval
+* dcterms:title -[0..N]-&gt; rdfs:Literal
+* foaf:homepage -[0..N]-&gt; foaf:Document
+* frapo:hasAcronym -[0..N]-&gt; rdfs:Literal
+* frapo:hasCallIdentifier -[0..N]-&gt; rdfs:Literal
+* frapo:hasCurrency -[0..N]-&gt; xsd:float
+* frapo:hasCurrencyCode -[0..N]-&gt; xsd:string
+* frapo:hasFundingAgency -[0..N]-&gt; frapo:FundingAgency
+* frapo:hasGrantNumber -[0..N]-&gt; xsd:string
+* frapo:supports -[0..N]-&gt; foaf:Organization
+* prism:keyword -[0..N]-&gt; rdfs:Literal
+* pro:isRelatedToRoleInTime -[0..N]-&gt; pro:RoleInTime</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/scoro/ProjectRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>scoro:ProjectRole</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/scoro/project-member">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>scoro:project-member (SKG-IF labels: project member)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/cerif/frapo/FundingAgency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>frapo:FundingAgency</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/hasIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>datacite:hasIdentifier (SKG-IF labels: identifiers)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* datacite:Identifier</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/abstract">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>dcterms:abstract (SKG-IF labels: abstract)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pro/isRelatedToRoleInTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>pro:isRelatedToRoleInTime (SKG-IF labels: contributions)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* pro:RoleInTime</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/homepage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>foaf:homepage (SKG-IF labels: website)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* foaf:Document</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ti:TimeInterval</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"/>
+    <dc:description>The properties that can be used with this class are:
+
+* ti:hasIntervalEndDate -[0..N]-&gt; xsd:dateTime
+* ti:hasIntervalStartDate -[0..N]-&gt; xsd:dateTime</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/Identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>datacite:Identifier</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <dc:description>The properties that can be used with this class are:
+
+* datacite:usesIdentifierScheme -[0..N]-&gt; datacite:IdentifierScheme
+* literal:hasLiteralValue -[0..N]-&gt; rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/cerif/frapo/hasCurrency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>frapo:hasCurrency (SKG-IF labels: funded_amount)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* xsd:float</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/cerif/frapo/hasCurrencyCode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>frapo:hasCurrencyCode (SKG-IF labels: currency)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* xsd:string</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/cerif/frapo/hasGrantNumber">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>frapo:hasGrantNumber (SKG-IF labels: grant_number)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* xsd:string</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pro/withRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>pro:withRole (SKG-IF labels: role)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* pro:RoleInTime
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* scoro:ProjectRole</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/cerif/frapo/hasAcronym">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>frapo:hasAcronym (SKG-IF labels: acronym)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>ti:hasIntervalStartDate (SKG-IF labels: start)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* ti:TimeInterval
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* xsd:dateTime</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/IdentifierScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>datacite:IdentifierScheme</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pro/isHeldBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>pro:isHeldBy (SKG-IF labels: by)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* pro:RoleInTime
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* foaf:Agent</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>dcterms:title (SKG-IF labels: title)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/scoro/project-leader">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>scoro:project-leader (SKG-IF labels: project leader)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/cerif/frapo/hasCallIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>frapo:hasCallIdentifier (SKG-IF labels: funding_stream)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/scoro/co-applicant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>scoro:co-applicant (SKG-IF labels: co-applicant)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/cerif/frapo/hasFundingAgency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>frapo:hasFundingAgency (SKG-IF labels: funding_agency)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* frapo:FundingAgency</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/cerif/frapo/supports">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>frapo:supports (SKG-IF labels: beneficiaries)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* foaf:Organization</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/scoro/project-manager">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>scoro:project-manager (SKG-IF labels: project manager)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>literal:hasLiteralValue (SKG-IF labels: value)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2010/06/literalreification/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* datacite:Identifier
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>foaf:Document</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/temporal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>dcterms:temporal (SKG-IF labels: duration)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* frapo:Grant
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* ti:TimeInterval</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/usesIdentifierScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>datacite:usesIdentifierScheme (SKG-IF labels: scheme)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* datacite:Identifier
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* datacite:IdentifierScheme</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pro/RoleInTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>pro:RoleInTime</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro/"/>
+    <dc:description>The properties that can be used with this class are:
+
+* pro:isHeldBy -[0..N]-&gt; foaf:Agent
+* pro:withRole -[0..N]-&gt; scoro:ProjectRole</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>foaf:Agent (SKG-IF labels: Agent)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/scoro/workpackage-leader">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>scoro:workpackage-leader (SKG-IF labels: workpackage leader)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>

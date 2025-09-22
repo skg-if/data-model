@@ -1,0 +1,48 @@
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:IdentifierScheme" .
+<http://purl.org/spar/datacite/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/skg-if/ontology/topic/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/skg-if/ontology/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/fabio/SubjectTerm> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* datacite:hasIdentifier -[0..N]-> datacite:Identifier\n* skos:prefLabel -[0..N]-> rdfs:Literal" .
+<https://w3id.org/skg-if/ontology/topic/> <http://www.w3.org/2000/01/rdf-schema#label> "SKG-O: topic" .
+<http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* fabio:SubjectTerm\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:Identifier" .
+<https://w3id.org/skg-if/ontology/topic/> <http://purl.org/dc/elements/1.1/creator> "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" .
+<http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#label> "literal:hasLiteralValue (SKG-IF labels: value)" .
+<http://purl.org/spar/fabio/SubjectTerm> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:SubjectTerm (SKG-IF labels: topic)" .
+<https://w3id.org/skg-if/ontology/topic/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/skg-if/ontology/topic/1.1.0/> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/skg-if/ontology/topic/> <http://www.w3.org/2000/01/rdf-schema#comment> "SKG-O, the SKG-IF Ontology, is not yet another bibliographic ontology. Rather it is just a place where existing and complementary ontological entities from several other ontologies, all employed in the Scientific Knowledge Graph Interoperability Framework (SKG-IF), are grouped together for the purpose of providing descriptive metadata compliant with the SKG-IF Data Model." .
+<http://purl.org/spar/datacite/url> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/datacite/Identifier> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* datacite:usesIdentifierScheme -[0..N]-> datacite:IdentifierScheme\n* literal:hasLiteralValue -[0..N]-> rdfs:Literal" .
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:hasIdentifier (SKG-IF labels: identifiers)" .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:Identifier" .
+<https://w3id.org/skg-if/ontology/topic/> <http://purl.org/dc/elements/1.1/date> "2025-09-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/2000/01/rdf-schema#label> "skos:prefLabel (SKG-IF labels: labels)" .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* fabio:SubjectTerm\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<https://w3id.org/skg-if/ontology/topic/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/skg-if/ontology/topic/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "skg-o" .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/skg-if/ontology/topic/> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.essepuntato.it/2010/06/literalreification/> .
+<http://purl.org/spar/datacite/url> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:url (SKG-IF labels: url)" .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:IdentifierScheme" .
+<https://w3id.org/skg-if/ontology/topic/> <http://purl.org/dc/elements/1.1/title> "The SKG-IF Ontology: topic" .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:usesIdentifierScheme (SKG-IF labels: scheme)" .
+<https://w3id.org/skg-if/ontology/topic/> <http://www.w3.org/2002/07/owl#versionInfo> "1.1.0" .

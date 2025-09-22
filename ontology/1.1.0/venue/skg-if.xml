@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/skg-if/ontology/venue/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>SKG-O: venue</rdfs:label>
+    <dc:title>The SKG-IF Ontology: venue</dc:title>
+    <dc:creator>Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG</dc:creator>
+    <dc:rights>This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)</dc:rights>
+    <rdfs:comment>SKG-O, the SKG-IF Ontology, is not yet another bibliographic ontology. Rather it is just a place where existing and complementary ontological entities from several other ontologies, all employed in the Scientific Knowledge Graph Interoperability Framework (SKG-IF), are grouped together for the purpose of providing descriptive metadata compliant with the SKG-IF Data Model.</rdfs:comment>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-22</dc:date>
+    <vann:preferredNamespacePrefix>skg-o</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/skg-if/ontology/</vann:preferredNamespaceUri>
+    <owl:versionIRI rdf:resource="https://w3id.org/skg-if/ontology/venue/1.1.0/"/>
+    <owl:versionInfo>1.1.0</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/eissn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>datacite:eissn (SKG-IF labels: eissn)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>dcterms:created (SKG-IF labels: creation_date)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* fabio:ExpressionCollection
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* xsd:dateTime</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pso/holdsStatusInTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>pso:holdsStatusInTime (SKG-IF labels: access_rights)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* fabio:ExpressionCollection
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* pso:StatusInTime</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Repository">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>fabio:Repository (SKG-IF labels: repository)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/handle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>datacite:handle (SKG-IF labels: handle)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/ExpressionCollection">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>fabio:ExpressionCollection (SKG-IF labels: venue)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <dc:description>The properties that can be used with this class are:
+
+* datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier
+* dcterms:created -[0..N]-&gt; xsd:dateTime
+* dcterms:title -[0..N]-&gt; rdfs:Literal
+* frapo:hasAcronym -[0..N]-&gt; rdfs:Literal
+* prism:seriesTitle -[0..N]-&gt; rdfs:Literal
+* pro:isDocumentContextFor -[0..N]-&gt; pro:RoleInTime
+* pso:holdsStatusInTime -[0..N]-&gt; pso:StatusInTime</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/opendoar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>datacite:opendoar (SKG-IF labels: opendoar)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pro/Role">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>pro:Role</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Journal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>fabio:Journal (SKG-IF labels: journal)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://prismstandard.org/namespaces/basic/2.0/seriesTitle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>prism:seriesTitle (SKG-IF labels: series)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://prismstandard.org/namespaces/basic/2.0/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* fabio:ExpressionCollection
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/Book">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>fabio:Book (SKG-IF labels: book)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/hasIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>datacite:hasIdentifier (SKG-IF labels: identifiers)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* fabio:ExpressionCollection
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* datacite:Identifier</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/lissn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>datacite:lissn (SKG-IF labels: lissn)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pro/isDocumentContextFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>pro:isDocumentContextFor (SKG-IF labels: contributions)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* fabio:ExpressionCollection
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* pro:RoleInTime</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pso/StatusInTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>pso:StatusInTime</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso/"/>
+    <dc:description>The properties that can be used with this class are:
+
+* dcterms:description -[0..N]-&gt; xsd:string
+* pso:withStatus -[0..N]-&gt; pso:PublicationStatus</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pro/publisher">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>pro:publisher (SKG-IF labels: publisher)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/Identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>datacite:Identifier</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <dc:description>The properties that can be used with this class are:
+
+* datacite:usesIdentifierScheme -[0..N]-&gt; datacite:IdentifierScheme
+* literal:hasLiteralValue -[0..N]-&gt; rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pso/closed-access">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>pso:closed-access (SKG-IF labels: closed)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/cerif/frapo/hasAcronym">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>frapo:hasAcronym (SKG-IF labels: acronym)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* fabio:ExpressionCollection
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/issn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>datacite:issn (SKG-IF labels: issn)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/IdentifierScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>datacite:IdentifierScheme</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/isbn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>datacite:isbn (SKG-IF labels: isbn)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>dcterms:title (SKG-IF labels: title)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* fabio:ExpressionCollection
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pro/RoleInTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>pro:RoleInTime</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro/"/>
+    <dc:description>The properties that can be used with this class are:
+
+* pro:withRole -[0..N]-&gt; pro:Role</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pso/PublicationStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>pso:PublicationStatus</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>dcterms:description (SKG-IF labels: description)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* pso:StatusInTime
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* xsd:string</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pro/withRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>pro:withRole (SKG-IF labels: role)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* pro:RoleInTime
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* pro:Role</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pso/withStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>pso:withStatus (SKG-IF labels: status)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* pso:StatusInTime
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* pso:PublicationStatus</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/re3data">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>datacite:re3data</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>literal:hasLiteralValue (SKG-IF labels: value)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://www.essepuntato.it/2010/06/literalreification/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* datacite:Identifier
+
+In SKG-IF, it is used to link to entities belonging to the following data types (range):
+* rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/usesIdentifierScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>datacite:usesIdentifierScheme (SKG-IF labels: scheme)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <dc:description>In SKG-IF, it is used in the following classes (domain):
+* datacite:Identifier
+
+In SKG-IF, it is used to link to entities belonging to the following classes (range):
+* datacite:IdentifierScheme</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/ConferenceProceedings">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>fabio:ConferenceProceedings (SKG-IF labels: conference)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/fairsharing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>datacite:fairsharing (SKG-IF labels: fairsharing)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pro/editor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>pro:editor (SKG-IF labels: editor)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pro/author">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>pro:author (SKG-IF labels: author)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pro/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pso/open-access">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>pso:open-access (SKG-IF labels: open)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/pso/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+</rdf:RDF>

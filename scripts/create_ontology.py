@@ -57,7 +57,7 @@ prefixes = {
 
 
 def normalise(s):
-    s = sub("\s+", " ", s).strip()
+    s = sub(r"\s+", " ", s).strip()
     return s
 
 def clean_term(s):
@@ -102,7 +102,7 @@ def gather_entities_and_labels(soup, consider_edges, d_support, file_name):
             d_support["domain_range"][element_id]["range"] = element_target
 
         element_label = normalise("".join(element.find(entity_label, recursive=True).strings))
-        element_label_sequence = findall("(\w+:[\w-]+)( \(([ \w-]+)\))?", element_label)
+        element_label_sequence = findall(r"(\w+:[\w-]+)( \(([ \w-]+)\))?", element_label)
         for entity, _, label in element_label_sequence:
             terms.add(entity)
             
@@ -422,14 +422,14 @@ if __name__ == "__main__":
 
                 log.info("Extracting the entity definitions from the document '%s'." % file_name_d)
                 associate_definitions([
-                    ("\n# (.+)[\\n\\s]+(.+)", None),
-                    ("\n### (.+)[\\n\\s]+(.+)", "^[^:]+: (.+)"),
-                    ("\n\s*- `(.+)` \*[^\*]+\* [^:]+: (.+)", "^[^:]+: (.+)"),
-                    ("\n\s*- `(.+)`: (.+)", "^[^:]+: (.+)")
+                    (r"\n# (.+)[\\n\\s]+(.+)", None),
+                    (r"\n### (.+)[\\n\\s]+(.+)", r"^[^:]+: (.+)"),
+                    (r"\n\s*- `(.+)` \*[^\*]+\* [^:]+: (.+)", r"^[^:]+: (.+)"),
+                    (r"\n\s*- `(.+)`: (.+)", r"^[^:]+: (.+)")
                 ], file_string, d)
 
                 log.info("Extracting the arity of all the OWL object and data properties as defined in the document '%s'." % file_name_d)
-                arity_re = "(\s*- `([^`]+)` |### `([^`]+)`\s*\n+)\*([^\*]+)\* \((mandatory|recommended|optional)\)"
+                arity_re = r"(\s*- `([^`]+)` |### `([^`]+)`\s*\n+)\*([^\*]+)\* \((mandatory|recommended|optional)\)"
                 arity_def = findall(arity_re, file_string)
                 for _, e_name_v1, e_name_v2, p_type, arity in arity_def:
                     entity = e_name_v1 if e_name_v1 != "" else e_name_v2
