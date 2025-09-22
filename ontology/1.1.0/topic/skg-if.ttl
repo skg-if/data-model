@@ -39,10 +39,6 @@ In SKG-IF, it is used to link to entities belonging to the following classes (ra
 * datacite:Identifier""" ;
     rdfs:isDefinedBy datacite: .
 
-datacite:url a owl:NamedIndividual ;
-    rdfs:label "datacite:url (SKG-IF labels: url)" ;
-    rdfs:isDefinedBy datacite: .
-
 datacite:usesIdentifierScheme a owl:ObjectProperty ;
     rdfs:label "datacite:usesIdentifierScheme (SKG-IF labels: scheme)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):

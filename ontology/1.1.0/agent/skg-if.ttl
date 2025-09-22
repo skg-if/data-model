@@ -95,10 +95,6 @@ In SKG-IF, it is used to link to entities belonging to the following classes (ra
 * datacite:Identifier""" ;
     rdfs:isDefinedBy datacite: .
 
-datacite:orcid a owl:NamedIndividual ;
-    rdfs:label "datacite:orcid (SKG-IF labels: orcid)" ;
-    rdfs:isDefinedBy datacite: .
-
 datacite:usesIdentifierScheme a owl:ObjectProperty ;
     rdfs:label "datacite:usesIdentifierScheme (SKG-IF labels: scheme)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
@@ -106,10 +102,6 @@ datacite:usesIdentifierScheme a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * datacite:IdentifierScheme""" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:viaf a owl:NamedIndividual ;
-    rdfs:label "datacite:viaf (SKG-IF labels: viaf)" ;
     rdfs:isDefinedBy datacite: .
 
 pro:Role a owl:Class ;

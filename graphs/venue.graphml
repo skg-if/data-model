@@ -59,125 +59,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n4" yfiles.foldertype="group">
-      <data key="d6">
-        <y:ProxyAutoBoundsNode>
-          <y:Realizers active="0">
-            <y:GroupNode>
-              <y:Geometry height="264.6875" width="312.49788411458394" x="812.891004073525" y="124.23437499999997"/>
-              <y:Fill hasColor="false" transparent="false"/>
-              <y:BorderStyle color="#666699" type="dotted" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="312.49788411458394" x="0.0" xml:space="preserve" y="0.0">types of id schemes</y:NodeLabel>
-              <y:Shape type="roundrectangle"/>
-              <y:State closed="false" closedHeight="90.4052734375" closedWidth="458.7734375" innerGraphDisplayEnabled="false"/>
-              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="5" leftF="4.74007161458394" right="0" rightF="0.0" top="0" topF="0.0"/>
-            </y:GroupNode>
-            <y:GroupNode>
-              <y:Geometry height="50.0" width="50.0" x="1118.0" y="427.5"/>
-              <y:Fill color="#CAECFF80" transparent="false"/>
-              <y:BorderStyle color="#666699" type="dotted" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.75830078125" x="-6.879150390625" xml:space="preserve" y="0.0">Folder 3</y:NodeLabel>
-              <y:Shape type="roundrectangle"/>
-              <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-              <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-            </y:GroupNode>
-          </y:Realizers>
-        </y:ProxyAutoBoundsNode>
-      </data>
-      <graph edgedefault="directed" id="n4:">
-        <node id="n4::n0">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="832.6310756881089" y="163.49999999999997"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="147.7109375" x="24.0" xml:space="preserve" y="-1.421875">datacite:issn (issn)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-        <node id="n4::n1">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="832.6310756881089" y="190.49999999999997"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="165.5390625" x="24.0" xml:space="preserve" y="-1.421875">datacite:eissn (eissn)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-        <node id="n4::n2">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="832.6310756881089" y="217.49999999999997"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="156.9609375" x="24.0" xml:space="preserve" y="-1.421875">datacite:lissn (lissn)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-        <node id="n4::n3">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="832.6310756881089" y="244.49999999999997"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="151.5390625" x="24.0" xml:space="preserve" y="-1.4218749999999716">datacite:isbn (isbn)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-        <node id="n4::n4">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="832.6310756881089" y="271.5"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="234.0234375" x="24.0" xml:space="preserve" y="-1.421875">datacite:opendoar (opendoar)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-        <node id="n4::n5">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="832.6310756881089" y="298.5"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="236.0" x="24.0" xml:space="preserve" y="-1.421875">datacite:re3data (re3data.org)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-        <node id="n4::n6">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="832.6310756881089" y="325.5"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="253.7578125" x="24.0" xml:space="preserve" y="-1.421875">datacite:fairsharing (fairsharing)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-        <node id="n4::n7">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="832.6310756881089" y="352.5"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="190.5859375" x="24.0" xml:space="preserve" y="-1.421875">datacite:handle (handle)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-      </graph>
-    </node>
-    <node id="n5">
+    <node id="n4">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="122.96822102864604" x="241.89695298955337" y="793.7457466918714"/>
@@ -189,7 +71,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n6">
+    <node id="n5">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="96.65654979565812" x="387.1996490253327" y="793.7457466918714"/>
@@ -201,7 +83,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n7">
+    <node id="n6">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="156.96822102864604" x="506.1906738281241" y="793.7457466918714"/>
@@ -213,7 +95,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n8">
+    <node id="n7">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="241.96822102864604" x="685.4933698639034" y="793.7457466918714"/>
@@ -225,7 +107,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n9">
+    <node id="n8">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="116.96822102864604" x="244.89695298955337" y="300.0"/>
@@ -236,7 +118,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n10" yfiles.foldertype="group">
+    <node id="n9" yfiles.foldertype="group">
       <data key="d6">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -263,8 +145,8 @@
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n10:">
-        <node id="n10::n0">
+      <graph edgedefault="directed" id="n9:">
+        <node id="n9::n0">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="519.2800579913189" y="296.1790771484375"/>
@@ -275,7 +157,7 @@
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n10::n1">
+        <node id="n9::n1">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="519.2800579913189" y="323.3409423828125"/>
@@ -286,7 +168,7 @@
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n10::n2">
+        <node id="n9::n2">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="519.2800579913189" y="350.6646728515625"/>
@@ -299,7 +181,7 @@
         </node>
       </graph>
     </node>
-    <node id="n11">
+    <node id="n10">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="127.96822102864604" x="239.39695298955337" y="478.99999999999994"/>
@@ -310,7 +192,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n12">
+    <node id="n11">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="156.96822102864604" x="1237.742286255992" y="629.5"/>
@@ -321,7 +203,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n13">
+    <node id="n12">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="191.96822102864604" x="1220.242286255992" y="479.0"/>
@@ -332,7 +214,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n14" yfiles.foldertype="group">
+    <node id="n13" yfiles.foldertype="group">
       <data key="d6">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -359,8 +241,8 @@
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n14:">
-        <node id="n14::n0">
+      <graph edgedefault="directed" id="n13:">
+        <node id="n13::n0">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="1198.288896770315" y="317.5"/>
@@ -371,7 +253,7 @@
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n14::n1">
+        <node id="n13::n1">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="1198.288896770315" y="352.5"/>
@@ -384,7 +266,7 @@
         </node>
       </graph>
     </node>
-    <node id="n15">
+    <node id="n14">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="43.0" width="138.96822102864604" x="1246.742286255992" y="794.2457466918714"/>
@@ -395,7 +277,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n16">
+    <node id="n15">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="43.0" width="138.96822102864604" x="1017.6178280599476" y="794.2457466918714"/>
@@ -442,18 +324,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e3" source="n4" target="n2">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="69.3125" x="-34.6562574824643" xml:space="preserve" y="33.6353759765625">has type<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e4" source="n0" target="n3">
+    <edge id="e3" source="n0" target="n3">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -466,7 +337,7 @@ prism:seriesTitle (series)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e5" source="n7" target="n0">
+    <edge id="e4" source="n6" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -479,7 +350,7 @@ prism:seriesTitle (series)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e6" source="n8" target="n0">
+    <edge id="e5" source="n7" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -492,7 +363,7 @@ prism:seriesTitle (series)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e7" source="n6" target="n0">
+    <edge id="e6" source="n5" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -505,7 +376,7 @@ prism:seriesTitle (series)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e8" source="n5" target="n0">
+    <edge id="e7" source="n4" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -518,7 +389,7 @@ prism:seriesTitle (series)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e9" source="n0" target="n11">
+    <edge id="e8" source="n0" target="n10">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-58.67478434244708" sy="0.8333333333333712" tx="0.0" ty="0.0">
@@ -532,7 +403,7 @@ prism:seriesTitle (series)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e10" source="n11" target="n9">
+    <edge id="e9" source="n10" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -544,7 +415,7 @@ prism:seriesTitle (series)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e11" source="n10" target="n9">
+    <edge id="e10" source="n9" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -555,7 +426,7 @@ prism:seriesTitle (series)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e12" source="n0" target="n12">
+    <edge id="e11" source="n0" target="n11">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -570,7 +441,7 @@ prism:seriesTitle (series)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e13" source="n12" target="n13">
+    <edge id="e12" source="n11" target="n12">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -582,7 +453,7 @@ prism:seriesTitle (series)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e14" source="n14" target="n13">
+    <edge id="e13" source="n13" target="n12">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -593,7 +464,7 @@ prism:seriesTitle (series)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e15" source="n12" target="n15">
+    <edge id="e14" source="n11" target="n14">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -605,7 +476,7 @@ prism:seriesTitle (series)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e16" source="n0" target="n16">
+    <edge id="e15" source="n0" target="n15">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">

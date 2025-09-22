@@ -254,14 +254,6 @@ datacite:IdentifierScheme a owl:Class ;
     rdfs:label "datacite:IdentifierScheme" ;
     rdfs:isDefinedBy datacite: .
 
-datacite:arxiv a owl:NamedIndividual ;
-    rdfs:label "datacite:arxiv (SKG-IF labels: arxiv)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:doi a owl:NamedIndividual ;
-    rdfs:label "datacite:doi (SKG-IF labels: doi)" ;
-    rdfs:isDefinedBy datacite: .
-
 datacite:hasIdentifier a owl:ObjectProperty ;
     rdfs:label "datacite:hasIdentifier (SKG-IF labels: identifiers)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
@@ -270,18 +262,6 @@ datacite:hasIdentifier a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * datacite:Identifier""" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:pmcid a owl:NamedIndividual ;
-    rdfs:label "datacite:pmcid (SKG-IF labels: pmcid)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:pmid a owl:NamedIndividual ;
-    rdfs:label "datacite:pmid (SKG-IF labels: pmid)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:url a owl:NamedIndividual ;
-    rdfs:label "datacite:url (SKG-IF labels: url)" ;
     rdfs:isDefinedBy datacite: .
 
 datacite:usesIdentifierScheme a owl:ObjectProperty ;
@@ -685,7 +665,7 @@ In SKG-IF, it is used to link to entities belonging to the following classes (ra
     rdfs:isDefinedBy frbr: .
 
 frbr:partOf a owl:ObjectProperty ;
-    rdfs:label "frbr:partOf (SKG-IF labels: in, is_part_of)" ;
+    rdfs:label "frbr:partOf (SKG-IF labels: is_part_of, in)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
 * fabio:Expression
 * fabio:Work

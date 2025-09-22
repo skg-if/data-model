@@ -6,22 +6,6 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:vann="http://purl.org/vocab/vann/"
 >
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/IdentifierScheme">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>datacite:IdentifierScheme</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/url">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdfs:label>datacite:url (SKG-IF labels: url)</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/skg-if/ontology/topic/">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <rdfs:label>SKG-O: topic</rdfs:label>
@@ -35,27 +19,15 @@
     <owl:versionIRI rdf:resource="https://w3id.org/skg-if/ontology/topic/1.1.0/"/>
     <owl:versionInfo>1.1.0</owl:versionInfo>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/fabio/SubjectTerm">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>fabio:SubjectTerm (SKG-IF labels: topic)</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
-    <dc:description>The properties that can be used with this class are:
-
-* datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier
-* skos:prefLabel -[0..N]-&gt; rdfs:Literal</dc:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/hasIdentifier">
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/usesIdentifierScheme">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label>datacite:hasIdentifier (SKG-IF labels: identifiers)</rdfs:label>
+    <rdfs:label>datacite:usesIdentifierScheme (SKG-IF labels: scheme)</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
     <dc:description>In SKG-IF, it is used in the following classes (domain):
-* fabio:SubjectTerm
+* datacite:Identifier
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-* datacite:Identifier</dc:description>
+* datacite:IdentifierScheme</dc:description>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -67,18 +39,6 @@ In SKG-IF, it is used to link to entities belonging to the following classes (ra
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * rdfs:Literal</dc:description>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/Identifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>datacite:Identifier</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
-    <dc:description>The properties that can be used with this class are:
-
-* datacite:usesIdentifierScheme -[0..N]-&gt; datacite:IdentifierScheme
-* literal:hasLiteralValue -[0..N]-&gt; rdfs:Literal</dc:description>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:label>skos:prefLabel (SKG-IF labels: labels)</rdfs:label>
@@ -89,20 +49,55 @@ In SKG-IF, it is used to link to entities belonging to the following data types 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * rdfs:Literal</dc:description>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/datacite/usesIdentifierScheme">
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/Identifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>datacite:Identifier</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+    <dc:description>The properties that can be used with this class are:
+
+* datacite:usesIdentifierScheme -[0..N]-&gt; datacite:IdentifierScheme
+* literal:hasLiteralValue -[0..N]-&gt; rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/IdentifierScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>datacite:IdentifierScheme</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/fabio/SubjectTerm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>fabio:SubjectTerm (SKG-IF labels: topic)</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/fabio/"/>
+    <dc:description>The properties that can be used with this class are:
+
+* datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier
+* skos:prefLabel -[0..N]-&gt; rdfs:Literal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/datacite/hasIdentifier">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label>datacite:usesIdentifierScheme (SKG-IF labels: scheme)</rdfs:label>
+    <rdfs:label>datacite:hasIdentifier (SKG-IF labels: identifiers)</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/datacite/"/>
     <dc:description>In SKG-IF, it is used in the following classes (domain):
-* datacite:Identifier
+* fabio:SubjectTerm
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
-* datacite:IdentifierScheme</dc:description>
+* datacite:Identifier</dc:description>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">

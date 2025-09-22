@@ -79,18 +79,6 @@ datacite:IdentifierScheme a owl:Class ;
     rdfs:label "datacite:IdentifierScheme" ;
     rdfs:isDefinedBy datacite: .
 
-datacite:eissn a owl:NamedIndividual ;
-    rdfs:label "datacite:eissn (SKG-IF labels: eissn)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:fairsharing a owl:NamedIndividual ;
-    rdfs:label "datacite:fairsharing (SKG-IF labels: fairsharing)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:handle a owl:NamedIndividual ;
-    rdfs:label "datacite:handle (SKG-IF labels: handle)" ;
-    rdfs:isDefinedBy datacite: .
-
 datacite:hasIdentifier a owl:ObjectProperty ;
     rdfs:label "datacite:hasIdentifier (SKG-IF labels: identifiers)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
@@ -98,26 +86,6 @@ datacite:hasIdentifier a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * datacite:Identifier""" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:isbn a owl:NamedIndividual ;
-    rdfs:label "datacite:isbn (SKG-IF labels: isbn)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:issn a owl:NamedIndividual ;
-    rdfs:label "datacite:issn (SKG-IF labels: issn)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:lissn a owl:NamedIndividual ;
-    rdfs:label "datacite:lissn (SKG-IF labels: lissn)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:opendoar a owl:NamedIndividual ;
-    rdfs:label "datacite:opendoar (SKG-IF labels: opendoar)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:re3data a owl:NamedIndividual ;
-    rdfs:label "datacite:re3data" ;
     rdfs:isDefinedBy datacite: .
 
 datacite:usesIdentifierScheme a owl:ObjectProperty ;

@@ -479,92 +479,7 @@ scoro:ContributionSituation</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n31" yfiles.foldertype="group">
-      <data key="d6">
-        <y:ProxyAutoBoundsNode>
-          <y:Realizers active="0">
-            <y:GroupNode>
-              <y:Geometry height="211.6875" width="243.02566049080178" x="1065.4861192943533" y="346.65625"/>
-              <y:Fill hasColor="false" transparent="false"/>
-              <y:BorderStyle color="#666699" type="dotted" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="243.02566049080178" x="0.0" xml:space="preserve" y="0.0">types of id schemes</y:NodeLabel>
-              <y:Shape type="roundrectangle"/>
-              <y:State closed="false" closedHeight="90.4052734375" closedWidth="458.7734375" innerGraphDisplayEnabled="false"/>
-              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="7" leftF="7.2522229908017835" right="0" rightF="0.0" top="0" topF="0.0"/>
-            </y:GroupNode>
-            <y:GroupNode>
-              <y:Geometry height="50.0" width="50.0" x="1118.0" y="427.5"/>
-              <y:Fill color="#CAECFF80" transparent="false"/>
-              <y:BorderStyle color="#666699" type="dotted" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.75830078125" x="-6.879150390625" xml:space="preserve" y="0.0">Folder 3</y:NodeLabel>
-              <y:Shape type="roundrectangle"/>
-              <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-              <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-            </y:GroupNode>
-          </y:Realizers>
-        </y:ProxyAutoBoundsNode>
-      </data>
-      <graph edgedefault="directed" id="n31:">
-        <node id="n31::n0">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="1087.738342285155" y="385.921875"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="135.0234375" x="24.0" xml:space="preserve" y="-1.421875">datacite:doi (doi)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-        <node id="n31::n1">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="1087.738342285155" y="419.921875"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="162.1796875" x="24.0" xml:space="preserve" y="-1.421875">datacite:arxiv (arxiv)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-        <node id="n31::n2">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="1087.738342285155" y="453.921875"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="165.3828125" x="24.0" xml:space="preserve" y="-1.421875">datacite:pmid (pmid)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-        <node id="n31::n3">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="1087.738342285155" y="487.921875"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="181.7734375" x="24.0" xml:space="preserve" y="-1.421875">datacite:pmcid (pmcid)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-        <node id="n31::n4">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="1087.738342285155" y="521.921875"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="128.1796875" x="24.0" xml:space="preserve" y="-1.421875">datacite:url (url)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-      </graph>
-    </node>
-    <node id="n32">
+    <node id="n31">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="101.96822102864604" x="37.79776063286718" y="523.0"/>
@@ -576,7 +491,7 @@ scoro:ContributionSituation</y:NodeLabel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n33" yfiles.foldertype="group">
+    <node id="n32" yfiles.foldertype="group">
       <data key="d6">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -603,8 +518,8 @@ scoro:ContributionSituation</y:NodeLabel>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n33:">
-        <node id="n33::n0">
+      <graph edgedefault="directed" id="n32:">
+        <node id="n32::n0">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-373.45590026070875" y="-158.36890642225828"/>
@@ -615,7 +530,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n33::n1">
+        <node id="n32::n1">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-373.45590026070875" y="-131.20704118788328"/>
@@ -626,7 +541,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n33::n2">
+        <node id="n32::n2">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-373.45590026070875" y="-103.88331071913328"/>
@@ -639,7 +554,7 @@ scoro:ContributionSituation</y:NodeLabel>
         </node>
       </graph>
     </node>
-    <node id="n34" yfiles.foldertype="group">
+    <node id="n33" yfiles.foldertype="group">
       <data key="d6">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -666,8 +581,8 @@ scoro:ContributionSituation</y:NodeLabel>
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n34:">
-        <node id="n34::n0">
+      <graph edgedefault="directed" id="n33:">
+        <node id="n33::n0">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="-158.36890642225828"/>
@@ -678,7 +593,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n1">
+        <node id="n33::n1">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="-131.49509366784875"/>
@@ -689,7 +604,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n2">
+        <node id="n33::n2">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="-104.7474681590297"/>
@@ -700,7 +615,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n3">
+        <node id="n33::n3">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="-78.25221714139158"/>
@@ -711,7 +626,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n4">
+        <node id="n33::n4">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="-51.26171510611536"/>
@@ -722,7 +637,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n5">
+        <node id="n33::n5">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="-24.280711035562916"/>
@@ -733,7 +648,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n6">
+        <node id="n33::n6">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="2.6812971055419723"/>
@@ -744,7 +659,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n7">
+        <node id="n33::n7">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="29.60531338775175"/>
@@ -755,7 +670,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n8">
+        <node id="n33::n8">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="56.453345952171304"/>
@@ -766,7 +681,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n9">
+        <node id="n33::n9">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="83.14941108101041"/>
@@ -777,7 +692,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n10">
+        <node id="n33::n10">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="110.54154133868863"/>
@@ -788,7 +703,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n11">
+        <node id="n33::n11">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="137.32580185404507"/>
@@ -799,7 +714,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n12">
+        <node id="n33::n12">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="163.89432288475794"/>
@@ -810,7 +725,7 @@ scoro:ContributionSituation</y:NodeLabel>
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n34::n13">
+        <node id="n33::n13">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="-904.7129389309938" y="191.0313649461837"/>
@@ -1251,18 +1166,7 @@ prism:endingPage (last)<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOn
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e32" source="n31" target="n29">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="69.3125" x="-87.36710880985481" xml:space="preserve" y="-11.421875">has type<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e33" source="n16" target="n1">
+    <edge id="e32" source="n16" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -1277,7 +1181,7 @@ prism:endingPage (last)<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOn
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e34" source="n0" target="n15">
+    <edge id="e33" source="n0" target="n15">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -1292,7 +1196,7 @@ prism:endingPage (last)<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOn
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e35" source="n0" target="n32">
+    <edge id="e34" source="n0" target="n31">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -1306,7 +1210,7 @@ prism:endingPage (last)<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOn
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e36" source="n0" target="n0">
+    <edge id="e35" source="n0" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -1326,7 +1230,7 @@ frbr:supplement (is_supplemented_by)<y:LabelModel><y:SmartEdgeLabelModel autoRot
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e37" source="n16" target="n16">
+    <edge id="e36" source="n16" target="n16">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -1342,7 +1246,7 @@ frbr:supplement (is_supplemented_by)<y:LabelModel><y:SmartEdgeLabelModel autoRot
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e38" source="n33" target="n12">
+    <edge id="e37" source="n32" target="n12">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1353,7 +1257,7 @@ frbr:supplement (is_supplemented_by)<y:LabelModel><y:SmartEdgeLabelModel autoRot
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e39" source="n34" target="n13">
+    <edge id="e38" source="n33" target="n13">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>

@@ -63,7 +63,7 @@ In SKG-IF, it is used to link to entities belonging to the following classes (ra
     rdfs:isDefinedBy dcterms: .
 
 dcterms:coverage a owl:ObjectProperty ;
-    rdfs:label "dcterms:coverage (SKG-IF labels: for, research_product_types)" ;
+    rdfs:label "dcterms:coverage (SKG-IF labels: research_product_types, for)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
 * dcat:DataService
 * dcterms:Standard
@@ -111,22 +111,6 @@ datacite:IdentifierScheme a owl:Class ;
     rdfs:label "datacite:IdentifierScheme" ;
     rdfs:isDefinedBy datacite: .
 
-datacite:ark a owl:NamedIndividual ;
-    rdfs:label "datacite:ark (SKG-IF labels: ark)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:arxiv a owl:NamedIndividual ;
-    rdfs:label "datacite:arxiv (SKG-IF labels: arxiv)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:doi a owl:NamedIndividual ;
-    rdfs:label "datacite:doi (SKG-IF labels: doi)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:handle a owl:NamedIndividual ;
-    rdfs:label "datacite:handle (SKG-IF labels: handle)" ;
-    rdfs:isDefinedBy datacite: .
-
 datacite:hasIdentifier a owl:ObjectProperty ;
     rdfs:label "datacite:hasIdentifier (SKG-IF labels: identifiers)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
@@ -134,22 +118,6 @@ datacite:hasIdentifier a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * datacite:Identifier""" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:isni a owl:NamedIndividual ;
-    rdfs:label "datacite:isni (SKG-IF labels: isni)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:orcid a owl:NamedIndividual ;
-    rdfs:label "datacite:orcid (SKG-IF labels: orcid)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:pmcid a owl:NamedIndividual ;
-    rdfs:label "datacite:pmcid (SKG-IF labels: pmcid)" ;
-    rdfs:isDefinedBy datacite: .
-
-datacite:ror a owl:NamedIndividual ;
-    rdfs:label "datacite:ror (SKG-IF labels: ror)" ;
     rdfs:isDefinedBy datacite: .
 
 datacite:usesIdentifierScheme a owl:ObjectProperty ;

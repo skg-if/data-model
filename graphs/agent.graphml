@@ -91,59 +91,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n7" yfiles.foldertype="group">
-      <data key="d6">
-        <y:ProxyAutoBoundsNode>
-          <y:Realizers active="0">
-            <y:GroupNode>
-              <y:Geometry height="109.6875" width="233.76003549080178" x="1136.259928385416" y="-234.34375"/>
-              <y:Fill hasColor="false" transparent="false"/>
-              <y:BorderStyle color="#666699" type="dotted" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="233.76003549080178" x="0.0" xml:space="preserve" y="0.0">types of id schemes</y:NodeLabel>
-              <y:Shape type="roundrectangle"/>
-              <y:State closed="false" closedHeight="90.4052734375" closedWidth="458.7734375" innerGraphDisplayEnabled="false"/>
-              <y:Insets bottom="15" bottomF="15.0" left="15" leftF="15.0" right="15" rightF="15.0" top="15" topF="15.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="7" leftF="7.2522229908017835" right="8" rightF="8.0" top="0" topF="0.0"/>
-            </y:GroupNode>
-            <y:GroupNode>
-              <y:Geometry height="50.0" width="50.0" x="1118.0" y="427.5"/>
-              <y:Fill color="#CAECFF80" transparent="false"/>
-              <y:BorderStyle color="#666699" type="dotted" width="1.0"/>
-              <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#99CCFF" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.75830078125" x="-6.879150390625" xml:space="preserve" y="0.0">Folder 3</y:NodeLabel>
-              <y:Shape type="roundrectangle"/>
-              <y:State closed="true" closedHeight="50.0" closedWidth="50.0" innerGraphDisplayEnabled="false"/>
-              <y:Insets bottom="5" bottomF="5.0" left="5" leftF="5.0" right="5" rightF="5.0" top="5" topF="5.0"/>
-              <y:BorderInsets bottom="0" bottomF="0.0" left="0" leftF="0.0" right="0" rightF="0.0" top="0" topF="0.0"/>
-            </y:GroupNode>
-          </y:Realizers>
-        </y:ProxyAutoBoundsNode>
-      </data>
-      <graph edgedefault="directed" id="n7:">
-        <node id="n7::n0">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="1158.5121513762178" y="-195.078125"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="164.5078125" x="24.0" xml:space="preserve" y="-1.421875">datacite:orcid (orcid)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-        <node id="n7::n1">
-          <data key="d6">
-            <y:ShapeNode>
-              <y:Geometry height="20.0" width="20.0" x="1158.5121513762178" y="-161.078125"/>
-              <y:Fill color="#FF99CC" transparent="false"/>
-              <y:BorderStyle color="#000000" type="line" width="3.0"/>
-              <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="eight_pos" modelPosition="e" textColor="#000000" verticalTextPosition="bottom" visible="true" width="141.2265625" x="24.0" xml:space="preserve" y="-1.421875">datacite:viaf (viaf)</y:NodeLabel>
-              <y:Shape type="ellipse"/>
-            </y:ShapeNode>
-          </data>
-        </node>
-      </graph>
-    </node>
-    <node id="n8">
+    <node id="n7">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="116.96822102864604" x="1194.655835616494" y="250.0"/>
@@ -154,7 +102,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n9">
+    <node id="n8">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="138.96822102864604" x="780.655835616494" y="250.0"/>
@@ -165,7 +113,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n10">
+    <node id="n9">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="138.96822102864604" x="780.655835616494" y="99.5"/>
@@ -176,7 +124,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n11">
+    <node id="n10">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="43.0" width="138.96822102864604" x="1183.655835616494" y="100.0"/>
@@ -187,7 +135,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n12" yfiles.foldertype="group">
+    <node id="n11" yfiles.foldertype="group">
       <data key="d6">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
@@ -214,8 +162,8 @@
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n12:">
-        <node id="n12::n0">
+      <graph edgedefault="directed" id="n11:">
+        <node id="n11::n0">
           <data key="d6">
             <y:ShapeNode>
               <y:Geometry height="20.0" width="20.0" x="1152.16015625" y="424.421875"/>
@@ -228,7 +176,7 @@
         </node>
       </graph>
     </node>
-    <node id="n13">
+    <node id="n12">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="43.0" width="126.0949682107173" x="245.19932172146025" y="250.50000000000003"/>
@@ -239,7 +187,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n14">
+    <node id="n13">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="138.96822102864604" x="238.7626953124959" y="99.5"/>
@@ -250,7 +198,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n15">
+    <node id="n14">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="250.52730305983692" x="-35.0110677082763" y="527.0"/>
@@ -262,7 +210,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n16">
+    <node id="n15">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="143.96822102864604" x="236.2626953124959" y="695.0"/>
@@ -274,7 +222,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n17">
+    <node id="n16">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="186.96822102864604" x="400.97737630207723" y="695.0"/>
@@ -286,7 +234,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n18">
+    <node id="n17">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="186.96822102864604" x="400.97737630207723" y="527.0"/>
@@ -298,7 +246,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n19">
+    <node id="n18">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="250.52730305983692" x="-35.0110677082763" y="695.0"/>
@@ -310,7 +258,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n20">
+    <node id="n19">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="250.52730305983692" x="-35.0110677082763" y="639.0"/>
@@ -322,7 +270,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n21">
+    <node id="n20">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="250.52730305983692" x="-35.0110677082763" y="583.0"/>
@@ -334,7 +282,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n22">
+    <node id="n21">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="186.96822102864604" x="400.97737630207723" y="639.0"/>
@@ -346,7 +294,7 @@
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n23">
+    <node id="n22">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="44.0" width="186.96822102864604" x="400.97737630207723" y="583.0"/>
@@ -435,18 +383,7 @@
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e6" source="n7" target="n5">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="69.3125" x="-117.26760221128461" xml:space="preserve" y="-11.421875">has type<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e7" source="n1" target="n3">
+    <edge id="e6" source="n1" target="n3">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -460,7 +397,7 @@ foaf:familyName (family_name)<y:LabelModel><y:SmartEdgeLabelModel autoRotationEn
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e8" source="n9" target="n8">
+    <edge id="e7" source="n8" target="n7">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -472,7 +409,7 @@ foaf:familyName (family_name)<y:LabelModel><y:SmartEdgeLabelModel autoRotationEn
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e9" source="n1" target="n9">
+    <edge id="e8" source="n1" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -486,7 +423,7 @@ foaf:familyName (family_name)<y:LabelModel><y:SmartEdgeLabelModel autoRotationEn
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e10" source="n9" target="n2">
+    <edge id="e9" source="n8" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -502,7 +439,7 @@ foaf:familyName (family_name)<y:LabelModel><y:SmartEdgeLabelModel autoRotationEn
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e11" source="n10" target="n11">
+    <edge id="e10" source="n9" target="n10">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -514,7 +451,7 @@ ti:hasIntervalEndDate (end)<y:PreferredPlacementDescriptor angle="0.0" angleOffs
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e12" source="n9" target="n10">
+    <edge id="e11" source="n8" target="n9">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -526,7 +463,7 @@ ti:hasIntervalEndDate (end)<y:PreferredPlacementDescriptor angle="0.0" angleOffs
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e13" source="n12" target="n8">
+    <edge id="e12" source="n11" target="n7">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -537,7 +474,7 @@ ti:hasIntervalEndDate (end)<y:PreferredPlacementDescriptor angle="0.0" angleOffs
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e14" source="n2" target="n13">
+    <edge id="e13" source="n2" target="n12">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -550,7 +487,7 @@ frapo:hasCountry (country)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e15" source="n2" target="n14">
+    <edge id="e14" source="n2" target="n13">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -565,7 +502,7 @@ frapo:hasCountry (country)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e16" source="n16" target="n2">
+    <edge id="e15" source="n15" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -576,7 +513,7 @@ frapo:hasCountry (country)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e17" source="n18" target="n2">
+    <edge id="e16" source="n17" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -589,7 +526,7 @@ frapo:hasCountry (country)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e18" source="n23" target="n2">
+    <edge id="e17" source="n22" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -602,7 +539,7 @@ frapo:hasCountry (country)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e19" source="n22" target="n2">
+    <edge id="e18" source="n21" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -615,7 +552,7 @@ frapo:hasCountry (country)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e20" source="n17" target="n2">
+    <edge id="e19" source="n16" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -628,7 +565,7 @@ frapo:hasCountry (country)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e21" source="n15" target="n2">
+    <edge id="e20" source="n14" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -641,7 +578,7 @@ frapo:hasCountry (country)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e22" source="n21" target="n2">
+    <edge id="e21" source="n20" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -654,7 +591,7 @@ frapo:hasCountry (country)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e23" source="n20" target="n2">
+    <edge id="e22" source="n19" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -667,7 +604,7 @@ frapo:hasCountry (country)<y:PreferredPlacementDescriptor angle="0.0" angleOffse
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e24" source="n19" target="n2">
+    <edge id="e23" source="n18" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
