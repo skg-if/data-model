@@ -120,7 +120,7 @@ dc:rights a owl:AnnotationProperty .
 dc:title a owl:AnnotationProperty .
 
 dcterms:abstract a owl:DatatypeProperty ;
-    rdfs:label "dcterms:abstract (SKG-IF labels: abstract)" ;
+    rdfs:label "dcterms:abstract (SKG-IF labels: abstracts)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
 * frapo:Grant
 
@@ -138,7 +138,7 @@ In SKG-IF, it is used to link to entities belonging to the following classes (ra
     rdfs:isDefinedBy dcterms: .
 
 dcterms:title a owl:DatatypeProperty ;
-    rdfs:label "dcterms:title (SKG-IF labels: title)" ;
+    rdfs:label "dcterms:title (SKG-IF labels: titles)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
 * frapo:Grant
 

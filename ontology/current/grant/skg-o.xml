@@ -8,7 +8,7 @@
 >
   <rdf:Description rdf:about="http://purl.org/dc/terms/title">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label>dcterms:title (SKG-IF labels: title)</rdfs:label>
+    <rdfs:label>dcterms:title (SKG-IF labels: titles)</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     <dc:description>In SKG-IF, it is used in the following classes (domain):
 * frapo:Grant
@@ -184,7 +184,7 @@ In SKG-IF, it is used to link to entities belonging to the following classes (ra
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/terms/abstract">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label>dcterms:abstract (SKG-IF labels: abstract)</rdfs:label>
+    <rdfs:label>dcterms:abstract (SKG-IF labels: abstracts)</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
     <dc:description>In SKG-IF, it is used in the following classes (domain):
 * frapo:Grant
