@@ -21,7 +21,7 @@ vann:preferredNamespaceUri a owl:AnnotationProperty .
 <https://w3id.org/skg-if/ontology/> a owl:Ontology ;
     rdfs:label "SKG-O" ;
     dc:creator "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" ;
-    dc:date "2025-09-22"^^xsd:date ;
+    dc:date "2025-11-07"^^xsd:date ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" ;
     dc:title "The SKG-IF Ontology" ;
     vann:preferredNamespacePrefix "skg-o" ;

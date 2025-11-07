@@ -17,22 +17,27 @@
 
 frapo:ResearchInformationSystem a owl:Class ;
     rdfs:label "frapo:ResearchInformationSystem (SKG-IF labels: cris system)" ;
+    rdfs:comment "A current research information system (CRIS) is an information system to store, manage and exchange contextual metadata for the research products funded by a research funder or conducted at a research-performing organisation" ;
     rdfs:isDefinedBy frapo: .
 
 coar:c_14cb a owl:NamedIndividual ;
     rdfs:label "coar:c_14cb (SKG-IF labels: metadata only access)" ;
+    rdfs:comment "This policy provides the possibility of having / handling metadata only access refers to the resources in the Data source (from COAR Access Rights 1.0)." ;
     rdfs:isDefinedBy coar: .
 
 coar:c_16ec a owl:NamedIndividual ;
     rdfs:label "coar:c_16ec (SKG-IF labels: restricted access)" ;
+    rdfs:comment "This policy provides the possibility of having / handling restricted access to the resources in the Data source (from COAR Access Rights 1.0)." ;
     rdfs:isDefinedBy coar: .
 
 coar:c_abf2 a owl:NamedIndividual ;
     rdfs:label "coar:c_abf2 (SKG-IF labels: open access)" ;
+    rdfs:comment "This policy provides the possibility of having / handling Data source resources that are immediately and permanently online (from COAR Access Rights 1.0)." ;
     rdfs:isDefinedBy coar: .
 
 coar:c_f1cf a owl:NamedIndividual ;
     rdfs:label "coar:c_f1cf (SKG-IF labels: embargoed access)" ;
+    rdfs:comment "This policy provides the possibility of having / handling embargoed access refers to the resources in the Data source (from COAR Access Rights 1.0)." ;
     rdfs:isDefinedBy coar: .
 
 dc:creator a owl:AnnotationProperty .
@@ -49,8 +54,8 @@ dcterms:Standard a owl:Class ;
     rdfs:label "dcterms:Standard" ;
     dc:description """The properties that can be used with this class are:
 
-* dcterms:coverage -[0..N]-> owl:Thing
-* dcterms:requires -[0..N]-> datacite:IdentifierScheme""" ;
+* dcterms:coverage -[1]-> owl:Thing
+* dcterms:requires -[1..N]-> datacite:IdentifierScheme""" ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:conformsTo a owl:ObjectProperty ;
@@ -63,13 +68,14 @@ In SKG-IF, it is used to link to entities belonging to the following classes (ra
     rdfs:isDefinedBy dcterms: .
 
 dcterms:coverage a owl:ObjectProperty ;
-    rdfs:label "dcterms:coverage (SKG-IF labels: research_product_types, for)" ;
+    rdfs:label "dcterms:coverage (SKG-IF labels: for, research_product_types)" ;
     dc:description """In SKG-IF, it is used in the following classes (domain):
 * dcat:DataService
 * dcterms:Standard
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * owl:Thing""" ;
+    rdfs:comment "The Product type to which the persistent identifier is referring to. To choose from" ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:description a owl:DatatypeProperty ;
@@ -79,6 +85,7 @@ dcterms:description a owl:DatatypeProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * xsd:string""" ;
+    rdfs:comment "Describe the type of policy, if necessary." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:requires a owl:ObjectProperty ;
@@ -88,6 +95,7 @@ dcterms:requires a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * datacite:IdentifierScheme""" ;
+    rdfs:comment "Persistent identifier schemes used to refer to ProductTypes. Each elements must be drawn by the EOSC vocabulary Persistent Identity Scheme, i.e.," ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:subject a owl:ObjectProperty ;
@@ -103,8 +111,8 @@ datacite:Identifier a owl:Class ;
     rdfs:label "datacite:Identifier" ;
     dc:description """The properties that can be used with this class are:
 
-* datacite:usesIdentifierScheme -[0..N]-> datacite:IdentifierScheme
-* literal:hasLiteralValue -[0..N]-> rdfs:Literal""" ;
+* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme
+* literal:hasLiteralValue -[1]-> rdfs:Literal""" ;
     rdfs:isDefinedBy datacite: .
 
 datacite:IdentifierScheme a owl:Class ;
@@ -127,14 +135,17 @@ datacite:usesIdentifierScheme a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * datacite:IdentifierScheme""" ;
+    rdfs:comment "The scheme for the external identifier (e.g., a DOI)." ;
     rdfs:isDefinedBy datacite: .
 
 fabio:Catalog a owl:Class ;
     rdfs:label "fabio:Catalog (SKG-IF labels: aggregator)" ;
+    rdfs:comment "services for the aggregation of metadata about research products (and other entities) that are mainly collected (aka harvested) from data sources via APIs and then possibly curated/enriched by end-users, e.g. BASE, NARCIS, GESIS, B2FIND, OpenAIRE Research Graph" ;
     rdfs:isDefinedBy fabio: .
 
 fabio:Database a owl:Class ;
     rdfs:label "fabio:Database (SKG-IF labels: scientific database)" ;
+    rdfs:comment "Scientific Databases intended to store structured information about scientific entities, e.g. PROTDB, ENA, ECRIN Studies Database" ;
     rdfs:isDefinedBy fabio: .
 
 fabio:Dataset a owl:Class ;
@@ -143,6 +154,7 @@ fabio:Dataset a owl:Class ;
 
 fabio:Journal a owl:Class ;
     rdfs:label "fabio:Journal (SKG-IF labels: journal archive)" ;
+    rdfs:comment "Data sources for the deposition (submission), preservation, discovery, and access of scientific journal articles (metadata and files), e.g. publishers sites, journal sites, etc." ;
     rdfs:isDefinedBy fabio: .
 
 fabio:Metadata a owl:Class ;
@@ -151,6 +163,7 @@ fabio:Metadata a owl:Class ;
 
 fabio:Repository a owl:Class ;
     rdfs:label "fabio:Repository (SKG-IF labels: repository)" ;
+    rdfs:comment "services for the deposition, preservation, discovery, and access of research products metadata and files, e.g. PANGAEA, Zenodo, B2SHARE, EGI AppDB, BioTools" ;
     rdfs:isDefinedBy fabio: .
 
 fabio:ScholarlyWork a owl:Class ;
@@ -171,6 +184,7 @@ vann:preferredNamespaceUri a owl:AnnotationProperty .
 
 vivo:Publisher a owl:Class ;
     rdfs:label "vivo:Publisher (SKG-IF labels: publisher archive)" ;
+    rdfs:comment "Scientific literature publisher, e.g. Elsevier, Copernicus, Frontiers, Springer, providing metadata and files of scientific publications relative to journals and conferences" ;
     rdfs:isDefinedBy vivo: .
 
 literal:hasLiteralValue a owl:DatatypeProperty ;
@@ -180,6 +194,7 @@ literal:hasLiteralValue a owl:DatatypeProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * rdfs:Literal""" ;
+    rdfs:comment "The external identifier." ;
     rdfs:isDefinedBy literal: .
 
 dcat:DataService a owl:Class ;
@@ -187,11 +202,11 @@ dcat:DataService a owl:Class ;
     dc:description """The properties that can be used with this class are:
 
 * datacite:hasIdentifier -[0..N]-> datacite:Identifier
-* dcat:theme -[0..N]-> owl:Thing
+* dcat:theme -[0..1]-> owl:Thing
 * dcterms:conformsTo -[0..N]-> dcterms:Standard
 * dcterms:coverage -[0..N]-> owl:Thing
 * dcterms:subject -[0..N]-> owl:Thing
-* foaf:name -[0..N]-> rdfs:Literal
+* foaf:name -[0..1]-> rdfs:Literal
 * odrl:hasPolicy -[0..N]-> odrl:Policy
 * schema:audience -[0..N]-> schema:Audience""" ;
     rdfs:isDefinedBy dcat: .
@@ -213,9 +228,9 @@ odrl:Policy a owl:Class ;
     rdfs:label "odrl:Policy" ;
     dc:description """The properties that can be used with this class are:
 
-* dcterms:description -[0..N]-> xsd:string
-* foaf:page -[0..N]-> foaf:Document
-* odrl:action -[0..N]-> odrl:Action
+* dcterms:description -[0..1]-> xsd:string
+* foaf:page -[0..1]-> foaf:Document
+* odrl:action -[1]-> odrl:Action
 * odrl:target -[0..N]-> owl:Thing""" ;
     rdfs:isDefinedBy odrl: .
 
@@ -226,14 +241,17 @@ odrl:action a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * odrl:Action""" ;
+    rdfs:comment "The type of policy to consider." ;
     rdfs:isDefinedBy odrl: .
 
 odrl:aggregate a owl:NamedIndividual ;
     rdfs:label "odrl:aggregate (SKG-IF labels: submission)" ;
+    rdfs:comment "This policy provides a comprehensive framework for the contribution of research products. Criteria for submitting content to the repository as well as product preparation guidelines can be stated. Concepts for quality assurance may be provided." ;
     rdfs:isDefinedBy odrl: .
 
 odrl:archive a owl:NamedIndividual ;
     rdfs:label "odrl:archive (SKG-IF labels: preservation)" ;
+    rdfs:comment "This policy provides a comprehensive framework for the long-term preservation of the research products. Principles aims and responsibilities must be clarified. An important aspect is the description of preservation concepts to ensure the technical and conceptual utility of the content." ;
     rdfs:isDefinedBy odrl: .
 
 odrl:hasPolicy a owl:ObjectProperty ;
@@ -274,13 +292,14 @@ foaf:page a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * foaf:Document""" ;
+    rdfs:comment "The URL of the document that describes the policy." ;
     rdfs:isDefinedBy foaf: .
 
 schema:Audience a owl:Class ;
     rdfs:label "schema:Audience" ;
     dc:description """The properties that can be used with this class are:
 
-* schema:audienceType -[0..N]-> xsd:string""" ;
+* schema:audienceType -[1]-> xsd:string""" ;
     rdfs:isDefinedBy schema: .
 
 schema:audience a owl:ObjectProperty ;
@@ -299,12 +318,13 @@ schema:audienceType a owl:DatatypeProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * xsd:string""" ;
+    rdfs:comment "the type of the audience based on the vocabulary Jurisdiction." ;
     rdfs:isDefinedBy schema: .
 
 <https://w3id.org/skg-if/ontology/data-source/> a owl:Ontology ;
     rdfs:label "SKG-O: data-source" ;
     dc:creator "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" ;
-    dc:date "2025-09-22"^^xsd:date ;
+    dc:date "2025-11-07"^^xsd:date ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" ;
     dc:title "The SKG-IF Ontology: data-source" ;
     vann:preferredNamespacePrefix "skg-o" ;

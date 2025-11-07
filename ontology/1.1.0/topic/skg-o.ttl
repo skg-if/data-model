@@ -22,8 +22,8 @@ datacite:Identifier a owl:Class ;
     rdfs:label "datacite:Identifier" ;
     dc:description """The properties that can be used with this class are:
 
-* datacite:usesIdentifierScheme -[0..N]-> datacite:IdentifierScheme
-* literal:hasLiteralValue -[0..N]-> rdfs:Literal""" ;
+* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme
+* literal:hasLiteralValue -[1]-> rdfs:Literal""" ;
     rdfs:isDefinedBy datacite: .
 
 datacite:IdentifierScheme a owl:Class ;
@@ -46,6 +46,7 @@ datacite:usesIdentifierScheme a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * datacite:IdentifierScheme""" ;
+    rdfs:comment "The scheme for the external identifier." ;
     rdfs:isDefinedBy datacite: .
 
 fabio:SubjectTerm a owl:Class ;
@@ -67,6 +68,7 @@ literal:hasLiteralValue a owl:DatatypeProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * rdfs:Literal""" ;
+    rdfs:comment "The external identifier." ;
     rdfs:isDefinedBy literal: .
 
 skos:prefLabel a owl:DatatypeProperty ;
@@ -81,7 +83,7 @@ In SKG-IF, it is used to link to entities belonging to the following data types 
 <https://w3id.org/skg-if/ontology/topic/> a owl:Ontology ;
     rdfs:label "SKG-O: topic" ;
     dc:creator "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" ;
-    dc:date "2025-09-22"^^xsd:date ;
+    dc:date "2025-11-07"^^xsd:date ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" ;
     dc:title "The SKG-IF Ontology: topic" ;
     vann:preferredNamespacePrefix "skg-o" ;

@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/skg-if/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/skg-if/ontology/","name":"The SKG-IF Ontology: research-product", "headline":"Document describing the ontology https://w3id.org/skg-if/ontology/", "dateReleased":"Mon Sep 22 17:08:53 CEST 2025", "version":"1.1.0", "author":[{"@type":"Person","name":"Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/skg-if/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/skg-if/ontology/","name":"The SKG-IF Ontology: research-product", "headline":"Document describing the ontology https://w3id.org/skg-if/ontology/", "dateReleased":"Fri Nov 07 12:11:34 CET 2025", "version":"1.1.0", "author":[{"@type":"Person","name":"Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -131,7 +131,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <h3>bido:BibliometricDataInTime<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/bido/BibliometricDataInTime</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * bido:withBibliometricData -[0..N]-&gt; fabio:SubjectTerm * prov:wasGeneratedBy -[0..N]-&gt; prov:Activity</span>
+   <span class="markdown">The properties that can be used with this class are: * bido:withBibliometricData -[1]-&gt; fabio:SubjectTerm * prov:wasGeneratedBy -[0..N]-&gt; prov:Activity</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -146,7 +146,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <h3>datacite:Identifier<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/datacite/Identifier</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * datacite:usesIdentifierScheme -[0..N]-&gt; datacite:IdentifierScheme * literal:hasLiteralValue -[0..N]-&gt; rdfs:Literal</span>
+   <span class="markdown">The properties that can be used with this class are: * datacite:usesIdentifierScheme -[1]-&gt; datacite:IdentifierScheme * literal:hasLiteralValue -[1]-&gt; rdfs:Literal</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -197,7 +197,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <h3>fabio:Expression<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/Expression</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier * dcat:accessService -[0..N]-&gt; dcat:DataService * dcterms:created -[0..N]-&gt; xsd:dateTime * dcterms:dateAccepted -[0..N]-&gt; xsd:dateTime * dcterms:dateCopyrighted -[0..N]-&gt; xsd:dateTime * dcterms:issued -[0..N]-&gt; xsd:dateTime * dcterms:modified -[0..N]-&gt; xsd:dateTime * dcterms:valid -[0..N]-&gt; xsd:dateTime * fabio:hasAccessDate -[0..N]-&gt; xsd:dateTime * fabio:hasCorrectionDate -[0..N]-&gt; xsd:dateTime * fabio:hasDateCollected -[0..N]-&gt; xsd:dateTime * fabio:hasDateReceived -[0..N]-&gt; xsd:dateTime * fabio:hasDecisionDate -[0..N]-&gt; xsd:dateTime * fabio:hasDepositDate -[0..N]-&gt; xsd:dateTime * fabio:hasDistributionDate -[0..N]-&gt; xsd:dateTime * fabio:hasEmbargoDate -[0..N]-&gt; xsd:dateTime * fabio:hasRequestDate -[0..N]-&gt; xsd:dateTime * fabio:hasRetractionDate -[0..N]-&gt; xsd:dateTime * fabio:hasSequenceIdentifier -[0..N]-&gt; xsd:string * frbr:embodiment -[0..N]-&gt; fabio:Manifestation * frbr:partOf -[0..N]-&gt; fabio:Expression * prism:edition -[0..N]-&gt; xsd:string * prism:issueIdentifier -[0..N]-&gt; xsd:string * prism:versionIdentifier -[0..N]-&gt; xsd:string * prism:volume -[0..N]-&gt; xsd:string * pso:holdsStatusInTime -[0..N]-&gt; pso:StatusInTime * rdf:type -[0..N]-&gt; skos:Concept</span>
+   <span class="markdown">The properties that can be used with this class are: * datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier * dcat:accessService -[0..1]-&gt; dcat:DataService * dcterms:created -[0..N]-&gt; xsd:dateTime * dcterms:dateAccepted -[0..N]-&gt; xsd:dateTime * dcterms:dateCopyrighted -[0..N]-&gt; xsd:dateTime * dcterms:issued -[0..N]-&gt; xsd:dateTime * dcterms:modified -[0..N]-&gt; xsd:dateTime * dcterms:valid -[0..N]-&gt; xsd:dateTime * fabio:hasAccessDate -[0..N]-&gt; xsd:dateTime * fabio:hasCorrectionDate -[0..N]-&gt; xsd:dateTime * fabio:hasDateCollected -[0..N]-&gt; xsd:dateTime * fabio:hasDateReceived -[0..N]-&gt; xsd:dateTime * fabio:hasDecisionDate -[0..N]-&gt; xsd:dateTime * fabio:hasDepositDate -[0..N]-&gt; xsd:dateTime * fabio:hasDistributionDate -[0..N]-&gt; xsd:dateTime * fabio:hasEmbargoDate -[0..N]-&gt; xsd:dateTime * fabio:hasRequestDate -[0..N]-&gt; xsd:dateTime * fabio:hasRetractionDate -[0..N]-&gt; xsd:dateTime * fabio:hasSequenceIdentifier -[0..1]-&gt; xsd:string * frbr:embodiment -[0..1]-&gt; fabio:Manifestation * frbr:partOf -[0..1]-&gt; fabio:Expression * prism:edition -[0..1]-&gt; xsd:string * prism:issueIdentifier -[0..1]-&gt; xsd:string * prism:versionIdentifier -[0..1]-&gt; xsd:string * prism:volume -[0..1]-&gt; xsd:string * pso:holdsStatusInTime -[0..N]-&gt; pso:StatusInTime * rdf:type -[0..1]-&gt; skos:Concept</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -212,7 +212,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <h3>fabio:Manifestation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/Manifestation</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * prism:endingPage -[0..N]-&gt; xsd:string * prism:startingPage -[0..N]-&gt; xsd:string</span>
+   <span class="markdown">The properties that can be used with this class are: * prism:endingPage -[1]-&gt; xsd:string * prism:startingPage -[1]-&gt; xsd:string</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -326,7 +326,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <h3>pro:RoleInTime<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/pro/RoleInTime</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * co:index -[0..N]-&gt; xsd:positiveInteger * pro:isHeldBy -[0..N]-&gt; foaf:Agent * pro:relatesToOrganization -[0..N]-&gt; foaf:Organization * pro:withRole -[0..N]-&gt; pro:Role * scoro:withContribution -[0..N]-&gt; scoro:Contribution</span>
+   <span class="markdown">The properties that can be used with this class are: * co:index -[0..1]-&gt; xsd:positiveInteger * pro:isHeldBy -[1]-&gt; foaf:Agent * pro:relatesToOrganization -[0..N]-&gt; foaf:Organization * pro:withRole -[0..1]-&gt; pro:Role * scoro:withContribution -[0..N]-&gt; scoro:Contribution</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -341,7 +341,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <h3>prov:Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/prov#Activity</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * prov:wasAssociatedWith -[0..N]-&gt; foaf:Agent * rdf:value -[0..N]-&gt; xsd:float</span>
+   <span class="markdown">The properties that can be used with this class are: * prov:wasAssociatedWith -[1]-&gt; foaf:Agent * rdf:value -[1]-&gt; xsd:float</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -368,7 +368,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <h3>pso:StatusInTime<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/pso/StatusInTime</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * dcterms:description -[0..N]-&gt; xsd:string * pso:withStatus -[0..N]-&gt; pso:PublicationStatus</span>
+   <span class="markdown">The properties that can be used with this class are: * dcterms:description -[0..1]-&gt; xsd:string * pso:withStatus -[1]-&gt; pso:PublicationStatus</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -395,7 +395,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <h3>scoro:ContributionSituation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/scoro/ContributionSituation</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * co:index -[0..N]-&gt; xsd:positiveInteger * pro:isHeldBy -[0..N]-&gt; foaf:Agent * pro:relatesToOrganization -[0..N]-&gt; foaf:Organization * pro:withRole -[0..N]-&gt; pro:Role * scoro:withContribution -[0..N]-&gt; scoro:Contribution</span>
+   <span class="markdown">The properties that can be used with this class are: * co:index -[0..1]-&gt; xsd:positiveInteger * pro:isHeldBy -[1]-&gt; foaf:Agent * pro:relatesToOrganization -[0..N]-&gt; foaf:Organization * pro:withRole -[0..1]-&gt; pro:Role * scoro:withContribution -[0..N]-&gt; scoro:Contribution</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -410,7 +410,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <h3>skos:Concept<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#Concept</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * skos:inScheme -[0..N]-&gt; skos:ConceptScheme * skos:prefLabel -[0..N]-&gt; rdfs:Literal</span>
+   <span class="markdown">The properties that can be used with this class are: * skos:inScheme -[0..1]-&gt; skos:ConceptScheme * skos:prefLabel -[0..N]-&gt; rdfs:Literal</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -446,7 +446,7 @@ This section provides details for each class and property defined by SKG-O: rese
   <li><a href="#http://purl.org/dc/terms/relation" title="http://purl.org/dc/terms/relation">dcterms:relation (SKG-IF labels: relevant_organisations)</a></li>
   <li><a href="#http://purl.org/cerif/frapo/isFundedBy" title="http://purl.org/cerif/frapo/isFundedBy">frapo:isFundedBy (SKG-IF labels: funding)</a></li>
   <li><a href="#http://purl.org/vocab/frbr/core#embodiment" title="http://purl.org/vocab/frbr/core#embodiment">frbr:embodiment (SKG-IF labels: pages)</a></li>
-  <li><a href="#http://purl.org/vocab/frbr/core#partOf" title="http://purl.org/vocab/frbr/core#partOf">frbr:partOf (SKG-IF labels: is_part_of, in)</a></li>
+  <li><a href="#http://purl.org/vocab/frbr/core#partOf" title="http://purl.org/vocab/frbr/core#partOf">frbr:partOf (SKG-IF labels: in, is_part_of)</a></li>
   <li><a href="#http://purl.org/vocab/frbr/core#realization" title="http://purl.org/vocab/frbr/core#realization">frbr:realization (SKG-IF labels: manifestations)</a></li>
   <li><a href="#http://purl.org/vocab/frbr/core#revisionOf" title="http://purl.org/vocab/frbr/core#revisionOf">frbr:revisionOf (SKG-IF labels: is_new_version_of)</a></li>
   <li><a href="#http://purl.org/vocab/frbr/core#supplement" title="http://purl.org/vocab/frbr/core#supplement">frbr:supplement (SKG-IF labels: is_supplemented_by)</a></li>
@@ -479,6 +479,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/bido/withBibliometricData">
   <h3>bido:withBibliometricData (SKG-IF labels: term)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/bido/withBibliometricData</p>
+  <div class="comment">
+   <span class="markdown">The identifier of a Topic relevant for the Research product.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * bido:BibliometricDataInTime In SKG-IF, it is used to link to entities belonging to the following classes (range): * fabio:SubjectTerm</span>
   </div>
@@ -494,6 +497,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/cito/cites">
   <h3>cito:cites (SKG-IF labels: cites)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/cito/cites</p>
+  <div class="comment">
+   <span class="markdown">Research products identifiers that are cited by a given Research product.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Work In SKG-IF, it is used to link to entities belonging to the following classes (range): * fabio:Work</span>
   </div>
@@ -509,6 +515,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/cito/isDocumentedBy">
   <h3>cito:isDocumentedBy (SKG-IF labels: is_documented_by)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/cito/isDocumentedBy</p>
+  <div class="comment">
+   <span class="markdown">Research products identifiers that documents a given Research product.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Work In SKG-IF, it is used to link to entities belonging to the following classes (range): * fabio:Work</span>
   </div>
@@ -524,6 +533,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/datacite/hasIdentifier">
   <h3>datacite:hasIdentifier (SKG-IF labels: identifiers)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/datacite/hasIdentifier</p>
+  <div class="comment">
+   <span class="markdown">Objects representing external identifiers for the manifestation.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression * fabio:Work In SKG-IF, it is used to link to entities belonging to the following classes (range): * datacite:Identifier</span>
   </div>
@@ -539,6 +551,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/datacite/usesIdentifierScheme">
   <h3>datacite:usesIdentifierScheme (SKG-IF labels: scheme)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/datacite/usesIdentifierScheme</p>
+  <div class="comment">
+   <span class="markdown">The scheme for the external identifier (e.g., doi, handle, url, pubmed, etc.).</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * datacite:Identifier In SKG-IF, it is used to link to entities belonging to the following classes (range): * datacite:IdentifierScheme</span>
   </div>
@@ -554,6 +569,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://www.w3.org/ns/dcat#accessService">
   <h3>dcat:accessService (SKG-IF labels: hosting_data_source)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#accessService</p>
+  <div class="comment">
+   <span class="markdown">A Data source identifier for the manifestation.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following classes (range): * dcat:DataService</span>
   </div>
@@ -599,6 +617,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/vocab/frbr/core#embodiment">
   <h3>frbr:embodiment (SKG-IF labels: pages)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/vocab/frbr/core#embodiment</p>
+  <div class="comment">
+   <span class="markdown">the pages where the manifestation in defined (within its Venue).</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following classes (range): * fabio:Manifestation</span>
   </div>
@@ -612,8 +633,11 @@ This section provides details for each class and property defined by SKG-O: rese
   </dl>
  </div>
  <div class="entity" id="http://purl.org/vocab/frbr/core#partOf">
-  <h3>frbr:partOf (SKG-IF labels: is_part_of, in)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>frbr:partOf (SKG-IF labels: in, is_part_of)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/vocab/frbr/core#partOf</p>
+  <div class="comment">
+   <span class="markdown">A Venue identifier for the manifestation.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression * fabio:Work In SKG-IF, it is used to link to entities belonging to the following classes (range): * fabio:Expression * fabio:Work</span>
   </div>
@@ -644,6 +668,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/vocab/frbr/core#revisionOf">
   <h3>frbr:revisionOf (SKG-IF labels: is_new_version_of)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/vocab/frbr/core#revisionOf</p>
+  <div class="comment">
+   <span class="markdown">Research products identifiers that are prior versions of a given Research product.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Work In SKG-IF, it is used to link to entities belonging to the following classes (range): * fabio:Work</span>
   </div>
@@ -659,6 +686,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/vocab/frbr/core#supplement">
   <h3>frbr:supplement (SKG-IF labels: is_supplemented_by)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/vocab/frbr/core#supplement</p>
+  <div class="comment">
+   <span class="markdown">Research products identifiers that are supplement of a given Research product.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Work In SKG-IF, it is used to link to entities belonging to the following classes (range): * fabio:Work</span>
   </div>
@@ -674,6 +704,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/pro/isHeldBy">
   <h3>pro:isHeldBy (SKG-IF labels: by)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/pro/isHeldBy</p>
+  <div class="comment">
+   <span class="markdown">The identifier of an Agent contributing to a Research product.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * pro:RoleInTime * scoro:ContributionSituation In SKG-IF, it is used to link to entities belonging to the following classes (range): * foaf:Agent</span>
   </div>
@@ -704,6 +737,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/pro/relatesToOrganization">
   <h3>pro:relatesToOrganization (SKG-IF labels: declared_affiliations)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/pro/relatesToOrganization</p>
+  <div class="comment">
+   <span class="markdown">Organisations identifiers that reflect the declared affiliations of a Agent for a Research product.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * pro:RoleInTime * scoro:ContributionSituation In SKG-IF, it is used to link to entities belonging to the following classes (range): * foaf:Organization</span>
   </div>
@@ -719,6 +755,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/pro/withRole">
   <h3>pro:withRole (SKG-IF labels: role)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/pro/withRole</p>
+  <div class="comment">
+   <span class="markdown">The role that an Agent had in a Research product, to choose among `author`, `editor`, and `publisher`.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * pro:RoleInTime * scoro:ContributionSituation In SKG-IF, it is used to link to entities belonging to the following classes (range): * pro:Role</span>
   </div>
@@ -734,6 +773,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://www.w3.org/ns/prov#wasAssociatedWith">
   <h3>prov:wasAssociatedWith (SKG-IF labels: associated_with)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasAssociatedWith</p>
+  <div class="comment">
+   <span class="markdown">the `local_identifier` of the Agent responsible for the topic relation.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * prov:Activity In SKG-IF, it is used to link to entities belonging to the following classes (range): * foaf:Agent</span>
   </div>
@@ -749,6 +791,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://www.w3.org/ns/prov#wasGeneratedBy">
   <h3>prov:wasGeneratedBy (SKG-IF labels: provenance)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasGeneratedBy</p>
+  <div class="comment">
+   <span class="markdown">Provenance information tracking the origin of the relation between a Topic and a Research product.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * bido:BibliometricDataInTime In SKG-IF, it is used to link to entities belonging to the following classes (range): * prov:Activity</span>
   </div>
@@ -779,6 +824,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/pso/withStatus">
   <h3>pso:withStatus (SKG-IF labels: status)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/pso/withStatus</p>
+  <div class="comment">
+   <span class="markdown">describe if the manifestation is open access (`open`), closed access (`closed`), under embargo (`embargoed`), restricted access (`restricted`), or unavailable for some reason (`unavailable`).</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * pso:StatusInTime In SKG-IF, it is used to link to entities belonging to the following classes (range): * pso:PublicationStatus</span>
   </div>
@@ -794,6 +842,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/scoro/withContribution">
   <h3>scoro:withContribution (SKG-IF labels: contribution_types)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/scoro/withContribution</p>
+  <div class="comment">
+   <span class="markdown">The contributions that an Agent had in a Research product.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * pro:RoleInTime * scoro:ContributionSituation In SKG-IF, it is used to link to entities belonging to the following classes (range): * scoro:Contribution</span>
   </div>
@@ -809,6 +860,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://www.w3.org/2004/02/skos/core#inScheme">
   <h3>skos:inScheme (SKG-IF labels: defined_in)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#inScheme</p>
+  <div class="comment">
+   <span class="markdown">the URL of the schema of the manifestation type, e.g., a link to the vocabulary of allowed product types.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * skos:Concept In SKG-IF, it is used to link to entities belonging to the following classes (range): * skos:ConceptScheme</span>
   </div>
@@ -857,6 +911,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/co/index">
   <h3>co:index (SKG-IF labels: rank)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/co/index</p>
+  <div class="comment">
+   <span class="markdown">The rank (i.e., order of appearance) of a Agent with a specific role (e.g., the order of an author in a list) of a Research product.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * pro:RoleInTime * scoro:ContributionSituation In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:positiveInteger</span>
   </div>
@@ -887,6 +944,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/dc/terms/created">
   <h3>dcterms:created (SKG-IF labels: creation)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+  <div class="comment">
+   <span class="markdown">The date on which an entity has been created.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -902,6 +962,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/dc/terms/dateAccepted">
   <h3>dcterms:dateAccepted (SKG-IF labels: acceptance)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/dateAccepted</p>
+  <div class="comment">
+   <span class="markdown">The date of acceptance of an entity. Examples of entities to which a date accepted may be relevant are a thesis (accepted by a university examination board) or an article (accepted by a journal editor).</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -917,6 +980,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/dc/terms/dateCopyrighted">
   <h3>dcterms:dateCopyrighted (SKG-IF labels: copyright)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/dateCopyrighted</p>
+  <div class="comment">
+   <span class="markdown">The date on which an entity has been copyrighted.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -932,6 +998,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/dc/terms/description">
   <h3>dcterms:description (SKG-IF labels: description)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+  <div class="comment">
+   <span class="markdown">describe and qualify the specific status selected.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * pso:StatusInTime In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:string</span>
   </div>
@@ -947,6 +1016,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/dc/terms/issued">
   <h3>dcterms:issued (SKG-IF labels: publication)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/issued</p>
+  <div class="comment">
+   <span class="markdown">The date of formal issuance of a resource (e.g. a publication or a patent).</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -962,6 +1034,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/dc/terms/modified">
   <h3>dcterms:modified (SKG-IF labels: modified)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/modified</p>
+  <div class="comment">
+   <span class="markdown">The date on which an entity has been modified.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -992,6 +1067,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/dc/terms/valid">
   <h3>dcterms:valid (SKG-IF labels: validity)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/valid</p>
+  <div class="comment">
+   <span class="markdown">Date of validity of a resource.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -1007,6 +1085,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/fabio/hasAccessDate">
   <h3>fabio:hasAccessDate (SKG-IF labels: access)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/hasAccessDate</p>
+  <div class="comment">
+   <span class="markdown">The date on which a particular digital item, such as a PDF or an HTML file, has been accessed by somebody.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -1022,6 +1103,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/fabio/hasCorrectionDate">
   <h3>fabio:hasCorrectionDate (SKG-IF labels: correction)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/hasCorrectionDate</p>
+  <div class="comment">
+   <span class="markdown">The date on which something, for example a document, is corrected.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -1037,6 +1121,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/fabio/hasDateCollected">
   <h3>fabio:hasDateCollected (SKG-IF labels: collected)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/hasDateCollected</p>
+  <div class="comment">
+   <span class="markdown">The date on which some item has been collected, for example the data gathered by means of questionnaires.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -1052,6 +1139,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/fabio/hasDateReceived">
   <h3>fabio:hasDateReceived (SKG-IF labels: received)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/hasDateReceived</p>
+  <div class="comment">
+   <span class="markdown">The date on which some item is received, for example a document being received by a publisher.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -1067,6 +1157,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/fabio/hasDecisionDate">
   <h3>fabio:hasDecisionDate (SKG-IF labels: decision)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/hasDecisionDate</p>
+  <div class="comment">
+   <span class="markdown">The date on which a particular endeavour, such as a grant application, has been or will be approved or rejected by somebody.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -1082,6 +1175,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/fabio/hasDepositDate">
   <h3>fabio:hasDepositDate (SKG-IF labels: deposit)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/hasDepositDate</p>
+  <div class="comment">
+   <span class="markdown">The date on which an entity has been deposited, for example in a library, repository, supplementary information archive, database or similar place of document or information storage.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -1097,6 +1193,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/fabio/hasDistributionDate">
   <h3>fabio:hasDistributionDate (SKG-IF labels: distribution)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/hasDistributionDate</p>
+  <div class="comment">
+   <span class="markdown">The date on which something is distributed, for example the date on which a preprint of a document is e-mailed to colleagues and other academics by the author(s), or the date on which a printed announcement of forthcoming theatre events is mailed to those those on the theatre's mailing list.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -1112,6 +1211,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/fabio/hasEmbargoDate">
   <h3>fabio:hasEmbargoDate (SKG-IF labels: embargo)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/hasEmbargoDate</p>
+  <div class="comment">
+   <span class="markdown">The date before which an entity should not be published, or before which a press release should not be reported on. For open-access journal articles, the embargo date is the date before which availability of the open-access version of the article is restricted by the publisher, following subscription-access availability of the published work.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -1127,6 +1229,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/fabio/hasRequestDate">
   <h3>fabio:hasRequestDate (SKG-IF labels: request)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/hasRequestDate</p>
+  <div class="comment">
+   <span class="markdown">The date on which an agent is requested to do something, for example a reviewer is requested to write a review of a paper submitted to a journal for publication, or an author is requested to supply a revised version of the paper in response to the reviews received.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -1142,6 +1247,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/fabio/hasRetractionDate">
   <h3>fabio:hasRetractionDate (SKG-IF labels: retraction)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/hasRetractionDate</p>
+  <div class="comment">
+   <span class="markdown">The date on which something, for example a claim or a journal article, is retracted.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -1157,6 +1265,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://purl.org/spar/fabio/hasSequenceIdentifier">
   <h3>fabio:hasSequenceIdentifier (SKG-IF labels: number)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/hasSequenceIdentifier</p>
+  <div class="comment">
+   <span class="markdown">a number of the manifestation within the Venue (e.g., chapter number).</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:string</span>
   </div>
@@ -1172,6 +1283,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue">
   <h3>literal:hasLiteralValue (SKG-IF labels: value)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue</p>
+  <div class="comment">
+   <span class="markdown">The external identifier.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * datacite:Identifier In SKG-IF, it is used to link to entities belonging to the following data types (range): * rdfs:Literal</span>
   </div>
@@ -1187,6 +1301,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://prismstandard.org/namespaces/basic/2.0/edition">
   <h3>prism:edition (SKG-IF labels: edition)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://prismstandard.org/namespaces/basic/2.0/edition</p>
+  <div class="comment">
+   <span class="markdown">The edition (for journals and books).</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:string</span>
   </div>
@@ -1202,6 +1319,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://prismstandard.org/namespaces/basic/2.0/endingPage">
   <h3>prism:endingPage (SKG-IF labels: last)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://prismstandard.org/namespaces/basic/2.0/endingPage</p>
+  <div class="comment">
+   <span class="markdown">The ending page.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Manifestation In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:string</span>
   </div>
@@ -1217,6 +1337,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://prismstandard.org/namespaces/basic/2.0/issueIdentifier">
   <h3>prism:issueIdentifier (SKG-IF labels: issue)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://prismstandard.org/namespaces/basic/2.0/issueIdentifier</p>
+  <div class="comment">
+   <span class="markdown">Issue number.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:string</span>
   </div>
@@ -1232,6 +1355,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://prismstandard.org/namespaces/basic/2.0/startingPage">
   <h3>prism:startingPage (SKG-IF labels: first)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://prismstandard.org/namespaces/basic/2.0/startingPage</p>
+  <div class="comment">
+   <span class="markdown">The starting page.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Manifestation In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:string</span>
   </div>
@@ -1247,6 +1373,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://prismstandard.org/namespaces/basic/2.0/versionIdentifier">
   <h3>prism:versionIdentifier (SKG-IF labels: version)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://prismstandard.org/namespaces/basic/2.0/versionIdentifier</p>
+  <div class="comment">
+   <span class="markdown">The version for a software or research data product.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:string</span>
   </div>
@@ -1262,6 +1391,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://prismstandard.org/namespaces/basic/2.0/volume">
   <h3>prism:volume (SKG-IF labels: volume)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://prismstandard.org/namespaces/basic/2.0/volume</p>
+  <div class="comment">
+   <span class="markdown">Volume number (for journals, books, conferences).</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * fabio:Expression In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:string</span>
   </div>
@@ -1277,6 +1409,9 @@ This section provides details for each class and property defined by SKG-O: rese
  <div class="entity" id="http://www.w3.org/2004/02/skos/core#prefLabel">
   <h3>skos:prefLabel (SKG-IF labels: labels)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#prefLabel</p>
+  <div class="comment">
+   <span class="markdown">the labels describing the type (multiple for multilingualism).</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * skos:Concept In SKG-IF, it is used to link to entities belonging to the following data types (range): * rdfs:Literal</span>
   </div>

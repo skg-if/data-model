@@ -56,6 +56,7 @@ dcterms:description a owl:DatatypeProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * xsd:string""" ;
+    rdfs:comment "describe and qualify the specific status selected." ;
     rdfs:isDefinedBy dcterms: .
 
 dcterms:title a owl:DatatypeProperty ;
@@ -71,8 +72,8 @@ datacite:Identifier a owl:Class ;
     rdfs:label "datacite:Identifier" ;
     dc:description """The properties that can be used with this class are:
 
-* datacite:usesIdentifierScheme -[0..N]-> datacite:IdentifierScheme
-* literal:hasLiteralValue -[0..N]-> rdfs:Literal""" ;
+* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme
+* literal:hasLiteralValue -[1]-> rdfs:Literal""" ;
     rdfs:isDefinedBy datacite: .
 
 datacite:IdentifierScheme a owl:Class ;
@@ -95,6 +96,7 @@ datacite:usesIdentifierScheme a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * datacite:IdentifierScheme""" ;
+    rdfs:comment "The scheme for the external identifier. It can be one of the following" ;
     rdfs:isDefinedBy datacite: .
 
 fabio:Book a owl:Class ;
@@ -110,12 +112,12 @@ fabio:ExpressionCollection a owl:Class ;
     dc:description """The properties that can be used with this class are:
 
 * datacite:hasIdentifier -[0..N]-> datacite:Identifier
-* dcterms:created -[0..N]-> xsd:dateTime
+* dcterms:created -[0..1]-> xsd:dateTime
 * dcterms:title -[0..N]-> rdfs:Literal
 * frapo:hasAcronym -[0..N]-> rdfs:Literal
-* prism:seriesTitle -[0..N]-> rdfs:Literal
+* prism:seriesTitle -[0..1]-> rdfs:Literal
 * pro:isDocumentContextFor -[0..N]-> pro:RoleInTime
-* pso:holdsStatusInTime -[0..N]-> pso:StatusInTime""" ;
+* pso:holdsStatusInTime -[0..1]-> pso:StatusInTime""" ;
     rdfs:isDefinedBy fabio: .
 
 fabio:Journal a owl:Class ;
@@ -175,8 +177,8 @@ pso:StatusInTime a owl:Class ;
     rdfs:label "pso:StatusInTime" ;
     dc:description """The properties that can be used with this class are:
 
-* dcterms:description -[0..N]-> xsd:string
-* pso:withStatus -[0..N]-> pso:PublicationStatus""" ;
+* dcterms:description -[0..1]-> xsd:string
+* pso:withStatus -[1]-> pso:PublicationStatus""" ;
     rdfs:isDefinedBy pso: .
 
 pso:closed-access a owl:NamedIndividual ;
@@ -203,6 +205,7 @@ pso:withStatus a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * pso:PublicationStatus""" ;
+    rdfs:comment "describe if the journal is open access (`open`), closed access (`closed`), or hybrid (`hybrid`)." ;
     rdfs:isDefinedBy pso: .
 
 vann:preferredNamespacePrefix a owl:AnnotationProperty .
@@ -216,12 +219,13 @@ literal:hasLiteralValue a owl:DatatypeProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * rdfs:Literal""" ;
+    rdfs:comment "The external identifier." ;
     rdfs:isDefinedBy literal: .
 
 <https://w3id.org/skg-if/ontology/venue/> a owl:Ontology ;
     rdfs:label "SKG-O: venue" ;
     dc:creator "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" ;
-    dc:date "2025-09-22"^^xsd:date ;
+    dc:date "2025-11-07"^^xsd:date ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" ;
     dc:title "The SKG-IF Ontology: venue" ;
     vann:preferredNamespacePrefix "skg-o" ;

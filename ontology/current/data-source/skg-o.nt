@@ -1,162 +1,182 @@
+<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/skg-if/ontology/data-source/> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" .
+<http://purl.org/coar/access_right/c_14cb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/coar/access_right/c_14cb> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/coar/access_right/> .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xmlns.com/foaf/0.1/page> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* odrl:Policy\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Document" .
+<http://purl.org/spar/fabio/Catalog> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Catalog (SKG-IF labels: aggregator)" .
+<http://purl.org/dc/terms/requires> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcterms:Standard\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:IdentifierScheme" .
+<https://w3id.org/skg-if/ontology/data-source/> <http://www.w3.org/2002/07/owl#versionInfo> "1.1.0" .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/dcat#> .
 <http://purl.org/coar/access_right/c_f1cf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/coar/access_right/> .
-<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#label> "dcat:theme (SKG-IF labels: data_source_classification)" .
-<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://schema.org/audienceType> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* schema:Audience\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:string" .
-<https://schema.org/audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/target> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* odrl:Policy\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* owl:Thing" .
-<https://w3id.org/skg-if/ontology/data-source/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "skg-o" .
-<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:target (SKG-IF labels: target)" .
-<http://www.w3.org/ns/dcat#DataService> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* datacite:hasIdentifier -[0..N]-> datacite:Identifier\n* dcat:theme -[0..N]-> owl:Thing\n* dcterms:conformsTo -[0..N]-> dcterms:Standard\n* dcterms:coverage -[0..N]-> owl:Thing\n* dcterms:subject -[0..N]-> owl:Thing\n* foaf:name -[0..N]-> rdfs:Literal\n* odrl:hasPolicy -[0..N]-> odrl:Policy\n* schema:audience -[0..N]-> schema:Audience" .
-<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:IdentifierScheme" .
+<http://purl.org/coar/access_right/c_abf2> <http://www.w3.org/2000/01/rdf-schema#label> "coar:c_abf2 (SKG-IF labels: open access)" .
+<http://purl.org/coar/access_right/c_abf2> <http://www.w3.org/2000/01/rdf-schema#comment> "This policy provides the possibility of having / handling Data source resources that are immediately and permanently online (from COAR Access Rights 1.0)." .
+<http://purl.org/dc/terms/Standard> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:Standard" .
+<http://purl.org/spar/fabio/Software> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Software (SKG-IF labels: software)" .
+<http://purl.org/spar/datacite/Identifier> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme\n* literal:hasLiteralValue -[1]-> rdfs:Literal" .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fabio/Repository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/archive> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:archive (SKG-IF labels: preservation)" .
+<http://purl.org/spar/fabio/Metadata> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Metadata (SKG-IF labels: metadata)" .
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/coar/access_right/c_16ec> <http://www.w3.org/2000/01/rdf-schema#label> "coar:c_16ec (SKG-IF labels: restricted access)" .
+<https://w3id.org/skg-if/ontology/data-source/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://www.w3.org/ns/odrl/2/archive> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
 <http://purl.org/spar/fabio/ScholarlyWork> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<https://schema.org/Audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:description (SKG-IF labels: description)" .
-<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/hasPolicy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
-<https://w3id.org/skg-if/ontology/data-source/> <http://www.w3.org/2002/07/owl#versionInfo> "1.1.0" .
-<http://vivoweb.org/ontology/core#Publisher> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vivoweb.org/ontology/core#> .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:hasIdentifier (SKG-IF labels: identifiers)" .
-<http://purl.org/coar/access_right/c_14cb> <http://www.w3.org/2000/01/rdf-schema#label> "coar:c_14cb (SKG-IF labels: metadata only access)" .
-<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:IdentifierScheme" .
-<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#label> "schema:audience (SKG-IF labels: audience)" .
-<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<https://w3id.org/skg-if/ontology/data-source/> <http://purl.org/dc/elements/1.1/title> "The SKG-IF Ontology: data-source" .
-<http://purl.org/dc/terms/requires> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:requires (SKG-IF labels: pid_schemes)" .
-<http://vivoweb.org/ontology/core#Publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/dcat#theme> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* owl:Thing" .
-<https://w3id.org/skg-if/ontology/data-source/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Document" .
-<https://schema.org/audienceType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/> .
-<https://w3id.org/skg-if/ontology/data-source/> <http://purl.org/dc/elements/1.1/rights> "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" .
-<http://purl.org/coar/access_right/c_abf2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/coar/access_right/> .
-<http://xmlns.com/foaf/0.1/page> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* odrl:Policy\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* foaf:Document" .
-<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/spar/fabio/ScholarlyWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/conformsTo> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* dcterms:Standard" .
-<http://purl.org/cerif/frapo/ResearchInformationSystem> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:ResearchInformationSystem (SKG-IF labels: cris system)" .
-<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
-<https://w3id.org/skg-if/ontology/data-source/> <http://purl.org/dc/elements/1.1/creator> "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" .
-<http://purl.org/dc/terms/coverage> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:coverage (SKG-IF labels: research_product_types, for)" .
-<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Dataset (SKG-IF labels: research data)" .
-<http://purl.org/coar/access_right/c_f1cf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3.org/ns/odrl/2/aggregate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
-<http://purl.org/spar/fabio/Database> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Database (SKG-IF labels: scientific database)" .
-<http://purl.org/spar/fabio/Repository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/coar/access_right/c_f1cf> <http://www.w3.org/2000/01/rdf-schema#label> "coar:c_f1cf (SKG-IF labels: embargoed access)" .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.essepuntato.it/2010/06/literalreification/> .
-<http://purl.org/cerif/frapo/ResearchInformationSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
-<http://purl.org/coar/access_right/c_16ec> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/coar/access_right/> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
-<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/dcat#> .
-<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
-<http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Journal (SKG-IF labels: journal archive)" .
-<http://www.w3.org/ns/odrl/2/archive> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:archive (SKG-IF labels: preservation)" .
 <http://purl.org/spar/fabio/Catalog> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://www.w3.org/ns/odrl/2/Policy> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* dcterms:description -[0..N]-> xsd:string\n* foaf:page -[0..N]-> foaf:Document\n* odrl:action -[0..N]-> odrl:Action\n* odrl:target -[0..N]-> owl:Thing" .
-<http://www.w3.org/ns/odrl/2/hasPolicy> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* odrl:Policy" .
-<http://www.w3.org/ns/odrl/2/hasPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/requires> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcterms:Standard\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:IdentifierScheme" .
-<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://vivoweb.org/ontology/core#Publisher> <http://www.w3.org/2000/01/rdf-schema#label> "vivo:Publisher (SKG-IF labels: publisher archive)" .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:name (SKG-IF labels: name)" .
-<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#label> "dcat:DataService (SKG-IF labels: Data source)" .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/coar/access_right/c_14cb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/spar/fabio/Catalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:Action" .
-<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/Standard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/spar/fabio/Repository> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Repository (SKG-IF labels: repository)" .
-<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://schema.org/Audience> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* schema:audienceType -[0..N]-> xsd:string" .
-<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
-<http://purl.org/dc/terms/coverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
-<http://purl.org/dc/terms/coverage> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n* dcterms:Standard\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* owl:Thing" .
-<http://purl.org/dc/terms/requires> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/dc/terms/requires> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<https://schema.org/audienceType> <http://www.w3.org/2000/01/rdf-schema#label> "schema:audienceType (SKG-IF labels: audience_type)" .
-<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://purl.org/coar/access_right/c_16ec> <http://www.w3.org/2000/01/rdf-schema#label> "coar:c_16ec (SKG-IF labels: restricted access)" .
-<https://w3id.org/skg-if/ontology/data-source/> <http://purl.org/dc/elements/1.1/date> "2025-09-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/cerif/frapo/ResearchInformationSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
-<http://www.w3.org/ns/odrl/2/aggregate> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:aggregate (SKG-IF labels: submission)" .
-<http://purl.org/spar/fabio/Metadata> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#label> "literal:hasLiteralValue (SKG-IF labels: value)" .
-<http://purl.org/dc/terms/coverage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<https://schema.org/Audience> <http://www.w3.org/2000/01/rdf-schema#label> "schema:Audience" .
-<http://purl.org/dc/terms/description> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* odrl:Policy\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:string" .
-<https://w3id.org/skg-if/ontology/data-source/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/skg-if/ontology/data-source/1.1.0/> .
-<http://purl.org/dc/terms/Standard> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:Standard" .
-<http://purl.org/coar/access_right/c_16ec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/ns/dcat#DataService> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* datacite:hasIdentifier -[0..N]-> datacite:Identifier\n* dcat:theme -[0..1]-> owl:Thing\n* dcterms:conformsTo -[0..N]-> dcterms:Standard\n* dcterms:coverage -[0..N]-> owl:Thing\n* dcterms:subject -[0..N]-> owl:Thing\n* foaf:name -[0..1]-> rdfs:Literal\n* odrl:hasPolicy -[0..N]-> odrl:Policy\n* schema:audience -[0..N]-> schema:Audience" .
 <http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
-<http://purl.org/spar/datacite/hasIdentifier> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:Identifier" .
-<http://xmlns.com/foaf/0.1/name> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
-<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:page (SKG-IF labels: documented_at)" .
-<http://purl.org/spar/fabio/Database> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/ScholarlyWork> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:ScholarlyWork (SKG-IF labels: literature)" .
-<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:usesIdentifierScheme (SKG-IF labels: scheme)" .
-<http://purl.org/dc/terms/Standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://www.w3.org/ns/odrl/2/action> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* odrl:Policy\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* odrl:Action" .
-<http://purl.org/dc/terms/subject> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* owl:Thing" .
-<http://purl.org/spar/datacite/Identifier> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* datacite:usesIdentifierScheme -[0..N]-> datacite:IdentifierScheme\n* literal:hasLiteralValue -[0..N]-> rdfs:Literal" .
-<https://w3id.org/skg-if/ontology/data-source/> <http://www.w3.org/2000/01/rdf-schema#label> "SKG-O: data-source" .
-<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/coar/access_right/c_abf2> <http://www.w3.org/2000/01/rdf-schema#label> "coar:c_abf2 (SKG-IF labels: open access)" .
-<http://purl.org/spar/fabio/Software> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Software (SKG-IF labels: software)" .
-<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/dcat#> .
-<http://purl.org/coar/access_right/c_abf2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/spar/fabio/Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Work (SKG-IF labels: any)" .
-<https://schema.org/audience> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* schema:Audience" .
-<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/archive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:action (SKG-IF labels: about)" .
-<http://purl.org/dc/terms/Standard> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* dcterms:coverage -[0..N]-> owl:Thing\n* dcterms:requires -[0..N]-> datacite:IdentifierScheme" .
-<http://www.w3.org/ns/odrl/2/hasPolicy> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:hasPolicy (SKG-IF labels: policies)" .
-<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:Policy" .
-<https://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/> .
-<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/skg-if/ontology/data-source/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/skg-if/ontology/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<https://w3id.org/skg-if/ontology/data-source/> <http://www.w3.org/2000/01/rdf-schema#comment> "SKG-O, the SKG-IF Ontology, is not yet another bibliographic ontology. Rather it is just a place where existing and complementary ontological entities from several other ontologies, all employed in the Scientific Knowledge Graph Interoperability Framework (SKG-IF), are grouped together for the purpose of providing descriptive metadata compliant with the SKG-IF Data Model." .
-<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Catalog> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Catalog (SKG-IF labels: aggregator)" .
-<http://purl.org/spar/fabio/Journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/fabio/Repository> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:conformsTo (SKG-IF labels: persistent_identity_systems)" .
-<http://www.w3.org/ns/odrl/2/aggregate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://purl.org/spar/fabio/Metadata> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Metadata (SKG-IF labels: metadata)" .
-<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
-<http://purl.org/spar/fabio/Software> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
-<http://purl.org/spar/fabio/Database> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/coar/access_right/c_14cb> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/coar/access_right/> .
-<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:Identifier" .
-<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://schema.org/Audience> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/> .
-<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:subject (SKG-IF labels: disciplines)" .
+<http://purl.org/spar/fabio/Repository> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Repository (SKG-IF labels: repository)" .
+<https://schema.org/audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/coar/access_right/c_14cb> <http://www.w3.org/2000/01/rdf-schema#label> "coar:c_14cb (SKG-IF labels: metadata only access)" .
+<http://purl.org/coar/access_right/c_14cb> <http://www.w3.org/2000/01/rdf-schema#comment> "This policy provides the possibility of having / handling metadata only access refers to the resources in the Data source (from COAR Access Rights 1.0)." .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:hasIdentifier (SKG-IF labels: identifiers)" .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:description (SKG-IF labels: description)" .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/coverage> <http://www.w3.org/2000/01/rdf-schema#comment> "The Product type to which the persistent identifier is referring to. To choose from" .
+<https://schema.org/audienceType> <http://www.w3.org/2000/01/rdf-schema#label> "schema:audienceType (SKG-IF labels: audience_type)" .
+<http://purl.org/coar/access_right/c_16ec> <http://www.w3.org/2000/01/rdf-schema#comment> "This policy provides the possibility of having / handling restricted access to the resources in the Data source (from COAR Access Rights 1.0)." .
+<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fabio/Catalog> <http://www.w3.org/2000/01/rdf-schema#comment> "services for the aggregation of metadata about research products (and other entities) that are mainly collected (aka harvested) from data sources via APIs and then possibly curated/enriched by end-users, e.g. BASE, NARCIS, GESIS, B2FIND, OpenAIRE Research Graph" .
+<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/2000/01/rdf-schema#comment> "The URL of the document that describes the policy." .
+<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/coar/access_right/c_f1cf> <http://www.w3.org/2000/01/rdf-schema#comment> "This policy provides the possibility of having / handling embargoed access refers to the resources in the Data source (from COAR Access Rights 1.0)." .
+<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:Action" .
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://purl.org/dc/terms/coverage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The external identifier." .
+<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://www.w3.org/ns/odrl/2/target> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* odrl:Policy\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* owl:Thing" .
+<http://purl.org/spar/fabio/Database> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Database (SKG-IF labels: scientific database)" .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#label> "dcat:theme (SKG-IF labels: data_source_classification)" .
+<http://www.w3.org/ns/odrl/2/archive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/Audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Repository> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<https://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#label> "schema:audience (SKG-IF labels: audience)" .
+<http://www.w3.org/ns/odrl/2/Policy> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* dcterms:description -[0..1]-> xsd:string\n* foaf:page -[0..1]-> foaf:Document\n* odrl:action -[1]-> odrl:Action\n* odrl:target -[0..N]-> owl:Thing" .
+<http://www.w3.org/ns/odrl/2/aggregate> <http://www.w3.org/2000/01/rdf-schema#comment> "This policy provides a comprehensive framework for the contribution of research products. Criteria for submitting content to the repository as well as product preparation guidelines can be stated. Concepts for quality assurance may be provided." .
+<http://www.w3.org/ns/odrl/2/hasPolicy> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* odrl:Policy" .
+<http://purl.org/spar/fabio/Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/hasPolicy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<https://w3id.org/skg-if/ontology/data-source/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/skg-if/ontology/data-source/1.1.0/> .
+<http://purl.org/dc/terms/coverage> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n* dcterms:Standard\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* owl:Thing" .
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:target (SKG-IF labels: target)" .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#label> "dcat:DataService (SKG-IF labels: Data source)" .
+<http://purl.org/coar/access_right/c_abf2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vivoweb.org/ontology/core#Publisher> <http://www.w3.org/2000/01/rdf-schema#comment> "Scientific literature publisher, e.g. Elsevier, Copernicus, Frontiers, Springer, providing metadata and files of scientific publications relative to journals and conferences" .
+<http://purl.org/coar/access_right/c_abf2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/coar/access_right/> .
+<http://purl.org/dc/terms/Standard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<https://w3id.org/skg-if/ontology/data-source/> <http://www.w3.org/2000/01/rdf-schema#comment> "SKG-O, the SKG-IF Ontology, is not yet another bibliographic ontology. Rather it is just a place where existing and complementary ontological entities from several other ontologies, all employed in the Scientific Knowledge Graph Interoperability Framework (SKG-IF), are grouped together for the purpose of providing descriptive metadata compliant with the SKG-IF Data Model." .
+<http://vivoweb.org/ontology/core#Publisher> <http://www.w3.org/2000/01/rdf-schema#label> "vivo:Publisher (SKG-IF labels: publisher archive)" .
+<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:IdentifierScheme" .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#comment> "Describe the type of policy, if necessary." .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<https://schema.org/audienceType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/> .
+<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Dataset (SKG-IF labels: research data)" .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The scheme for the external identifier (e.g., a DOI)." .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://www.w3.org/ns/odrl/2/aggregate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/fabio/Journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Work (SKG-IF labels: any)" .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:Journal (SKG-IF labels: journal archive)" .
+<http://purl.org/spar/fabio/Database> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#theme> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* owl:Thing" .
+<http://www.w3.org/ns/odrl/2/archive> <http://www.w3.org/2000/01/rdf-schema#comment> "This policy provides a comprehensive framework for the long-term preservation of the research products. Principles aims and responsibilities must be clarified. An important aspect is the description of preservation concepts to ensure the technical and conceptual utility of the content." .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<https://schema.org/audienceType> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* schema:Audience\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:string" .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.essepuntato.it/2010/06/literalreification/> .
+<https://w3id.org/skg-if/ontology/data-source/> <http://www.w3.org/2000/01/rdf-schema#label> "SKG-O: data-source" .
+<http://purl.org/cerif/frapo/ResearchInformationSystem> <http://www.w3.org/2000/01/rdf-schema#label> "frapo:ResearchInformationSystem (SKG-IF labels: cris system)" .
+<http://purl.org/spar/datacite/hasIdentifier> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:Identifier" .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skg-if/ontology/data-source/> <http://purl.org/dc/elements/1.1/date> "2025-11-07"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/cerif/frapo/ResearchInformationSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/coar/access_right/c_16ec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/ns/odrl/2/action> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* odrl:Policy\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* odrl:Action" .
+<http://purl.org/spar/fabio/Metadata> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://purl.org/dc/terms/description> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* odrl:Policy\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* xsd:string" .
+<http://purl.org/spar/fabio/Software> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/Audience> <http://www.w3.org/2000/01/rdf-schema#label> "schema:Audience" .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#comment> "Data sources for the deposition (submission), preservation, discovery, and access of scientific journal articles (metadata and files), e.g. publishers sites, journal sites, etc." .
+<https://schema.org/Audience> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* schema:audienceType -[1]-> xsd:string" .
+<http://purl.org/dc/terms/Standard> <http://purl.org/dc/elements/1.1/description> "The properties that can be used with this class are:\n\n* dcterms:coverage -[1]-> owl:Thing\n* dcterms:requires -[1..N]-> datacite:IdentifierScheme" .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/spar/datacite/hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/datacite/> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/spar/fabio/ScholarlyWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cerif/frapo/ResearchInformationSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A current research information system (CRIS) is an information system to store, manage and exchange contextual metadata for the research products funded by a research funder or conducted at a research-performing organisation" .
+<http://www.w3.org/ns/odrl/2/hasPolicy> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:hasPolicy (SKG-IF labels: policies)" .
 <https://schema.org/audienceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/cerif/frapo/ResearchInformationSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/cerif/frapo/> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://xmlns.com/foaf/0.1/name> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal" .
+<http://purl.org/spar/fabio/Journal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<https://schema.org/audience> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* schema:Audience" .
+<http://purl.org/dc/terms/coverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:usesIdentifierScheme (SKG-IF labels: scheme)" .
+<http://purl.org/spar/fabio/Database> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:Policy" .
+<https://schema.org/audienceType> <http://www.w3.org/2000/01/rdf-schema#comment> "the type of the audience based on the vocabulary Jurisdiction." .
+<http://vivoweb.org/ontology/core#Publisher> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vivoweb.org/ontology/core#> .
+<http://purl.org/dc/terms/requires> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<https://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/> .
+<http://purl.org/spar/fabio/Repository> <http://www.w3.org/2000/01/rdf-schema#comment> "services for the deposition, preservation, discovery, and access of research products metadata and files, e.g. PANGAEA, Zenodo, B2SHARE, EGI AppDB, BioTools" .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://purl.org/dc/terms/conformsTo> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* dcterms:Standard" .
+<http://purl.org/spar/fabio/Dataset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/fabio/> .
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of policy to consider." .
+<https://w3id.org/skg-if/ontology/data-source/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/skg-if/ontology/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/spar/fabio/ScholarlyWork> <http://www.w3.org/2000/01/rdf-schema#label> "fabio:ScholarlyWork (SKG-IF labels: literature)" .
+<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:conformsTo (SKG-IF labels: persistent_identity_systems)" .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/2000/01/rdf-schema#label> "literal:hasLiteralValue (SKG-IF labels: value)" .
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/aggregate> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:aggregate (SKG-IF labels: submission)" .
+<http://purl.org/coar/access_right/c_f1cf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/dcat#> .
+<http://purl.org/coar/access_right/c_16ec> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/coar/access_right/> .
+<http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/skg-if/ontology/data-source/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "skg-o" .
+<http://purl.org/spar/fabio/Database> <http://www.w3.org/2000/01/rdf-schema#comment> "Scientific Databases intended to store structured information about scientific entities, e.g. PROTDB, ENA, ECRIN Studies Database" .
+<http://purl.org/dc/terms/requires> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:requires (SKG-IF labels: pid_schemes)" .
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2000/01/rdf-schema#label> "odrl:action (SKG-IF labels: about)" .
+<https://w3id.org/skg-if/ontology/data-source/> <http://purl.org/dc/elements/1.1/creator> "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" .
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:subject (SKG-IF labels: disciplines)" .
+<http://www.w3.org/ns/odrl/2/hasPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/skg-if/ontology/data-source/> <http://purl.org/dc/elements/1.1/title> "The SKG-IF Ontology: data-source" .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:Document" .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:page (SKG-IF labels: documented_at)" .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/requires> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://purl.org/spar/fabio/Catalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/IdentifierScheme> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:IdentifierScheme" .
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "foaf:name (SKG-IF labels: name)" .
+<http://purl.org/dc/terms/subject> <http://purl.org/dc/elements/1.1/description> "In SKG-IF, it is used in the following classes (domain):\n* dcat:DataService\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* owl:Thing" .
+<http://purl.org/coar/access_right/c_f1cf> <http://www.w3.org/2000/01/rdf-schema#label> "coar:c_f1cf (SKG-IF labels: embargoed access)" .
+<http://vivoweb.org/ontology/core#Publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/ns/odrl/2/Policy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://purl.org/dc/terms/coverage> <http://www.w3.org/2000/01/rdf-schema#label> "dcterms:coverage (SKG-IF labels: for, research_product_types)" .
+<http://purl.org/dc/terms/requires> <http://www.w3.org/2000/01/rdf-schema#comment> "Persistent identifier schemes used to refer to ProductTypes. Each elements must be drawn by the EOSC vocabulary Persistent Identity Scheme, i.e.," .
+<http://purl.org/spar/datacite/Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "datacite:Identifier" .
+<http://purl.org/dc/terms/Standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/datacite/usesIdentifierScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/aggregate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .

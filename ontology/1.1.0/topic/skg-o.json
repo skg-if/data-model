@@ -1,120 +1,5 @@
 [
   {
-    "@id": "http://purl.org/dc/elements/1.1/description",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/datacite/usesIdentifierScheme",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:IdentifierScheme"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/datacite/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "datacite:usesIdentifierScheme (SKG-IF labels: scheme)"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/rights",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/datacite/IdentifierScheme",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/datacite/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "datacite:IdentifierScheme"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/title",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/date",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/elements/1.1/creator",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/spar/datacite/Identifier",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "The properties that can be used with this class are:\n\n* datacite:usesIdentifierScheme -[0..N]-> datacite:IdentifierScheme\n* literal:hasLiteralValue -[0..N]-> rdfs:Literal"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/datacite/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "datacite:Identifier"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://purl.org/dc/elements/1.1/description": [
-      {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://www.essepuntato.it/2010/06/literalreification/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "literal:hasLiteralValue (SKG-IF labels: value)"
-      }
-    ]
-  },
-  {
     "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
@@ -136,30 +21,29 @@
     ]
   },
   {
-    "@id": "http://purl.org/spar/datacite/hasIdentifier",
+    "@id": "http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://purl.org/dc/elements/1.1/description": [
       {
-        "@value": "In SKG-IF, it is used in the following classes (domain):\n* fabio:SubjectTerm\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:Identifier"
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following data types (range):\n* rdfs:Literal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The external identifier."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/datacite/"
+        "@id": "http://www.essepuntato.it/2010/06/literalreification/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "datacite:hasIdentifier (SKG-IF labels: identifiers)"
+        "@value": "literal:hasLiteralValue (SKG-IF labels: value)"
       }
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
@@ -175,7 +59,7 @@
     "http://purl.org/dc/elements/1.1/date": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2025-09-22"
+        "@value": "2025-11-07"
       }
     ],
     "http://purl.org/dc/elements/1.1/rights": [
@@ -221,6 +105,39 @@
     ]
   },
   {
+    "@id": "http://purl.org/dc/elements/1.1/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/datacite/Identifier",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "The properties that can be used with this class are:\n\n* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme\n* literal:hasLiteralValue -[1]-> rdfs:Literal"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/datacite/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "datacite:Identifier"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
     "@id": "http://purl.org/spar/fabio/SubjectTerm",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -239,6 +156,99 @@
       {
         "@value": "fabio:SubjectTerm (SKG-IF labels: topic)"
       }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/date",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/datacite/hasIdentifier",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* fabio:SubjectTerm\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:Identifier"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/datacite/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "datacite:hasIdentifier (SKG-IF labels: identifiers)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/datacite/IdentifierScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/datacite/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "datacite:IdentifierScheme"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/datacite/usesIdentifierScheme",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@value": "In SKG-IF, it is used in the following classes (domain):\n* datacite:Identifier\n\nIn SKG-IF, it is used to link to entities belonging to the following classes (range):\n* datacite:IdentifierScheme"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "The scheme for the external identifier."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/datacite/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "datacite:usesIdentifierScheme (SKG-IF labels: scheme)"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/rights",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   }
 ]

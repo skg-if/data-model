@@ -78,8 +78,8 @@ datacite:Identifier a owl:Class ;
     rdfs:label "datacite:Identifier" ;
     dc:description """The properties that can be used with this class are:
 
-* datacite:usesIdentifierScheme -[0..N]-> datacite:IdentifierScheme
-* literal:hasLiteralValue -[0..N]-> rdfs:Literal""" ;
+* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme
+* literal:hasLiteralValue -[1]-> rdfs:Literal""" ;
     rdfs:isDefinedBy datacite: .
 
 datacite:IdentifierScheme a owl:Class ;
@@ -102,6 +102,7 @@ datacite:usesIdentifierScheme a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * datacite:IdentifierScheme""" ;
+    rdfs:comment "The scheme for the external identifier." ;
     rdfs:isDefinedBy datacite: .
 
 pro:Role a owl:Class ;
@@ -112,9 +113,9 @@ pro:RoleInTime a owl:Class ;
     rdfs:label "pro:RoleInTime" ;
     dc:description """The properties that can be used with this class are:
 
-* pro:relatesToOrganization -[0..N]-> foaf:Organization
-* pro:withRole -[0..N]-> pro:Role
-* tvc:atTime -[0..N]-> ti:TimeInterval""" ;
+* pro:relatesToOrganization -[1]-> foaf:Organization
+* pro:withRole -[0..1]-> pro:Role
+* tvc:atTime -[0..1]-> ti:TimeInterval""" ;
     rdfs:isDefinedBy pro: .
 
 pro:holdsRoleInTime a owl:ObjectProperty ;
@@ -133,6 +134,7 @@ pro:relatesToOrganization a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * foaf:Organization""" ;
+    rdfs:comment "The identifier of an Organisation a Person is affiliated with." ;
     rdfs:isDefinedBy pro: .
 
 pro:withRole a owl:ObjectProperty ;
@@ -142,6 +144,7 @@ pro:withRole a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * pro:Role""" ;
+    rdfs:comment "The role that a Person had in the context of an Organisation. Needed for parsing purposes; fixed to `affiliate`." ;
     rdfs:isDefinedBy pro: .
 
 scoro:affiliate a owl:NamedIndividual ;
@@ -159,6 +162,7 @@ literal:hasLiteralValue a owl:DatatypeProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * rdfs:Literal""" ;
+    rdfs:comment "The external identifier." ;
     rdfs:isDefinedBy literal: .
 
 tvc:atTime a owl:ObjectProperty ;
@@ -168,14 +172,15 @@ tvc:atTime a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * ti:TimeInterval""" ;
+    rdfs:comment "The time period where the Person was affiliated with an Organisation. It includes the following information:" ;
     rdfs:isDefinedBy tvc: .
 
 ti:TimeInterval a owl:Class ;
     rdfs:label "ti:TimeInterval" ;
     dc:description """The properties that can be used with this class are:
 
-* ti:hasIntervalEndDate -[0..N]-> xsd:dateTime
-* ti:hasIntervalStartDate -[0..N]-> xsd:dateTime""" ;
+* ti:hasIntervalEndDate -[0..1]-> xsd:dateTime
+* ti:hasIntervalStartDate -[0..1]-> xsd:dateTime""" ;
     rdfs:isDefinedBy ti: .
 
 ti:hasIntervalEndDate a owl:DatatypeProperty ;
@@ -185,6 +190,7 @@ ti:hasIntervalEndDate a owl:DatatypeProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * xsd:dateTime""" ;
+    rdfs:comment "The end datetime (if any) of the affiliation with an Organisation. The string should be compliant with the ISO 8601 datetime string." ;
     rdfs:isDefinedBy ti: .
 
 ti:hasIntervalStartDate a owl:DatatypeProperty ;
@@ -194,6 +200,7 @@ ti:hasIntervalStartDate a owl:DatatypeProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * xsd:dateTime""" ;
+    rdfs:comment "The start datetime of the affiliation with an Organisation. The string should be compliant with the ISO 8601 datetime string." ;
     rdfs:isDefinedBy ti: .
 
 skos:altLabel a owl:DatatypeProperty ;
@@ -210,7 +217,7 @@ foaf:Agent a owl:Class ;
     dc:description """The properties that can be used with this class are:
 
 * datacite:hasIdentifier -[0..N]-> datacite:Identifier
-* foaf:name -[0..N]-> rdfs:Literal""" ;
+* foaf:name -[0..1]-> rdfs:Literal""" ;
     rdfs:isDefinedBy foaf: .
 
 foaf:Document a owl:Class ;
@@ -221,9 +228,9 @@ foaf:Organization a owl:Class ;
     rdfs:label "foaf:Organization" ;
     dc:description """The properties that can be used with this class are:
 
-* foaf:homepage -[0..N]-> foaf:Document
-* frapo:hasAcronym -[0..N]-> rdfs:Literal
-* frapo:hasCountry -[0..N]-> rdfs:Literal
+* foaf:homepage -[0..1]-> foaf:Document
+* frapo:hasAcronym -[0..1]-> rdfs:Literal
+* frapo:hasCountry -[0..1]-> rdfs:Literal
 * skos:altLabel -[0..N]-> rdfs:Literal""" ;
     rdfs:isDefinedBy foaf: .
 
@@ -231,8 +238,8 @@ foaf:Person a owl:Class ;
     rdfs:label "foaf:Person" ;
     dc:description """The properties that can be used with this class are:
 
-* foaf:familyName -[0..N]-> rdfs:Literal
-* foaf:givenName -[0..N]-> rdfs:Literal
+* foaf:familyName -[0..1]-> rdfs:Literal
+* foaf:givenName -[0..1]-> rdfs:Literal
 * pro:holdsRoleInTime -[0..N]-> pro:RoleInTime""" ;
     rdfs:isDefinedBy foaf: .
 
@@ -279,7 +286,7 @@ schema:MedicalOrganization a owl:Class ;
 <https://w3id.org/skg-if/ontology/agent/> a owl:Ontology ;
     rdfs:label "SKG-O: agent" ;
     dc:creator "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" ;
-    dc:date "2025-09-22"^^xsd:date ;
+    dc:date "2025-11-07"^^xsd:date ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" ;
     dc:title "The SKG-IF Ontology: agent" ;
     vann:preferredNamespacePrefix "skg-o" ;

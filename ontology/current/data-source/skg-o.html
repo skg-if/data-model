@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/skg-if/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/skg-if/ontology/","name":"The SKG-IF Ontology: data-source", "headline":"Document describing the ontology https://w3id.org/skg-if/ontology/", "dateReleased":"Mon Sep 22 17:07:29 CEST 2025", "version":"1.1.0", "author":[{"@type":"Person","name":"Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/skg-if/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/skg-if/ontology/","name":"The SKG-IF Ontology: data-source", "headline":"Document describing the ontology https://w3id.org/skg-if/ontology/", "dateReleased":"Fri Nov 07 12:09:21 CET 2025", "version":"1.1.0", "author":[{"@type":"Person","name":"Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -127,7 +127,7 @@ This section provides details for each class and property defined by SKG-O: data
   <h3>datacite:Identifier<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/datacite/Identifier</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * datacite:usesIdentifierScheme -[0..N]-&gt; datacite:IdentifierScheme * literal:hasLiteralValue -[0..N]-&gt; rdfs:Literal</span>
+   <span class="markdown">The properties that can be used with this class are: * datacite:usesIdentifierScheme -[1]-&gt; datacite:IdentifierScheme * literal:hasLiteralValue -[1]-&gt; rdfs:Literal</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -154,7 +154,7 @@ This section provides details for each class and property defined by SKG-O: data
   <h3>dcat:DataService (SKG-IF labels: Data source)<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/dcat#DataService</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier * dcat:theme -[0..N]-&gt; owl:Thing * dcterms:conformsTo -[0..N]-&gt; dcterms:Standard * dcterms:coverage -[0..N]-&gt; owl:Thing * dcterms:subject -[0..N]-&gt; owl:Thing * foaf:name -[0..N]-&gt; rdfs:Literal * odrl:hasPolicy -[0..N]-&gt; odrl:Policy * schema:audience -[0..N]-&gt; schema:Audience</span>
+   <span class="markdown">The properties that can be used with this class are: * datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier * dcat:theme -[0..1]-&gt; owl:Thing * dcterms:conformsTo -[0..N]-&gt; dcterms:Standard * dcterms:coverage -[0..N]-&gt; owl:Thing * dcterms:subject -[0..N]-&gt; owl:Thing * foaf:name -[0..1]-&gt; rdfs:Literal * odrl:hasPolicy -[0..N]-&gt; odrl:Policy * schema:audience -[0..N]-&gt; schema:Audience</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -169,7 +169,7 @@ This section provides details for each class and property defined by SKG-O: data
   <h3>dcterms:Standard<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/Standard</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * dcterms:coverage -[0..N]-&gt; owl:Thing * dcterms:requires -[0..N]-&gt; datacite:IdentifierScheme</span>
+   <span class="markdown">The properties that can be used with this class are: * dcterms:coverage -[1]-&gt; owl:Thing * dcterms:requires -[1..N]-&gt; datacite:IdentifierScheme</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -183,6 +183,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://purl.org/spar/fabio/Catalog">
   <h3>fabio:Catalog (SKG-IF labels: aggregator)<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/Catalog</p>
+  <div class="comment">
+   <span class="markdown">services for the aggregation of metadata about research products (and other entities) that are mainly collected (aka harvested) from data sources via APIs and then possibly curated/enriched by end-users, e.g. BASE, NARCIS, GESIS, B2FIND, OpenAIRE Research Graph</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -195,6 +198,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://purl.org/spar/fabio/Database">
   <h3>fabio:Database (SKG-IF labels: scientific database)<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/Database</p>
+  <div class="comment">
+   <span class="markdown">Scientific Databases intended to store structured information about scientific entities, e.g. PROTDB, ENA, ECRIN Studies Database</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -219,6 +225,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://purl.org/spar/fabio/Journal">
   <h3>fabio:Journal (SKG-IF labels: journal archive)<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/Journal</p>
+  <div class="comment">
+   <span class="markdown">Data sources for the deposition (submission), preservation, discovery, and access of scientific journal articles (metadata and files), e.g. publishers sites, journal sites, etc.</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -243,6 +252,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://purl.org/spar/fabio/Repository">
   <h3>fabio:Repository (SKG-IF labels: repository)<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/Repository</p>
+  <div class="comment">
+   <span class="markdown">services for the deposition, preservation, discovery, and access of research products metadata and files, e.g. PANGAEA, Zenodo, B2SHARE, EGI AppDB, BioTools</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -303,6 +315,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://purl.org/cerif/frapo/ResearchInformationSystem">
   <h3>frapo:ResearchInformationSystem (SKG-IF labels: cris system)<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/cerif/frapo/ResearchInformationSystem</p>
+  <div class="comment">
+   <span class="markdown">A current research information system (CRIS) is an information system to store, manage and exchange contextual metadata for the research products funded by a research funder or conducted at a research-performing organisation</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -328,7 +343,7 @@ This section provides details for each class and property defined by SKG-O: data
   <h3>odrl:Policy<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/odrl/2/Policy</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * dcterms:description -[0..N]-&gt; xsd:string * foaf:page -[0..N]-&gt; foaf:Document * odrl:action -[0..N]-&gt; odrl:Action * odrl:target -[0..N]-&gt; owl:Thing</span>
+   <span class="markdown">The properties that can be used with this class are: * dcterms:description -[0..1]-&gt; xsd:string * foaf:page -[0..1]-&gt; foaf:Document * odrl:action -[1]-&gt; odrl:Action * odrl:target -[0..N]-&gt; owl:Thing</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -343,7 +358,7 @@ This section provides details for each class and property defined by SKG-O: data
   <h3>schema:Audience<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://schema.org/Audience</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * schema:audienceType -[0..N]-&gt; xsd:string</span>
+   <span class="markdown">The properties that can be used with this class are: * schema:audienceType -[1]-&gt; xsd:string</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -357,6 +372,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://vivoweb.org/ontology/core#Publisher">
   <h3>vivo:Publisher (SKG-IF labels: publisher archive)<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://vivoweb.org/ontology/core#Publisher</p>
+  <div class="comment">
+   <span class="markdown">Scientific literature publisher, e.g. Elsevier, Copernicus, Frontiers, Springer, providing metadata and files of scientific publications relative to journals and conferences</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -373,7 +391,7 @@ This section provides details for each class and property defined by SKG-O: data
   <li><a href="#http://purl.org/spar/datacite/usesIdentifierScheme" title="http://purl.org/spar/datacite/usesIdentifierScheme">datacite:usesIdentifierScheme (SKG-IF labels: scheme)</a></li>
   <li><a href="#http://www.w3.org/ns/dcat#theme" title="http://www.w3.org/ns/dcat#theme">dcat:theme (SKG-IF labels: data_source_classification)</a></li>
   <li><a href="#http://purl.org/dc/terms/conformsTo" title="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo (SKG-IF labels: persistent_identity_systems)</a></li>
-  <li><a href="#http://purl.org/dc/terms/coverage" title="http://purl.org/dc/terms/coverage">dcterms:coverage (SKG-IF labels: research_product_types, for)</a></li>
+  <li><a href="#http://purl.org/dc/terms/coverage" title="http://purl.org/dc/terms/coverage">dcterms:coverage (SKG-IF labels: for, research_product_types)</a></li>
   <li><a href="#http://purl.org/dc/terms/requires" title="http://purl.org/dc/terms/requires">dcterms:requires (SKG-IF labels: pid_schemes)</a></li>
   <li><a href="#http://purl.org/dc/terms/subject" title="http://purl.org/dc/terms/subject">dcterms:subject (SKG-IF labels: disciplines)</a></li>
   <li><a href="#http://xmlns.com/foaf/0.1/page" title="http://xmlns.com/foaf/0.1/page">foaf:page (SKG-IF labels: documented_at)</a></li>
@@ -400,6 +418,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://purl.org/spar/datacite/usesIdentifierScheme">
   <h3>datacite:usesIdentifierScheme (SKG-IF labels: scheme)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/datacite/usesIdentifierScheme</p>
+  <div class="comment">
+   <span class="markdown">The scheme for the external identifier (e.g., a DOI).</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * datacite:Identifier In SKG-IF, it is used to link to entities belonging to the following classes (range): * datacite:IdentifierScheme</span>
   </div>
@@ -443,8 +464,11 @@ This section provides details for each class and property defined by SKG-O: data
   </dl>
  </div>
  <div class="entity" id="http://purl.org/dc/terms/coverage">
-  <h3>dcterms:coverage (SKG-IF labels: research_product_types, for)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>dcterms:coverage (SKG-IF labels: for, research_product_types)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/coverage</p>
+  <div class="comment">
+   <span class="markdown">The Product type to which the persistent identifier is referring to. To choose from</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * dcat:DataService * dcterms:Standard In SKG-IF, it is used to link to entities belonging to the following classes (range): * owl:Thing</span>
   </div>
@@ -460,6 +484,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://purl.org/dc/terms/requires">
   <h3>dcterms:requires (SKG-IF labels: pid_schemes)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/requires</p>
+  <div class="comment">
+   <span class="markdown">Persistent identifier schemes used to refer to ProductTypes. Each elements must be drawn by the EOSC vocabulary Persistent Identity Scheme, i.e.,</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * dcterms:Standard In SKG-IF, it is used to link to entities belonging to the following classes (range): * datacite:IdentifierScheme</span>
   </div>
@@ -490,6 +517,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://xmlns.com/foaf/0.1/page">
   <h3>foaf:page (SKG-IF labels: documented_at)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/page</p>
+  <div class="comment">
+   <span class="markdown">The URL of the document that describes the policy.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * odrl:Policy In SKG-IF, it is used to link to entities belonging to the following classes (range): * foaf:Document</span>
   </div>
@@ -505,6 +535,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://www.w3.org/ns/odrl/2/action">
   <h3>odrl:action (SKG-IF labels: about)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/odrl/2/action</p>
+  <div class="comment">
+   <span class="markdown">The type of policy to consider.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * odrl:Policy In SKG-IF, it is used to link to entities belonging to the following classes (range): * odrl:Action</span>
   </div>
@@ -573,6 +606,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://purl.org/dc/terms/description">
   <h3>dcterms:description (SKG-IF labels: description)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+  <div class="comment">
+   <span class="markdown">Describe the type of policy, if necessary.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * odrl:Policy In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:string</span>
   </div>
@@ -603,6 +639,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue">
   <h3>literal:hasLiteralValue (SKG-IF labels: value)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue</p>
+  <div class="comment">
+   <span class="markdown">The external identifier.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * datacite:Identifier In SKG-IF, it is used to link to entities belonging to the following data types (range): * rdfs:Literal</span>
   </div>
@@ -618,6 +657,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="https://schema.org/audienceType">
   <h3>schema:audienceType (SKG-IF labels: audience_type)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://schema.org/audienceType</p>
+  <div class="comment">
+   <span class="markdown">the type of the audience based on the vocabulary Jurisdiction.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * schema:Audience In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:string</span>
   </div>
@@ -643,6 +685,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://purl.org/coar/access_right/c_14cb">
   <h3>coar:c_14cb (SKG-IF labels: metadata only access)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/coar/access_right/c_14cb</p>
+  <div class="comment">
+   <span class="markdown">This policy provides the possibility of having / handling metadata only access refers to the resources in the Data source (from COAR Access Rights 1.0).</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -655,6 +700,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://purl.org/coar/access_right/c_16ec">
   <h3>coar:c_16ec (SKG-IF labels: restricted access)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/coar/access_right/c_16ec</p>
+  <div class="comment">
+   <span class="markdown">This policy provides the possibility of having / handling restricted access to the resources in the Data source (from COAR Access Rights 1.0).</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -667,6 +715,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://purl.org/coar/access_right/c_abf2">
   <h3>coar:c_abf2 (SKG-IF labels: open access)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/coar/access_right/c_abf2</p>
+  <div class="comment">
+   <span class="markdown">This policy provides the possibility of having / handling Data source resources that are immediately and permanently online (from COAR Access Rights 1.0).</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -679,6 +730,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://purl.org/coar/access_right/c_f1cf">
   <h3>coar:c_f1cf (SKG-IF labels: embargoed access)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/coar/access_right/c_f1cf</p>
+  <div class="comment">
+   <span class="markdown">This policy provides the possibility of having / handling embargoed access refers to the resources in the Data source (from COAR Access Rights 1.0).</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -691,6 +745,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://www.w3.org/ns/odrl/2/aggregate">
   <h3>odrl:aggregate (SKG-IF labels: submission)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/odrl/2/aggregate</p>
+  <div class="comment">
+   <span class="markdown">This policy provides a comprehensive framework for the contribution of research products. Criteria for submitting content to the repository as well as product preparation guidelines can be stated. Concepts for quality assurance may be provided.</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -703,6 +760,9 @@ This section provides details for each class and property defined by SKG-O: data
  <div class="entity" id="http://www.w3.org/ns/odrl/2/archive">
   <h3>odrl:archive (SKG-IF labels: preservation)<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/odrl/2/archive</p>
+  <div class="comment">
+   <span class="markdown">This policy provides a comprehensive framework for the long-term preservation of the research products. Principles aims and responsibilities must be clarified. An important aspect is the description of preservation concepts to ensure the technical and conceptual utility of the content.</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by

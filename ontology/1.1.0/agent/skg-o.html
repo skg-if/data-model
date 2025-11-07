@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/skg-if/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/skg-if/ontology/","name":"The SKG-IF Ontology: agent", "headline":"Document describing the ontology https://w3id.org/skg-if/ontology/", "dateReleased":"Mon Sep 22 17:05:38 CEST 2025", "version":"1.1.0", "author":[{"@type":"Person","name":"Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/skg-if/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/skg-if/ontology/","name":"The SKG-IF Ontology: agent", "headline":"Document describing the ontology https://w3id.org/skg-if/ontology/", "dateReleased":"Fri Nov 07 12:08:13 CET 2025", "version":"1.1.0", "author":[{"@type":"Person","name":"Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -126,7 +126,7 @@ This section provides details for each class and property defined by SKG-O: agen
   <h3>datacite:Identifier<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/datacite/Identifier</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * datacite:usesIdentifierScheme -[0..N]-&gt; datacite:IdentifierScheme * literal:hasLiteralValue -[0..N]-&gt; rdfs:Literal</span>
+   <span class="markdown">The properties that can be used with this class are: * datacite:usesIdentifierScheme -[1]-&gt; datacite:IdentifierScheme * literal:hasLiteralValue -[1]-&gt; rdfs:Literal</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -153,7 +153,7 @@ This section provides details for each class and property defined by SKG-O: agen
   <h3>foaf:Agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/Agent</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier * foaf:name -[0..N]-&gt; rdfs:Literal</span>
+   <span class="markdown">The properties that can be used with this class are: * datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier * foaf:name -[0..1]-&gt; rdfs:Literal</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -180,7 +180,7 @@ This section provides details for each class and property defined by SKG-O: agen
   <h3>foaf:Organization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/Organization</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * foaf:homepage -[0..N]-&gt; foaf:Document * frapo:hasAcronym -[0..N]-&gt; rdfs:Literal * frapo:hasCountry -[0..N]-&gt; rdfs:Literal * skos:altLabel -[0..N]-&gt; rdfs:Literal</span>
+   <span class="markdown">The properties that can be used with this class are: * foaf:homepage -[0..1]-&gt; foaf:Document * frapo:hasAcronym -[0..1]-&gt; rdfs:Literal * frapo:hasCountry -[0..1]-&gt; rdfs:Literal * skos:altLabel -[0..N]-&gt; rdfs:Literal</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -195,7 +195,7 @@ This section provides details for each class and property defined by SKG-O: agen
   <h3>foaf:Person<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/Person</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * foaf:familyName -[0..N]-&gt; rdfs:Literal * foaf:givenName -[0..N]-&gt; rdfs:Literal * pro:holdsRoleInTime -[0..N]-&gt; pro:RoleInTime</span>
+   <span class="markdown">The properties that can be used with this class are: * foaf:familyName -[0..1]-&gt; rdfs:Literal * foaf:givenName -[0..1]-&gt; rdfs:Literal * pro:holdsRoleInTime -[0..N]-&gt; pro:RoleInTime</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -318,7 +318,7 @@ This section provides details for each class and property defined by SKG-O: agen
   <h3>pro:RoleInTime<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/pro/RoleInTime</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * pro:relatesToOrganization -[0..N]-&gt; foaf:Organization * pro:withRole -[0..N]-&gt; pro:Role * tvc:atTime -[0..N]-&gt; ti:TimeInterval</span>
+   <span class="markdown">The properties that can be used with this class are: * pro:relatesToOrganization -[1]-&gt; foaf:Organization * pro:withRole -[0..1]-&gt; pro:Role * tvc:atTime -[0..1]-&gt; ti:TimeInterval</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -345,7 +345,7 @@ This section provides details for each class and property defined by SKG-O: agen
   <h3>ti:TimeInterval<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * ti:hasIntervalEndDate -[0..N]-&gt; xsd:dateTime * ti:hasIntervalStartDate -[0..N]-&gt; xsd:dateTime</span>
+   <span class="markdown">The properties that can be used with this class are: * ti:hasIntervalEndDate -[0..1]-&gt; xsd:dateTime * ti:hasIntervalStartDate -[0..1]-&gt; xsd:dateTime</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -385,6 +385,9 @@ This section provides details for each class and property defined by SKG-O: agen
  <div class="entity" id="http://purl.org/spar/datacite/usesIdentifierScheme">
   <h3>datacite:usesIdentifierScheme (SKG-IF labels: scheme)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/datacite/usesIdentifierScheme</p>
+  <div class="comment">
+   <span class="markdown">The scheme for the external identifier.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * datacite:Identifier In SKG-IF, it is used to link to entities belonging to the following classes (range): * datacite:IdentifierScheme</span>
   </div>
@@ -430,6 +433,9 @@ This section provides details for each class and property defined by SKG-O: agen
  <div class="entity" id="http://purl.org/spar/pro/relatesToOrganization">
   <h3>pro:relatesToOrganization (SKG-IF labels: affiliation)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/pro/relatesToOrganization</p>
+  <div class="comment">
+   <span class="markdown">The identifier of an Organisation a Person is affiliated with.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * pro:RoleInTime In SKG-IF, it is used to link to entities belonging to the following classes (range): * foaf:Organization</span>
   </div>
@@ -445,6 +451,9 @@ This section provides details for each class and property defined by SKG-O: agen
  <div class="entity" id="http://purl.org/spar/pro/withRole">
   <h3>pro:withRole (SKG-IF labels: role)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/pro/withRole</p>
+  <div class="comment">
+   <span class="markdown">The role that a Person had in the context of an Organisation. Needed for parsing purposes; fixed to `affiliate`.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * pro:RoleInTime In SKG-IF, it is used to link to entities belonging to the following classes (range): * pro:Role</span>
   </div>
@@ -460,6 +469,9 @@ This section provides details for each class and property defined by SKG-O: agen
  <div class="entity" id="http://www.essepuntato.it/2012/04/tvc/atTime">
   <h3>tvc:atTime (SKG-IF labels: period)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.essepuntato.it/2012/04/tvc/atTime</p>
+  <div class="comment">
+   <span class="markdown">The time period where the Person was affiliated with an Organisation. It includes the following information:</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * pro:RoleInTime In SKG-IF, it is used to link to entities belonging to the following classes (range): * ti:TimeInterval</span>
   </div>
@@ -563,6 +575,9 @@ This section provides details for each class and property defined by SKG-O: agen
  <div class="entity" id="http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue">
   <h3>literal:hasLiteralValue (SKG-IF labels: value)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue</p>
+  <div class="comment">
+   <span class="markdown">The external identifier.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * datacite:Identifier In SKG-IF, it is used to link to entities belonging to the following data types (range): * rdfs:Literal</span>
   </div>
@@ -593,6 +608,9 @@ This section provides details for each class and property defined by SKG-O: agen
  <div class="entity" id="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate">
   <h3>ti:hasIntervalEndDate (SKG-IF labels: end)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate</p>
+  <div class="comment">
+   <span class="markdown">The end datetime (if any) of the affiliation with an Organisation. The string should be compliant with the ISO 8601 datetime string.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * ti:TimeInterval In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>
@@ -608,6 +626,9 @@ This section provides details for each class and property defined by SKG-O: agen
  <div class="entity" id="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate">
   <h3>ti:hasIntervalStartDate (SKG-IF labels: start)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate</p>
+  <div class="comment">
+   <span class="markdown">The start datetime of the affiliation with an Organisation. The string should be compliant with the ISO 8601 datetime string.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * ti:TimeInterval In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:dateTime</span>
   </div>

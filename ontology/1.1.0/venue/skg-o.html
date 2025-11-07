@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/skg-if/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/skg-if/ontology/","name":"The SKG-IF Ontology: venue", "headline":"Document describing the ontology https://w3id.org/skg-if/ontology/", "dateReleased":"Mon Sep 22 17:11:13 CEST 2025", "version":"1.1.0", "author":[{"@type":"Person","name":"Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/skg-if/ontology/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/skg-if/ontology/","name":"The SKG-IF Ontology: venue", "headline":"Document describing the ontology https://w3id.org/skg-if/ontology/", "dateReleased":"Fri Nov 07 12:13:51 CET 2025", "version":"1.1.0", "author":[{"@type":"Person","name":"Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -119,7 +119,7 @@ This section provides details for each class and property defined by SKG-O: venu
   <h3>datacite:Identifier<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/datacite/Identifier</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * datacite:usesIdentifierScheme -[0..N]-&gt; datacite:IdentifierScheme * literal:hasLiteralValue -[0..N]-&gt; rdfs:Literal</span>
+   <span class="markdown">The properties that can be used with this class are: * datacite:usesIdentifierScheme -[1]-&gt; datacite:IdentifierScheme * literal:hasLiteralValue -[1]-&gt; rdfs:Literal</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -170,7 +170,7 @@ This section provides details for each class and property defined by SKG-O: venu
   <h3>fabio:ExpressionCollection (SKG-IF labels: venue)<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/fabio/ExpressionCollection</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier * dcterms:created -[0..N]-&gt; xsd:dateTime * dcterms:title -[0..N]-&gt; rdfs:Literal * frapo:hasAcronym -[0..N]-&gt; rdfs:Literal * prism:seriesTitle -[0..N]-&gt; rdfs:Literal * pro:isDocumentContextFor -[0..N]-&gt; pro:RoleInTime * pso:holdsStatusInTime -[0..N]-&gt; pso:StatusInTime</span>
+   <span class="markdown">The properties that can be used with this class are: * datacite:hasIdentifier -[0..N]-&gt; datacite:Identifier * dcterms:created -[0..1]-&gt; xsd:dateTime * dcterms:title -[0..N]-&gt; rdfs:Literal * frapo:hasAcronym -[0..N]-&gt; rdfs:Literal * prism:seriesTitle -[0..1]-&gt; rdfs:Literal * pro:isDocumentContextFor -[0..N]-&gt; pro:RoleInTime * pso:holdsStatusInTime -[0..1]-&gt; pso:StatusInTime</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -248,7 +248,7 @@ This section provides details for each class and property defined by SKG-O: venu
   <h3>pso:StatusInTime<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/pso/StatusInTime</p>
   <div class="info">
-   <span class="markdown">The properties that can be used with this class are: * dcterms:description -[0..N]-&gt; xsd:string * pso:withStatus -[0..N]-&gt; pso:PublicationStatus</span>
+   <span class="markdown">The properties that can be used with this class are: * dcterms:description -[0..1]-&gt; xsd:string * pso:withStatus -[1]-&gt; pso:PublicationStatus</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -287,6 +287,9 @@ This section provides details for each class and property defined by SKG-O: venu
  <div class="entity" id="http://purl.org/spar/datacite/usesIdentifierScheme">
   <h3>datacite:usesIdentifierScheme (SKG-IF labels: scheme)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/datacite/usesIdentifierScheme</p>
+  <div class="comment">
+   <span class="markdown">The scheme for the external identifier. It can be one of the following</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * datacite:Identifier In SKG-IF, it is used to link to entities belonging to the following classes (range): * datacite:IdentifierScheme</span>
   </div>
@@ -347,6 +350,9 @@ This section provides details for each class and property defined by SKG-O: venu
  <div class="entity" id="http://purl.org/spar/pso/withStatus">
   <h3>pso:withStatus (SKG-IF labels: status)<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/spar/pso/withStatus</p>
+  <div class="comment">
+   <span class="markdown">describe if the journal is open access (`open`), closed access (`closed`), or hybrid (`hybrid`).</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * pso:StatusInTime In SKG-IF, it is used to link to entities belonging to the following classes (range): * pso:PublicationStatus</span>
   </div>
@@ -387,6 +393,9 @@ This section provides details for each class and property defined by SKG-O: venu
  <div class="entity" id="http://purl.org/dc/terms/description">
   <h3>dcterms:description (SKG-IF labels: description)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+  <div class="comment">
+   <span class="markdown">describe and qualify the specific status selected.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * pso:StatusInTime In SKG-IF, it is used to link to entities belonging to the following data types (range): * xsd:string</span>
   </div>
@@ -432,6 +441,9 @@ This section provides details for each class and property defined by SKG-O: venu
  <div class="entity" id="http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue">
   <h3>literal:hasLiteralValue (SKG-IF labels: value)<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.essepuntato.it/2010/06/literalreification/hasLiteralValue</p>
+  <div class="comment">
+   <span class="markdown">The external identifier.</span>
+  </div>
   <div class="info">
    <span class="markdown">In SKG-IF, it is used in the following classes (domain): * datacite:Identifier In SKG-IF, it is used to link to entities belonging to the following data types (range): * rdfs:Literal</span>
   </div>

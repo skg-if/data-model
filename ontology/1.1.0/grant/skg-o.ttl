@@ -32,15 +32,15 @@ frapo:Grant a owl:Class ;
 
 * datacite:hasIdentifier -[0..N]-> datacite:Identifier
 * dcterms:abstract -[0..N]-> rdfs:Literal
-* dcterms:temporal -[0..N]-> ti:TimeInterval
+* dcterms:temporal -[0..1]-> ti:TimeInterval
 * dcterms:title -[0..N]-> rdfs:Literal
-* foaf:homepage -[0..N]-> foaf:Document
-* frapo:hasAcronym -[0..N]-> rdfs:Literal
-* frapo:hasCallIdentifier -[0..N]-> rdfs:Literal
-* frapo:hasCurrency -[0..N]-> xsd:float
+* foaf:homepage -[0..1]-> foaf:Document
+* frapo:hasAcronym -[0..1]-> rdfs:Literal
+* frapo:hasCallIdentifier -[0..1]-> rdfs:Literal
+* frapo:hasCurrency -[0..1]-> xsd:float
 * frapo:hasCurrencyCode -[0..N]-> xsd:string
-* frapo:hasFundingAgency -[0..N]-> frapo:FundingAgency
-* frapo:hasGrantNumber -[0..N]-> xsd:string
+* frapo:hasFundingAgency -[0..1]-> frapo:FundingAgency
+* frapo:hasGrantNumber -[0..1]-> xsd:string
 * frapo:supports -[0..N]-> foaf:Organization
 * prism:keyword -[0..N]-> rdfs:Literal
 * pro:isRelatedToRoleInTime -[0..N]-> pro:RoleInTime""" ;
@@ -150,8 +150,8 @@ datacite:Identifier a owl:Class ;
     rdfs:label "datacite:Identifier" ;
     dc:description """The properties that can be used with this class are:
 
-* datacite:usesIdentifierScheme -[0..N]-> datacite:IdentifierScheme
-* literal:hasLiteralValue -[0..N]-> rdfs:Literal""" ;
+* datacite:usesIdentifierScheme -[1]-> datacite:IdentifierScheme
+* literal:hasLiteralValue -[1]-> rdfs:Literal""" ;
     rdfs:isDefinedBy datacite: .
 
 datacite:IdentifierScheme a owl:Class ;
@@ -174,13 +174,14 @@ datacite:usesIdentifierScheme a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * datacite:IdentifierScheme""" ;
+    rdfs:comment "The scheme for the external identifier." ;
     rdfs:isDefinedBy datacite: .
 
 pro:RoleInTime a owl:Class ;
     rdfs:label "pro:RoleInTime" ;
     dc:description """The properties that can be used with this class are:
 
-* pro:isHeldBy -[0..N]-> foaf:Agent
+* pro:isHeldBy -[1]-> foaf:Agent
 * pro:withRole -[0..N]-> scoro:ProjectRole""" ;
     rdfs:isDefinedBy pro: .
 
@@ -191,6 +192,7 @@ pro:isHeldBy a owl:ObjectProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following classes (range):
 * foaf:Agent""" ;
+    rdfs:comment "The identifier of an Agent contributing to a Grant." ;
     rdfs:isDefinedBy pro: .
 
 pro:isRelatedToRoleInTime a owl:ObjectProperty ;
@@ -250,14 +252,15 @@ literal:hasLiteralValue a owl:DatatypeProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * rdfs:Literal""" ;
+    rdfs:comment "The external identifier." ;
     rdfs:isDefinedBy literal: .
 
 ti:TimeInterval a owl:Class ;
     rdfs:label "ti:TimeInterval" ;
     dc:description """The properties that can be used with this class are:
 
-* ti:hasIntervalEndDate -[0..N]-> xsd:dateTime
-* ti:hasIntervalStartDate -[0..N]-> xsd:dateTime""" ;
+* ti:hasIntervalEndDate -[0..1]-> xsd:dateTime
+* ti:hasIntervalStartDate -[1]-> xsd:dateTime""" ;
     rdfs:isDefinedBy ti: .
 
 ti:hasIntervalEndDate a owl:DatatypeProperty ;
@@ -267,6 +270,7 @@ ti:hasIntervalEndDate a owl:DatatypeProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * xsd:dateTime""" ;
+    rdfs:comment "The end datetime (if any) of the Grant. The string should be compliant with the ISO 8601 datetime string." ;
     rdfs:isDefinedBy ti: .
 
 ti:hasIntervalStartDate a owl:DatatypeProperty ;
@@ -276,6 +280,7 @@ ti:hasIntervalStartDate a owl:DatatypeProperty ;
 
 In SKG-IF, it is used to link to entities belonging to the following data types (range):
 * xsd:dateTime""" ;
+    rdfs:comment "The start datetime of the Grant. The string should be compliant with the ISO 8601 datetime string." ;
     rdfs:isDefinedBy ti: .
 
 foaf:Agent a owl:Class ;
@@ -302,7 +307,7 @@ In SKG-IF, it is used to link to entities belonging to the following classes (ra
 <https://w3id.org/skg-if/ontology/grant/> a owl:Ontology ;
     rdfs:label "SKG-O: grant" ;
     dc:creator "Scientific Knowledge Graphs – Interoperability Framework (SKG-IF) WG" ;
-    dc:date "2025-09-22"^^xsd:date ;
+    dc:date "2025-11-07"^^xsd:date ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" ;
     dc:title "The SKG-IF Ontology: grant" ;
     vann:preferredNamespacePrefix "skg-o" ;
