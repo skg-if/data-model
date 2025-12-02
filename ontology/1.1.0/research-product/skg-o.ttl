@@ -320,7 +320,7 @@ fabio:Expression a owl:Class ;
 * fabio:hasRetractionDate -[0..N]-> xsd:dateTime
 * fabio:hasSequenceIdentifier -[0..1]-> xsd:string
 * frbr:embodiment -[0..1]-> fabio:Manifestation
-* frbr:partOf -[0..1]-> fabio:Expression
+* frbr:partOf -[0..1]-> fabio:ExpressionCollection
 * prism:edition -[0..1]-> xsd:string
 * prism:issueIdentifier -[0..1]-> xsd:string
 * prism:versionIdentifier -[0..1]-> xsd:string

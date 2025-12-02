@@ -847,7 +847,7 @@ In SKG-IF, it is used to link to entities belonging to the following data types 
 * fabio:hasRetractionDate -[0..N]-&gt; xsd:dateTime
 * fabio:hasSequenceIdentifier -[0..1]-&gt; xsd:string
 * frbr:embodiment -[0..1]-&gt; fabio:Manifestation
-* frbr:partOf -[0..1]-&gt; fabio:Expression
+* frbr:partOf -[0..1]-&gt; fabio:ExpressionCollection
 * prism:edition -[0..1]-&gt; xsd:string
 * prism:issueIdentifier -[0..1]-&gt; xsd:string
 * prism:versionIdentifier -[0..1]-&gt; xsd:string
