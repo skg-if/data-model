@@ -5,7 +5,7 @@ layout: default
 nav_order: 1
 ---
 
-# FAQs : Model
+# FAQs : Data model
 
 ## I need a new entity or relation in the Data Model and API
 
